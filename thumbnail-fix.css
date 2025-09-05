@@ -1,0 +1,76 @@
+/* Thumbnail Click Fix for Inksnap Nigeria */
+/* Add this CSS to fix thumbnail clicking issues */
+
+/* Allow clicks on product cards and interactive elements */
+.product-card, 
+.product-card *,
+.product-image,
+.product-image *,
+.thumbnail,
+.thumbnail *,
+.gallery,
+.gallery *,
+.clickable,
+.clickable * {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+/* Ensure product cards are clickable */
+.products-grid .product-card {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+.products-grid .product-card:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
+
+/* Allow clicks on all links and buttons */
+a, button, .btn, .button {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+/* Allow clicks on navigation elements */
+nav, nav *,
+header, header *,
+footer, footer * {
+    pointer-events: auto !important;
+}
+
+/* Allow clicks on form elements */
+input, textarea, select, label {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+/* Allow text selection in form inputs */
+input, textarea, select {
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+    user-select: text !important;
+}
+
+/* Protect only standalone images (not in interactive elements) */
+img:not(.product-image img):not(.thumbnail img):not(.gallery img) {
+    -webkit-user-drag: none !important;
+    -khtml-user-drag: none !important;
+    -moz-user-drag: none !important;
+    -o-user-drag: none !important;
+    user-drag: none !important;
+}
+
+/* Ensure hover effects work on product cards */
+.product-card:hover .product-image {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Allow clicks on all interactive elements */
+[onclick], [href], [data-toggle], [data-target] {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
