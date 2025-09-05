@@ -441,27 +441,32 @@
             <div class="spinner">
             </div>
         </div>
-        <header>
-            <nav class="navbar navbar-expand-lg">
+        <header class="navbar-light navbar-sticky header-static">
+            <nav class="navbar navbar-expand-xl">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide" alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide" class="light-mode-item" src="assets/logo/logo.png" alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide" alt="Inksnap Logo - printing company in Lagos Nigeria - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy">
-                        <img alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide" alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide" class="dark-mode-item" src="assets/logo/white-logo.png" alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide" alt="Inksnap Logo - printing company in Lagos Nigeria - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy">
+                        <img alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide" alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide" class="navbar-brand-item light-mode-item" src="assets/logo/logo.png" alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide"  alt="Inksnap Logo - printing company in Lagos Nigeria - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy">
+                        <img alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide" alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide" class="navbar-brand-item dark-mode-item" src="assets/logo/white-logo.png" alt="Sublimation - Professional Printing Services in Lagos Nigeria & Nationwide"  alt="Inksnap Logo - printing company in Lagos Nigeria - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Mobile toggle -->
+                    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="text-body h6 d-none d-sm-inline-block">
+                            Menu
+                        </span>
                         <span class="navbar-toggler-icon">
                         </span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav me-auto">
+                    <!-- Navigation -->
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav navbar-nav-scroll ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">
-                                    Home
+                                    HOME
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Products
+                                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">
+                                    ALL PRODUCTS
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
@@ -607,42 +612,49 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about-us.html">
-                                    About
+                                    ABOUT US
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">
-                                    Contact
+                                <a class="nav-link" href="services.html">
+                                    SERVICES
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="quotes.html">
+                                    GET QUOTE
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="track-order.html">
+                                    TRACK ORDER
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="blog.html">
-                                    Blog
+                                    BLOG
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="calculator.html">
-                                    Calculator
+                                    CALCULATOR
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="stores.html">
-                                    Stores
+                                    STORES
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <button class="nav-link theme-toggle-btn" id="themeToggle">
+                                    <i class="fas fa-moon dark-icon">
+                                    </i>
+                                    <i class="fas fa-sun light-icon">
+                                    </i>
+                                </button>
+                            </li>
                         </ul>
-                        <div class="d-flex align-items-center">
-                            <button class="theme-toggle me-3" onclick="toggleTheme()">
-                                <i class="bi bi-moon-stars">
-                                </i>
-                            </button>
-                            <a href="#" class="btn btn-outline-primary me-2">
-                                Sign In
-                            </a>
-                            <a href="#" class="btn btn-primary">
-                                Create Account
-                            </a>
-                        </div>
+                    </div>
                     </div>
                 </div>
             </nav>
