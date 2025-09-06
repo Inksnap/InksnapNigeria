@@ -1,0 +1,339 @@
+PRODUCT IMAGE SCAN REPORT
+Generated: 09/06/2025 23:14:53
+Total Files Scanned: 149
+Files with Issues: 142
+Files without Main Image: 142
+Files with Thumbnail Issues: 20
+
+FILES WITHOUT MAIN PRODUCT IMAGE:
+- a2-poster-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- a2-wall-calendar-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- a3-paper-bag-details.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- a3-poster-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- a3-wall-calendar-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- a4-notebook.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- a4-poster-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- a5-jotter.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- a5flyer.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- a5menu-card-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- a6flyer.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- advert-banner-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- advert-poster-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- backdrop-banner-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- banner-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- bifold-product.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- birthday-banner-prints.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- blog.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- book-publishing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- boxflyer.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- branded-bag-prints.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- branded-box-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- branded-gift-items-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- branded-hoodies.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- branded-mousepad-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- branded-mug-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- brochure-company-profile-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- brochure-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- burial-funeral-banner-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- business-cards.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- button-down-polo-t-shirt-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- calculator.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- canvas-prints.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- classic-artwork-tshirt-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- collapsiblebox.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- commemorative-achievement-medal-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- component-button-badge-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- conqueror-letterhead.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- corporate-product.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- courier-shopping-bag-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-3D-monogram-embroidery-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-acrylic-business-social-media-signage.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-bath-towel-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-branded-helmet-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-branded-versity-jacket-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-branded-wireless-mouse-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-business-customer-thank-you-card-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-business-receipt-invoice-booklet-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-c4-envelope-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-calendar-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-certificate-of-completion-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-clothing-hang-tag-label-cards.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-clothing-woven-label-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-crystal-award-plaque-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-embroidered-face-towel-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-event-hall-branding.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-funeral-burial-tshirt-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-landscape-funeral-brochure-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-magnetic-name-tag-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-notebooks.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-office-wall-branding.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-Personalized-apron-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-point-of-sale-display-stand-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-promotional-counter-table-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-reusable-name-tag-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-square-funeral-brochure-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-table-tent-card-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-v-neck-t-shirt-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-wedding-handfan-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- custom-wooden-award-plaque-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- customized-sweatshirts-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- delivery-box-branding.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- desk-table-calendar-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- disposablebox.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- envelope-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- event-backdrop-banner-print-in-lagos-nigeria.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- event-table-tags-tent-cards-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- face-cap-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- faq.html: No main product image found
+- flyer-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- flyers.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- funeral-burial-roll-up-banner-prints.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- funeral-program-print (2).html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- funeral-program-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- hard-cover-jotter-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- image-template.html: No main product image found
+- invitations.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- keyholder-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- label-sticker-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- lanyard-idcard-rope-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- letterhead-design-and-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- letterhead-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- luxury-roundneck-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- magic-mug-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- marriage-wedding-program-of-event-brochure-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- menu-card-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- monogram-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- mugs.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- notebook-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- notepad-jotter-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- nylon-shopping-bag-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- office-box-package.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- office-presentation-file-folder-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- office-stationery-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- order.html: No main product image found
+- paper-bag-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- pen-branding-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- polo-shirt-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- polo-tshirt-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- postcards.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- premium-business-card-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- premium-invitation-box-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- premium-pen-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- printing-company-in-lagos-nigeria.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- products.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- pvc-transparent-plastic-business-card-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- quotes.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- reseller.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- restaurant-and-lounge-menu-book-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- roll-up-banner-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- round-neck-tshirt-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- safety-work-vest-reflective-jacket-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- services.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- shopping-paper-bag-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- soft-cover-jotter-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- square-birthday-program-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- standard-business-card-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- standard-id-card-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- steel-flask-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- sticker-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- stores.html: No main product image found
+- sublimation-print.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- table-calender.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- tote-bag-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- track-order.html: No main product image found
+- trifold-brochure-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- tshirt-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- vehicle-branding.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- vehicle-car-branding.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- wedding-banner-prints.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- wedding-invitation-card-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+- x-banner-printing.html: Broken image pattern: <img[^>]*src="[^"]*logo\.png"[^>]*>
+
+FILES WITH THUMBNAIL ISSUES:
+- a2-wall-calendar-print.html:
+  * Incorrect thumbnail alt text
+- a3-paper-bag-details.html:
+  * Incorrect thumbnail alt text
+  * Broken thumbnail path (logo.png)
+- a3-poster-print.html:
+  * Incorrect thumbnail alt text
+- a4-notebook.html:
+  * Incorrect thumbnail alt text
+- branded-mousepad-printing.html:
+  * Incorrect thumbnail alt text
+- branded-mug-printing.html:
+  * Incorrect thumbnail alt text
+- custom-branded-versity-jacket-print.html:
+  * Missing assets/images path
+- desk-table-calendar-print.html:
+  * Broken thumbnail path (logo.png)
+  * Missing assets/images path
+- flyer-printing.html:
+  * Incorrect thumbnail alt text
+- funeral-program-print (2).html:
+  * Incorrect thumbnail alt text
+- invitations.html:
+  * Incorrect thumbnail alt text
+- marriage-wedding-program-of-event-brochure-print.html:
+  * Incorrect thumbnail alt text
+- mugs.html:
+  * Incorrect thumbnail alt text
+- postcards.html:
+  * Incorrect thumbnail alt text
+  * Broken thumbnail path (logo.png)
+- premium-business-card-printing.html:
+  * Broken thumbnail path (logo.png)
+- premium-invitation-box-print.html:
+  * Incorrect thumbnail alt text
+- quotes.html:
+  * Broken thumbnail path (logo.png)
+- table-calender.html:
+  * Broken thumbnail path (logo.png)
+- tote-bag-printing.html:
+  * Broken thumbnail path (logo.png)
+- wedding-invitation-card-printing.html:
+  * Broken thumbnail path (logo.png)
+
+ALL FILES WITH ISSUES:
+- a2-poster-print.html
+- a2-wall-calendar-print.html
+- a3-paper-bag-details.html
+- a3-poster-print.html
+- a3-wall-calendar-print.html
+- a4-notebook.html
+- a4-poster-print.html
+- a5-jotter.html
+- a5flyer.html
+- a5menu-card-printing.html
+- a6flyer.html
+- advert-banner-print.html
+- advert-poster-print.html
+- backdrop-banner-print.html
+- banner-printing.html
+- bifold-product.html
+- birthday-banner-prints.html
+- blog.html
+- book-publishing.html
+- boxflyer.html
+- branded-bag-prints.html
+- branded-box-printing.html
+- branded-gift-items-printing.html
+- branded-hoodies.html
+- branded-mousepad-printing.html
+- branded-mug-printing.html
+- brochure-company-profile-printing.html
+- brochure-printing.html
+- burial-funeral-banner-printing.html
+- business-cards.html
+- button-down-polo-t-shirt-printing.html
+- calculator.html
+- canvas-prints.html
+- classic-artwork-tshirt-print.html
+- collapsiblebox.html
+- commemorative-achievement-medal-print.html
+- component-button-badge-print.html
+- conqueror-letterhead.html
+- corporate-product.html
+- courier-shopping-bag-print.html
+- custom-3D-monogram-embroidery-print.html
+- custom-acrylic-business-social-media-signage.html
+- custom-bath-towel-print.html
+- custom-branded-helmet-print.html
+- custom-branded-versity-jacket-print.html
+- custom-branded-wireless-mouse-print.html
+- custom-business-customer-thank-you-card-print.html
+- custom-business-receipt-invoice-booklet-print.html
+- custom-c4-envelope-printing.html
+- custom-calendar-printing.html
+- custom-certificate-of-completion-print.html
+- custom-clothing-hang-tag-label-cards.html
+- custom-clothing-woven-label-printing.html
+- custom-crystal-award-plaque-printing.html
+- custom-embroidered-face-towel-print.html
+- custom-event-hall-branding.html
+- custom-funeral-burial-tshirt-printing.html
+- custom-landscape-funeral-brochure-printing.html
+- custom-magnetic-name-tag-print.html
+- custom-notebooks.html
+- custom-office-wall-branding.html
+- custom-Personalized-apron-print.html
+- custom-point-of-sale-display-stand-print.html
+- custom-promotional-counter-table-printing.html
+- custom-reusable-name-tag-print.html
+- custom-square-funeral-brochure-print.html
+- custom-table-tent-card-printing.html
+- custom-v-neck-t-shirt-printing.html
+- custom-wedding-handfan-print.html
+- custom-wooden-award-plaque-printing.html
+- customized-sweatshirts-printing.html
+- delivery-box-branding.html
+- desk-table-calendar-print.html
+- disposablebox.html
+- envelope-printing.html
+- event-backdrop-banner-print-in-lagos-nigeria.html
+- event-table-tags-tent-cards-printing.html
+- face-cap-printing.html
+- faq.html
+- flyer-printing.html
+- flyers.html
+- funeral-burial-roll-up-banner-prints.html
+- funeral-program-print (2).html
+- funeral-program-print.html
+- hard-cover-jotter-print.html
+- image-template.html
+- invitations.html
+- keyholder-printing.html
+- label-sticker-printing.html
+- lanyard-idcard-rope-print.html
+- letterhead-design-and-printing.html
+- letterhead-printing.html
+- luxury-roundneck-print.html
+- magic-mug-print.html
+- marriage-wedding-program-of-event-brochure-print.html
+- menu-card-printing.html
+- monogram-printing.html
+- mugs.html
+- notebook-printing.html
+- notepad-jotter-printing.html
+- nylon-shopping-bag-print.html
+- office-box-package.html
+- office-presentation-file-folder-print.html
+- office-stationery-print.html
+- order.html
+- paper-bag-printing.html
+- pen-branding-printing.html
+- polo-shirt-printing.html
+- polo-tshirt-print.html
+- postcards.html
+- premium-business-card-printing.html
+- premium-invitation-box-print.html
+- premium-pen-printing.html
+- printing-company-in-lagos-nigeria.html
+- products.html
+- pvc-transparent-plastic-business-card-print.html
+- quotes.html
+- reseller.html
+- restaurant-and-lounge-menu-book-print.html
+- roll-up-banner-printing.html
+- round-neck-tshirt-printing.html
+- safety-work-vest-reflective-jacket-print.html
+- services.html
+- shopping-paper-bag-print.html
+- soft-cover-jotter-print.html
+- square-birthday-program-print.html
+- standard-business-card-printing.html
+- standard-id-card-printing.html
+- steel-flask-printing.html
+- sticker-printing.html
+- stores.html
+- sublimation-print.html
+- table-calender.html
+- tote-bag-printing.html
+- track-order.html
+- trifold-brochure-printing.html
+- tshirt-printing.html
+- vehicle-branding.html
+- vehicle-car-branding.html
+- wedding-banner-prints.html
+- wedding-invitation-card-printing.html
+- x-banner-printing.html
