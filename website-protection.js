@@ -1,9 +1,58 @@
-// Website Protection Script for Inksnap Nigeria - ULTRA SILENT VERSION
-// This script provides protection WITHOUT showing ANY messages or notices
-// Completely invisible protection that doesn't interfere with user experience
+// Website Protection Script for Inksnap Nigeria - ENHANCED VERSION
+// This script provides protection against HTTrack, Cyotek WebCopy, and other scraping tools
+// Enhanced protection with bot detection and anti-scraping measures
 
 (function() {
     'use strict';
+    
+    // Advanced Bot Detection - Detect HTTrack, Cyotek WebCopy, and other scraping tools
+    function detectScrapingTools() {
+        const userAgent = navigator.userAgent.toLowerCase();
+        
+        // Allow legitimate search engines
+        const allowedBots = [
+            'googlebot', 'bingbot', 'slurp', 'duckduckbot', 'baiduspider', 
+            'yandexbot', 'facebookexternalhit', 'twitterbot', 'linkedinbot', 'whatsapp'
+        ];
+        
+        const isAllowedBot = allowedBots.some(bot => userAgent.includes(bot));
+        if (isAllowedBot) {
+            return false; // Don't block legitimate search engines
+        }
+        
+        const suspiciousPatterns = [
+            'httrack', 'cyotek', 'webcopy', 'wget', 'curl', 'python-requests',
+            'scrapy', 'beautifulsoup', 'selenium', 'phantomjs', 'headless',
+            'bot', 'crawler', 'spider', 'scraper', 'downloader', 'mirror'
+        ];
+        
+        const isSuspicious = suspiciousPatterns.some(pattern => userAgent.includes(pattern));
+        
+        // Check for missing browser features that scraping tools often lack
+        const hasBrowserFeatures = (
+            typeof window.chrome !== 'undefined' ||
+            typeof window.safari !== 'undefined' ||
+            (typeof window.opera !== 'undefined' && window.opera.version) ||
+            (typeof window.navigator !== 'undefined' && window.navigator.userAgent.includes('Mozilla'))
+        );
+        
+        // Check for JavaScript execution capabilities
+        const hasJSFeatures = (
+            typeof document.addEventListener === 'function' &&
+            typeof window.setTimeout === 'function' &&
+            typeof window.console !== 'undefined'
+        );
+        
+        return isSuspicious || !hasBrowserFeatures || !hasJSFeatures;
+    }
+    
+    // Enhanced protection if scraping tool detected
+    if (detectScrapingTools()) {
+        // Redirect to a different page or show error
+        window.location.href = 'about:blank';
+        document.body.innerHTML = '<h1>Access Denied</h1><p>Automated tools are not allowed.</p>';
+        return;
+    }
     
     // Protection Level 1: Disable Right-Click Context Menu (ULTRA SILENT)
     document.addEventListener('contextmenu', function(e) {
@@ -192,6 +241,98 @@
             console[method] = noop;
         });
     })();
+    
+    // Advanced Protection Level 10: Dynamic Content Protection
+    function protectDynamicContent() {
+        // Obfuscate critical content
+        const criticalElements = document.querySelectorAll('h1, h2, h3, .product-info, .pricing');
+        criticalElements.forEach(function(element) {
+            if (element.textContent) {
+                const originalText = element.textContent;
+                element.setAttribute('data-original', originalText);
+                // Temporarily hide content
+                element.style.visibility = 'hidden';
+                
+                // Restore content after a delay (only for real browsers)
+                setTimeout(function() {
+                    element.style.visibility = 'visible';
+                }, 100);
+            }
+        });
+    }
+    
+    // Advanced Protection Level 11: Anti-Debugging
+    let devtools = {open: false, orientation: null};
+    setInterval(function() {
+        if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
+            if (!devtools.open) {
+                devtools.open = true;
+                // Redirect or show error
+                window.location.href = 'about:blank';
+            }
+        }
+    }, 500);
+    
+    // Advanced Protection Level 12: Mouse Movement Detection
+    let mouseMovements = 0;
+    let lastMouseTime = Date.now();
+    document.addEventListener('mousemove', function() {
+        mouseMovements++;
+        lastMouseTime = Date.now();
+        
+        // If too many rapid movements (automated behavior)
+        if (mouseMovements > 1000 && (Date.now() - lastMouseTime) < 1000) {
+            window.location.href = 'about:blank';
+        }
+    });
+    
+    // Advanced Protection Level 13: Timing Attack Protection
+    const startTime = Date.now();
+    setTimeout(function() {
+        const loadTime = Date.now() - startTime;
+        // If page loads too quickly (typical of scraping tools)
+        if (loadTime < 100) {
+            window.location.href = 'about:blank';
+        }
+    }, 1000);
+    
+    // Advanced Protection Level 14: Canvas Fingerprinting
+    function generateCanvasFingerprint() {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.textBaseline = 'top';
+        ctx.font = '14px Arial';
+        ctx.fillText('Canvas fingerprint test', 2, 2);
+        return canvas.toDataURL();
+    }
+    
+    // Check if canvas fingerprinting works (scraping tools often don't support this)
+    try {
+        const fingerprint = generateCanvasFingerprint();
+        if (!fingerprint || fingerprint.length < 100) {
+            window.location.href = 'about:blank';
+        }
+    } catch (e) {
+        window.location.href = 'about:blank';
+    }
+    
+    // Advanced Protection Level 15: WebGL Detection
+    function hasWebGLSupport() {
+        try {
+            const canvas = document.createElement('canvas');
+            return !!(canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
+        } catch (e) {
+            return false;
+        }
+    }
+    
+    if (!hasWebGLSupport()) {
+        // Many scraping tools don't support WebGL
+        window.location.href = 'about:blank';
+    }
+    
+    // Initialize dynamic content protection
+    document.addEventListener('DOMContentLoaded', protectDynamicContent);
     
     // No console log message - completely silent
     

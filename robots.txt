@@ -7,6 +7,59 @@ Sitemap: https://inksnapng.com/sitemap.xml
 # Crawl delay (optional)
 Crawl-delay: 1
 
+# Block scraping tools and website copiers
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Cyotek
+Disallow: /
+
+User-agent: WebCopy
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: python-requests
+Disallow: /
+
+User-agent: scrapy
+Disallow: /
+
+User-agent: beautifulsoup
+Disallow: /
+
+User-agent: selenium
+Disallow: /
+
+User-agent: phantomjs
+Disallow: /
+
+User-agent: headless
+Disallow: /
+
+# Block generic bots (but allow legitimate search engines)
+User-agent: *bot*
+Disallow: /
+
+User-agent: *crawler*
+Disallow: /
+
+User-agent: *spider*
+Disallow: /
+
+User-agent: *scraper*
+Disallow: /
+
+User-agent: *downloader*
+Disallow: /
+
+User-agent: *mirror*
+Disallow: /
+
 # Allow all search engines
 User-agent: Googlebot
 Allow: /
