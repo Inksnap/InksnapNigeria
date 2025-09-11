@@ -1,8 +1,9 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemaps
 Sitemap: https://inksnapng.com/sitemap.xml
+Sitemap: https://inksnapng.com/image-sitemap.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1

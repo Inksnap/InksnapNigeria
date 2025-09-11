@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Logo Images -->
+    <url>
+        <loc>https://inksnapng.com/</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/logo/logo.png</image:loc>
+            <image:title>Inksnap Nigeria Logo</image:title>
+            <image:caption>Professional printing services logo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/logo/logo-2.png</image:loc>
+            <image:title>Inksnap Nigeria Logo 2</image:title>
+            <image:caption>Alternative logo design</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/logo/white-logo.png</image:loc>
+            <image:title>Inksnap Nigeria White Logo</image:title>
+            <image:caption>White version of company logo</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/logo/my-logo-white.png</image:loc>
+            <image:title>Inksnap Nigeria White Logo Variant</image:title>
+            <image:caption>White logo variant for dark backgrounds</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/logo/favicon.png</image:loc>
+            <image:title>Inksnap Nigeria Favicon</image:title>
+            <image:caption>Website favicon icon</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Background Images -->
+    <url>
+        <loc>https://inksnapng.com/</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/background/bg.png</image:loc>
+            <image:title>Website Background</image:title>
+            <image:caption>Main website background image</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/index.png</image:loc>
+            <image:title>Homepage Image</image:title>
+            <image:caption>Main homepage image</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - Banner Printing -->
+    <url>
+        <loc>https://inksnapng.com/banner-printing.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/banner-printing/banner-printing-1.webp</image:loc>
+            <image:title>Banner Printing Sample 1</image:title>
+            <image:caption>Professional banner printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/banner-printing/banner-printing-2.webp</image:loc>
+            <image:title>Banner Printing Sample 2</image:title>
+            <image:caption>High-quality banner printing service</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/banner-printing/banner-printing-3.webp</image:loc>
+            <image:title>Banner Printing Sample 3</image:title>
+            <image:caption>Custom banner printing solutions</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - X-Banner Printing -->
+    <url>
+        <loc>https://inksnapng.com/x-banner-printing.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/x-banner -printng/x-banner-1.webp</image:loc>
+            <image:title>X-Banner Printing Sample 1</image:title>
+            <image:caption>Professional X-banner printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/x-banner -printng/x-banner-2.webp</image:loc>
+            <image:title>X-Banner Printing Sample 2</image:title>
+            <image:caption>High-quality X-banner printing service</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/x-banner -printng/x-banner-3.webp</image:loc>
+            <image:title>X-Banner Printing Sample 3</image:title>
+            <image:caption>Custom X-banner printing solutions</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - T-Shirt Printing -->
+    <url>
+        <loc>https://inksnapng.com/tshirt-printing.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/tshirt-printing/tshirt-printing-1.webp</image:loc>
+            <image:title>T-Shirt Printing Sample 1</image:title>
+            <image:caption>Professional t-shirt printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/tshirt-printing/tshirt-printing-2.webp</image:loc>
+            <image:title>T-Shirt Printing Sample 2</image:title>
+            <image:caption>High-quality t-shirt printing service</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/tshirt-printing/tshirt-printing-3.webp</image:loc>
+            <image:title>T-Shirt Printing Sample 3</image:title>
+            <image:caption>Custom t-shirt printing solutions</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - Round Neck T-Shirt Printing -->
+    <url>
+        <loc>https://inksnapng.com/round-neck-tshirt-printing.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/round-neck-tshirt-printing/round-neck-tshirt-printing-1.webp</image:loc>
+            <image:title>Round Neck T-Shirt Printing Sample 1</image:title>
+            <image:caption>Professional round neck t-shirt printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/round-neck-tshirt-printing/round-neck-tshirt-printing-3.webp</image:loc>
+            <image:title>Round Neck T-Shirt Printing Sample 2</image:title>
+            <image:caption>High-quality round neck t-shirt printing service</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - Sticker Printing -->
+    <url>
+        <loc>https://inksnapng.com/sticker-printing.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/stricker-printing/sticker-printing-1.webp</image:loc>
+            <image:title>Sticker Printing Sample 1</image:title>
+            <image:caption>Professional sticker printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/stricker-printing/sticker-printing-2.webp</image:loc>
+            <image:title>Sticker Printing Sample 2</image:title>
+            <image:caption>High-quality sticker printing service</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - Premium Pen Printing -->
+    <url>
+        <loc>https://inksnapng.com/premium-pen-printing.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/premium-pen-printing/premium-pen-printing-5.webp</image:loc>
+            <image:title>Premium Pen Printing Sample 1</image:title>
+            <image:caption>Professional premium pen printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/premium-pen-printing/premium-pen-printing-6.webp</image:loc>
+            <image:title>Premium Pen Printing Sample 2</image:title>
+            <image:caption>High-quality premium pen printing service</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - PVC Bunting -->
+    <url>
+        <loc>https://inksnapng.com/pvc-bunting-printing.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/pvc-bunting/pvc-bunting.webp</image:loc>
+            <image:title>PVC Bunting Sample 1</image:title>
+            <image:caption>Professional PVC bunting printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/pvc-bunting/pvc-bunting-1.webp</image:loc>
+            <image:title>PVC Bunting Sample 2</image:title>
+            <image:caption>High-quality PVC bunting printing service</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/pvc-bunting/pvc-bunting-2.webp</image:loc>
+            <image:title>PVC Bunting Sample 3</image:title>
+            <image:caption>Custom PVC bunting printing solutions</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/pvc-bunting/pvc-bunting-3.webp</image:loc>
+            <image:title>PVC Bunting Sample 4</image:title>
+            <image:caption>Premium PVC bunting printing options</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - Vehicle Branding -->
+    <url>
+        <loc>https://inksnapng.com/vehicle-branding.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/vehicle-branding/vehicle-branding-1.webp</image:loc>
+            <image:title>Vehicle Branding Sample 1</image:title>
+            <image:caption>Professional vehicle branding example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/vehicle-branding/vehicle-branding-2.webp</image:loc>
+            <image:title>Vehicle Branding Sample 2</image:title>
+            <image:caption>High-quality vehicle branding service</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/vehicle-branding/vehicle-branding-3.webp</image:loc>
+            <image:title>Vehicle Branding Sample 3</image:title>
+            <image:caption>Custom vehicle branding solutions</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/vehicle-branding/vehicle-branding-4.webp</image:loc>
+            <image:title>Vehicle Branding Sample 4</image:title>
+            <image:caption>Premium vehicle branding options</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/vehicle-branding/vehicle-branding-5.webp</image:loc>
+            <image:title>Vehicle Branding Sample 5</image:title>
+            <image:caption>Professional vehicle wrap branding</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/vehicle-branding/vehicle-branding-6.webp</image:loc>
+            <image:title>Vehicle Branding Sample 6</image:title>
+            <image:caption>Complete vehicle branding package</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - Wedding Invitation Cards -->
+    <url>
+        <loc>https://inksnapng.com/wedding-invitation-card-printing.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/wedding-invitation-card-printing/wedding-invitation-card-1.webp</image:loc>
+            <image:title>Wedding Invitation Card Sample 1</image:title>
+            <image:caption>Elegant wedding invitation card design</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/wedding-invitation-card-printing/wedding-invitation-card-2.webp</image:loc>
+            <image:title>Wedding Invitation Card Sample 2</image:title>
+            <image:caption>Premium wedding invitation card printing</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/wedding-invitation-card-printing/wedding-invitation-card-3.webp</image:loc>
+            <image:title>Wedding Invitation Card Sample 3</image:title>
+            <image:caption>Custom wedding invitation card solutions</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/wedding-invitation-card-printing/wedding-invitation-card-4.webp</image:loc>
+            <image:title>Wedding Invitation Card Sample 4</image:title>
+            <image:caption>Luxury wedding invitation card designs</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/wedding-invitation-card-printing/wedding-invitation-card-5.webp</image:loc>
+            <image:title>Wedding Invitation Card Sample 5</image:title>
+            <image:caption>Professional wedding invitation card service</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/wedding-invitation-card-printing/wedding-invitation-card-6.webp</image:loc>
+            <image:title>Wedding Invitation Card Sample 6</image:title>
+            <image:caption>Complete wedding invitation card package</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - Wedding Banner Prints -->
+    <url>
+        <loc>https://inksnapng.com/wedding-banner-prints.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/wedding-banner-prints/wedding-banner-prints-1.webp</image:loc>
+            <image:title>Wedding Banner Print Sample 1</image:title>
+            <image:caption>Beautiful wedding banner printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/wedding-banner-prints/wedding-banner-prints-2.webp</image:loc>
+            <image:title>Wedding Banner Print Sample 2</image:title>
+            <image:caption>Elegant wedding banner printing service</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/wedding-banner-prints/wedding-backdrop-design.webp</image:loc>
+            <image:title>Wedding Backdrop Design</image:title>
+            <image:caption>Professional wedding backdrop design and printing</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - V Neck T-Shirt -->
+    <url>
+        <loc>https://inksnapng.com/custom-v-neck-t-shirt-printing.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/V Neck T Shirt/v-neck-t-shirt-printing-1.webp</image:loc>
+            <image:title>V-Neck T-Shirt Printing Sample 1</image:title>
+            <image:caption>Professional V-neck t-shirt printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/V Neck T Shirt/v-neck-t-shirt-printing-2.webp</image:loc>
+            <image:title>V-Neck T-Shirt Printing Sample 2</image:title>
+            <image:caption>High-quality V-neck t-shirt printing service</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/V Neck T Shirt/v-neck-t-shirt-printing-3.webp</image:loc>
+            <image:title>V-Neck T-Shirt Printing Sample 3</image:title>
+            <image:caption>Custom V-neck t-shirt printing solutions</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - Thank You Cards -->
+    <url>
+        <loc>https://inksnapng.com/custom-business-customer-thank-you-card-print.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Thank-you-card/thank-you-card-1.webp</image:loc>
+            <image:title>Thank You Card Sample 1</image:title>
+            <image:caption>Professional thank you card printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Thank-you-card/thank-you-card-2.webp</image:loc>
+            <image:title>Thank You Card Sample 2</image:title>
+            <image:caption>High-quality thank you card printing service</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Thank-you-card/thank-you-card-3.webp</image:loc>
+            <image:title>Thank You Card Sample 3</image:title>
+            <image:caption>Custom thank you card printing solutions</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Thank-you-card/thank-you-card-4.webp</image:loc>
+            <image:title>Thank You Card Sample 4</image:title>
+            <image:caption>Premium thank you card printing options</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Thank-you-card/thank-you-card-5.webp</image:loc>
+            <image:title>Thank You Card Sample 5</image:title>
+            <image:caption>Elegant thank you card designs</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Thank-you-card/thank-you-card-6.webp</image:loc>
+            <image:title>Thank You Card Sample 6</image:title>
+            <image:caption>Complete thank you card printing package</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - Wedding Handfan Print -->
+    <url>
+        <loc>https://inksnapng.com/custom-wedding-handfan-print.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Wedding Handfan Print/custom-wedding-handfan-print-1.webp</image:loc>
+            <image:title>Wedding Handfan Print Sample 1</image:title>
+            <image:caption>Beautiful wedding handfan printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Wedding Handfan Print/custom-wedding-handfan-print-2.webp</image:loc>
+            <image:title>Wedding Handfan Print Sample 2</image:title>
+            <image:caption>Elegant wedding handfan printing service</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Wedding Handfan Print/custom-wedding-handfan-print-3.webp</image:loc>
+            <image:title>Wedding Handfan Print Sample 3</image:title>
+            <image:caption>Custom wedding handfan printing solutions</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Wedding Handfan Print/custom-wedding-handfan-print-4.webp</image:loc>
+            <image:title>Wedding Handfan Print Sample 4</image:title>
+            <image:caption>Premium wedding handfan printing options</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Wedding Handfan Print/custom-wedding-handfan-print-5.webp</image:loc>
+            <image:title>Wedding Handfan Print Sample 5</image:title>
+            <image:caption>Luxury wedding handfan designs</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Wedding Handfan Print/custom-wedding-handfan-print-6.webp</image:loc>
+            <image:title>Wedding Handfan Print Sample 6</image:title>
+            <image:caption>Complete wedding handfan printing package</image:caption>
+        </image:image>
+    </url>
+
+    <!-- Product Images - Wooden Award Plaque -->
+    <url>
+        <loc>https://inksnapng.com/custom-wooden-award-plaque-printing.html</loc>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Wooden Award Plaque/custom-crystal-award-plaque-printing-1.webp</image:loc>
+            <image:title>Wooden Award Plaque Sample 1</image:title>
+            <image:caption>Professional wooden award plaque printing example</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Wooden Award Plaque/custom-crystal-award-plaque-printing-2.webp</image:loc>
+            <image:title>Wooden Award Plaque Sample 2</image:title>
+            <image:caption>High-quality wooden award plaque printing service</image:caption>
+        </image:image>
+        <image:image>
+            <image:loc>https://inksnapng.com/assets/images/products/All-Products/Wooden Award Plaque/custom-crystal-award-plaque-printing-3.webp</image:loc>
+            <image:title>Wooden Award Plaque Sample 3</image:title>
+            <image:caption>Custom wooden award plaque printing solutions</image:caption>
+        </image:image>
+    </url>
+
+</urlset>
