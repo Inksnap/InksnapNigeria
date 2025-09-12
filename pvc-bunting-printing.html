@@ -1,5 +1,17 @@
 <!DOCTYPE html><html lang="en"><head>
         <meta charset="UTF-8">
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- Resource hints for better performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="assets/logo/logo.png" as="image">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PVC Bunting Lagos | Custom PVC Bunting Printing | Inksnap Nigeria</title>
         <!-- SEO Meta Tags -->
@@ -31,20 +43,36 @@
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&amp;family=Rubik:wght@400;500;700&amp;display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&amp;family=Rubik:wght@400;500;700&amp;display=swap&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;display=swap&display=swap" rel="stylesheet">
         <!-- CSS Libraries -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+    <style>
+        /* Critical CSS for above-the-fold content */
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Poppins',sans-serif;line-height:1.6;color:#333;background:#fff}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        header{background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000}
+        .navbar-brand{display:flex;align-items:center}
+        .navbar-brand-item{max-height:35px;width:auto}
+        .hero{background:linear-gradient(135deg,#e8f4f8 0%,#f0f8ff 50%,#e8f5e8 100%);padding:60px 0 80px;min-height:75vh;display:flex;align-items:center}
+        .hero-content{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+        .hero-text h1{font-size:64px;font-weight:700;margin-bottom:1rem;color:#495057;font-family:'Playfair Display',serif;line-height:1.1}
+        .preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;display:flex;justify-content:center;align-items:center;z-index:9999;transition:opacity 0.5s ease}
+        .preloader-item{text-align:center}
+        .preloader-item img{max-width:150px;height:auto}
+        @media (max-width:768px){.hero-content{grid-template-columns:1fr;text-align:center;gap:3rem}.hero-text h1{font-size:42px}}
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.css"></noscript>
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0HGEQLXGL4"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0HGEQLXGL4');</script>
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    <script type="text/javascript" defer>var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
     s1.async=true;
@@ -379,12 +407,12 @@
             <div class="container">
                 <div class="details-grid">
                     <div class="product-images">
-                        <img id="mainImage" class="main-product-image" src="assets/images/products/All-Products/pvc-bunting/pvc-bunting-1.webp" alt="Pvc Bunting - Professional Pvc Bunting Services in Lagos Nigeria" loading="lazy" title="Pvc Bunting Printing Flags - High Quality Digital Printing Services Lagos Nigeria" decoding="async">
+                        <img id="mainImage" class="main-product-image" src="assets/images/products/All-Products/pvc-bunting/pvc-bunting-1.webp" alt="Pvc Bunting - Professional Pvc Bunting Services in Lagos Nigeria" loading="lazy" title="Pvc Bunting Printing Flags - High Quality Digital Printing Services Lagos Nigeria" decoding="async"loading="lazy" decoding="async">
                                                                                                                                                                                                                         <div class="thumbnail-gallery">
-                            <img src="assets/images/products/All-Products/pvc-bunting/pvc-bunting-1.webp" alt="pvc Bunting Printing Flags Design 1" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/pvc-bunting/pvc-bunting-2.webp" alt="pvc Bunting Printing Flags Design 2" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/pvc-bunting/pvc-bunting-3.webp" alt="pvc Bunting Printing Flags Design 3" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/pvc-bunting/pvc-bunting.webp" alt="pvc Bunting Printing Flags Design 4" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/pvc-bunting/pvc-bunting-1.webp" alt="pvc Bunting Printing Flags Design 1" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/pvc-bunting/pvc-bunting-2.webp" alt="pvc Bunting Printing Flags Design 2" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/pvc-bunting/pvc-bunting-3.webp" alt="pvc Bunting Printing Flags Design 3" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/pvc-bunting/pvc-bunting.webp" alt="pvc Bunting Printing Flags Design 4" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="product-info">
@@ -574,42 +602,42 @@
                     <div class="product-slider" id="productSlider">
 
                         <a href="advert-banner-print.html" class="product-card">
-                            <img src="assets/images/products/All-Products/advert-banner-print/advert-banner-print-1.webp" alt="Advert Banner Print - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/advert-banner-print/advert-banner-print-1.webp" alt="Advert Banner Print - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Advert Banner Print</h3>
                                 <p>Professional advert banner print services.</p>
                             </div>
                         </a>
                         <a href="backdrop-banner-print.html" class="product-card">
-                            <img src="assets/images/products/All-Products/backdrop-banner-print/backdrop-banner-print-1.webp" alt="Backdrop Banner Print - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/backdrop-banner-print/backdrop-banner-print-1.webp" alt="Backdrop Banner Print - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Backdrop Banner Print</h3>
                                 <p>Professional backdrop banner print services.</p>
                             </div>
                         </a>
                         <a href="banner-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/banner-printing/banner-printing-1.webp" alt="Banner Printing - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/banner-printing/banner-printing-1.webp" alt="Banner Printing - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Banner Printing</h3>
                                 <p>Professional banner printing services.</p>
                             </div>
                         </a>
                         <a href="birthday-banner-prints.html" class="product-card">
-                            <img src="assets/images/products/All-Products/birthday-banner-prints/birthday-banner-prints-1.webp" alt="Birthday Banner Prints - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/birthday-banner-prints/birthday-banner-prints-1.webp" alt="Birthday Banner Prints - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Birthday Banner Prints</h3>
                                 <p>Professional birthday banner prints services.</p>
                             </div>
                         </a>
                         <a href="wedding-banner-prints.html" class="product-card">
-                            <img src="assets/images/products/All-Products/wedding-banner-prints/wedding-banner-prints-1.webp" alt="Wedding Banner Prints - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/wedding-banner-prints/wedding-banner-prints-1.webp" alt="Wedding Banner Prints - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Wedding Banner Prints</h3>
                                 <p>Professional wedding banner prints services.</p>
                             </div>
                         </a>
                         <a href="event-backdrop-banner-print-in-lagos-nigeria.html" class="product-card">
-                            <img src="assets/images/products/All-Products/event-backdrop-banner-print-in-lagos-nigeria/event-backdrop-banner-print-in-lagos-nigeria-1.webp" alt="Event Backdrop Banner Print - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/event-backdrop-banner-print-in-lagos-nigeria/event-backdrop-banner-print-in-lagos-nigeria-1.webp" alt="Event Backdrop Banner Print - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Event Backdrop Banner Print</h3>
                                 <p>Professional event backdrop banner print services.</p>
@@ -684,7 +712,7 @@
                     <p>© InkSnap 2023 - 2025. All rights reserved.</p>            </div>
         </div></footer>
         <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"defer>
         </script>
         
         <script>
@@ -1006,4 +1034,26 @@
 
 
 
+
+    <script>
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            // Measure LCP
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    console.log('LCP:', entry.startTime);
+                    if (entry.startTime > 4000) {
+                        console.warn('LCP is slow:', entry.startTime + 'ms');
+                    }
+                }
+            }).observe({entryTypes: ['largest-contentful-paint']});
+            
+            // Measure FCP
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    console.log('FCP:', entry.startTime);
+                }
+            }).observe({entryTypes: ['paint']});
+        });
+    </script>
 </body></html>
