@@ -1,5 +1,17 @@
 <!DOCTYPE html><html lang="en"><head>
         <meta charset="UTF-8">
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- Resource hints for better performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="assets/logo/logo.png" as="image">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Branded Gift Items Lagos | Custom Gift Item Printing | Inksnap Nigeria</title>
         
@@ -33,22 +45,38 @@
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&amp;family=Rubik:wght@400;500;700&amp;display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&amp;family=Rubik:wght@400;500;700&amp;display=swap&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap&display=swap" rel="stylesheet">
         
         <!-- CSS Libraries -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+    <style>
+        /* Critical CSS for above-the-fold content */
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Poppins',sans-serif;line-height:1.6;color:#333;background:#fff}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        header{background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000}
+        .navbar-brand{display:flex;align-items:center}
+        .navbar-brand-item{max-height:35px;width:auto}
+        .hero{background:linear-gradient(135deg,#e8f4f8 0%,#f0f8ff 50%,#e8f5e8 100%);padding:60px 0 80px;min-height:75vh;display:flex;align-items:center}
+        .hero-content{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+        .hero-text h1{font-size:64px;font-weight:700;margin-bottom:1rem;color:#495057;font-family:'Playfair Display',serif;line-height:1.1}
+        .preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;display:flex;justify-content:center;align-items:center;z-index:9999;transition:opacity 0.5s ease}
+        .preloader-item{text-align:center}
+        .preloader-item img{max-width:150px;height:auto}
+        @media (max-width:768px){.hero-content{grid-template-columns:1fr;text-align:center;gap:3rem}.hero-text h1{font-size:42px}}
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.css"></noscript>
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0HGEQLXGL4"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0HGEQLXGL4');</script>
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    <script type="text/javascript" defer>var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
     s1.async=true;
@@ -255,8 +283,8 @@
         <!-- Preloader -->
         <div class="preloader">
             <div class="preloader-item">
-                <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" src="assets/logo/logo.png" class="light-mode-item" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
-                <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" src="assets/logo/white-logo.png" class="dark-mode-item" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" src="assets/logo/logo.png" class="light-mode-item" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="logo">
+                <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" src="assets/logo/white-logo.png" class="dark-mode-item" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="white logo">
             </div>
         </div>
         
@@ -266,8 +294,8 @@
                 <div class="container">
                     <!-- Logo -->
                     <a class="navbar-brand" href="index.html">
-                        <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item light-mode-item" src="assets/logo/logo.png" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
-                        <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item dark-mode-item" src="assets/logo/logo.png" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                        <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item light-mode-item" src="assets/logo/logo.png" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="logo">
+                        <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item dark-mode-item" src="assets/logo/logo.png" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="logo">
                     </a>
                     
                     <!-- Mobile toggle -->
@@ -499,14 +527,14 @@
             <div class="container">
                 <div class="details-grid">
                     <div class="product-images">
-                        <img id="mainImage" class="main-product-image" src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-1.webp" alt="Branded Gift Items Printing - Professional Branded Gift Items Printing Services in Lagos Nigeria - High Quality Custom Printing" loading="lazy" title="Branded Gift Items Printing - High Quality Digital Printing Services Lagos Nigeria" decoding="async">
+                        <img id="mainImage" class="main-product-image" src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-1.webp" alt="Branded Gift Items Printing - Professional Branded Gift Items Printing Services in Lagos Nigeria - High Quality Custom Printing" loading="lazy" title="Branded Gift Items Printing - High Quality Digital Printing Services Lagos Nigeria" decoding="async"loading="lazy" decoding="async">
                                                                                                                                                                                                                                                 <div class="thumbnail-gallery">
-                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-1.webp" alt="branded gift items printing Design 1" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-2.webp" alt="branded gift items printing Design 2" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-3.webp" alt="branded gift items printing Design 3" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-4.webp" alt="branded gift items printing Design 4" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-5.webp" alt="branded gift items printing Design 5" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-6.webp" alt="branded gift items printing Design 6" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-1.webp" alt="branded gift items printing Design 1" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-2.webp" alt="branded gift items printing Design 2" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-3.webp" alt="branded gift items printing Design 3" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-4.webp" alt="branded gift items printing Design 4" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-5.webp" alt="branded gift items printing Design 5" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-6.webp" alt="branded gift items printing Design 6" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
                         
                         
                     </div>
@@ -601,70 +629,70 @@
                     <div class="product-slider" id="productSlider">
 
                         <a href="flyer-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/flyer-printing/flyer-printing-1.webp" alt="Flyer Printing - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/flyer-printing/flyer-printing-1.webp" alt="Flyer Printing - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Flyer Printing</h3>
                                 <p>Professional flyer printing printing services.</p>
                             </div>
                         </a>
                         <a href="a5menu-card-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/a5menu-card-printing/a5menu-card-printing-1.webp" alt="A5 Menu Card Printing - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/a5menu-card-printing/a5menu-card-printing-1.webp" alt="A5 Menu Card Printing - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>A5 Menu Card Printing</h3>
                                 <p>Professional a5menu card printing printing services.</p>
                             </div>
                         </a>
                         <a href="advert-banner-print.html" class="product-card">
-                            <img src="assets/images/products/All-Products/advert-banner-print/advert-banner-print-1.webp" alt="Advert Banner Print - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/advert-banner-print/advert-banner-print-1.webp" alt="Advert Banner Print - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Advert Banner Print</h3>
                                 <p>Professional advert banner print printing services.</p>
                             </div>
                         </a>
                         <a href="backdrop-banner-print.html" class="product-card">
-                            <img src="assets/images/products/All-Products/backdrop-banner-print/backdrop-banner-print-1.webp" alt="Backdrop Banner Print - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/backdrop-banner-print/backdrop-banner-print-1.webp" alt="Backdrop Banner Print - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Backdrop Banner Print</h3>
                                 <p>Professional backdrop banner print printing services.</p>
                             </div>
                         </a>
                         <a href="banner-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/banner-printing/banner-printing-1.webp" alt="Banner Printing - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/banner-printing/banner-printing-1.webp" alt="Banner Printing - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Banner Printing</h3>
                                 <p>Professional banner printing printing services.</p>
                             </div>
                         </a>
                         <a href="birthday-banner-prints.html" class="product-card">
-                            <img src="assets/images/products/All-Products/birthday-banner-prints/birthday-banner-prints-1.webp" alt="Birthday Banner Prints - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/birthday-banner-prints/birthday-banner-prints-1.webp" alt="Birthday Banner Prints - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Birthday Banner Prints</h3>
                                 <p>Professional birthday banner prints printing services.</p>
                             </div>
                         </a>
                         <a href="branded-bag-prints.html" class="product-card">
-                            <img src="assets/images/products/All-Products/branded-bag-prints/branded-bag-print-1.webp" alt="Branded Bag Prints - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/branded-bag-prints/branded-bag-print-1.webp" alt="Branded Bag Prints - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Branded Bag Prints</h3>
                                 <p>Professional branded bag prints printing services.</p>
                             </div>
                         </a>
                         <a href="branded-box-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/branded-box-printing/branded-box-printing-1.webp" alt="Branded Box Printing - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/branded-box-printing/branded-box-printing-1.webp" alt="Branded Box Printing - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Branded Box Printing</h3>
                                 <p>Professional branded box printing printing services.</p>
                             </div>
                         </a>
                         <a href="branded-gift-items-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-1.webp" alt="Branded Gift Items Printing - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-1.webp" alt="Branded Gift Items Printing - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Branded Gift Items Printing</h3>
                                 <p>Professional branded gift items printing printing services.</p>
                             </div>
                         </a>
                         <a href="branded-mousepad-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/branded-mousepad-printing/branded-mousepad-printing-1.webp" alt="Branded Mousepad Printing - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/branded-mousepad-printing/branded-mousepad-printing-1.webp" alt="Branded Mousepad Printing - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Branded Mousepad Printing</h3>
                                 <p>Professional branded mousepad printing printing services.</p>
@@ -693,8 +721,8 @@
                 <div class="footer-content">
                     <div class="footer-section text-center">
                         <a class="navbar-brand d-inline-block" href="index.html">
-                            <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item light-mode-item" src="assets/logo/white-logo.png" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
-                            <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item dark-mode-item" src="assets/logo/white-logo.png" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                            <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item light-mode-item" src="assets/logo/white-logo.png" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="white logo">
+                            <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item dark-mode-item" src="assets/logo/white-logo.png" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="white logo">
                         </a>
                         <p>Your trusted partner for all printing needs in Lagos State, Nigeria and nationwide. Quality prints, competitive prices, fast delivery all over Nigeria.</p>
                         <div class="social-icons">
@@ -736,7 +764,7 @@
         </footer>
         
         <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"defer></script>
         
         <script>window.addEventListener('load',function(){const preloader=document.querySelector('.preloader');if(preloader){preloader.style.opacity='0';setTimeout(()=>{preloader.style.display='none';},500);}});setTimeout(function(){const preloader=document.querySelector('.preloader');if(preloader){preloader.style.opacity='0';setTimeout(()=>{preloader.style.display='none';},500);}},3000);function updateMainImage(src,event){const mainImage=document.getElementById('mainImage');if(mainImage){const allThumbnails=document.querySelectorAll('.thumbnail-image');allThumbnails.forEach(thumb=>thumb.classList.remove('active'));if(event&&event.target){const clickedThumbnail=event.target;if(clickedThumbnail.classList.contains('thumbnail-image')){clickedThumbnail.classList.add('active');}mainImage.style.opacity='0';setTimeout(()=>{mainImage.src=src;mainImage.style.opacity='1';},150);}}document.addEventListener('DOMContentLoaded',function(){const firstThumbnail=document.querySelector('.thumbnail-image');if(firstThumbnail){firstThumbnail.classList.add('active');}});let currentSlide=0;let slider,cards,cardsPerView;function initializeSlider(){slider=document.getElementById('productSlider');cards=document.querySelectorAll('.product-card');cardsPerView=window.innerWidth>768?4:window.innerWidth>480?3:2;if(slider&&cards.length>0){updateSliderButtons();}else{}}function slideProducts(direction){if(!slider||!cards.length){return;}if(direction==='next'){currentSlide=Math.min(currentSlide+1,cards.length-cardsPerView);}else{currentSlide=Math.max(currentSlide-1,0);}const cardWidth=280;const gap=20;const slideDistance=cardWidth+gap;const translateX=-currentSlide*slideDistance;slider.style.transform=`translateX(${translateX}px)`;updateSliderButtons();}function updateSliderButtons(){const prevBtn=document.querySelector('.prev-btn');const nextBtn=document.querySelector('.next-btn');if(prevBtn&&nextBtn&&cards.length>0){prevBtn.style.opacity=currentSlide===0?'0.5':'1';nextBtn.style.opacity=currentSlide>=cards.length-cardsPerView?'0.5':'1';prevBtn.disabled=currentSlide===0;nextBtn.disabled=currentSlide>=cards.length-cardsPerView;}}initializeSlider();const prevBtn=document.querySelector('.prev-btn');const nextBtn=document.querySelector('.next-btn');if(prevBtn){prevBtn.addEventListener('click',function(){slideProducts('prev');});}if(nextBtn){nextBtn.addEventListener('click',function(){slideProducts('next');});}if(slider){let startX=0;let endX=0;let isDragging=false;slider.addEventListener('touchstart',function(e){startX=e.touches[0].clientX;isDragging=true;});slider.addEventListener('touchmove',function(e){if(!isDragging)return;e.preventDefault();});slider.addEventListener('touchend',function(e){if(!isDragging)return;endX=e.changedTouches[0].clientX;const diff=startX-endX;if(Math.abs(diff)>50){if(diff>0){slideProducts('next');}else{slideProducts('prev');}}isDragging=false;});slider.addEventListener('mousedown',function(e){startX=e.clientX;isDragging=true;slider.style.cursor='grabbing';});slider.addEventListener('mousemove',function(e){if(!isDragging)return;e.preventDefault();});slider.addEventListener('mouseup',function(e){if(!isDragging)return;endX=e.clientX;const diff=startX-endX;if(Math.abs(diff)>50){if(diff>0){slideProducts('next');}else{slideProducts('prev');}}isDragging=false;slider.style.cursor='grab';});slider.addEventListener('mouseleave',function(e){isDragging=false;slider.style.cursor='grab';});}window.addEventListener('resize',function(){currentSlide=0;if(slider){slider.style.transform='translateX(0)';}initializeSlider();});document.addEventListener('DOMContentLoaded',function(){var dropdownElementList=[].slice.call(document.querySelectorAll('.dropdown-toggle'));var dropdownList=dropdownElementList.map(function(dropdownToggleEl){return new bootstrap.Dropdown(dropdownToggleEl);});const dropdownToggles=document.querySelectorAll('.dropdown-submenu.dropdown-toggle');dropdownToggles.forEach(toggle=>{toggle.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();const parent=this.closest('.dropdown-submenu');const submenu=parent.querySelector('.dropdown-menu');const siblings=parent.parentElement.querySelectorAll('.dropdown-submenu.dropdown-menu.show');siblings.forEach(sibling=>{if(sibling!==submenu){sibling.classList.remove('show');}});if(submenu){submenu.classList.toggle('show');}});});document.addEventListener('click',function(e){if(!e.target.closest('.dropdown')){const openDropdowns=document.querySelectorAll('.dropdown-menu.show');openDropdowns.forEach(dropdown=>{dropdown.classList.remove('show');});}});const themeToggle=document.getElementById('themeToggle');if(themeToggle){const html=document.documentElement;const currentTheme=localStorage.getItem('theme')||'light';html.setAttribute('data-bs-theme',currentTheme);function updateToggleButton(){const isDark=html.getAttribute('data-bs-theme')==='dark';const darkIcon=themeToggle.querySelector('.dark-icon');const lightIcon=themeToggle.querySelector('.light-icon');if(darkIcon&&lightIcon){if(isDark){darkIcon.style.display='none';lightIcon.style.display='block';}else{darkIcon.style.display='block';lightIcon.style.display='none';}}}updateToggleButton();function toggleTheme(){const currentTheme=html.getAttribute('data-bs-theme');const newTheme=currentTheme==='dark'?'light':'dark';html.setAttribute('data-bs-theme',newTheme);localStorage.setItem('theme',newTheme);updateToggleButton();}themeToggle.addEventListener('click',toggleTheme);}});</script>
     
@@ -850,4 +878,26 @@
 
 
 
+
+    <script>
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            // Measure LCP
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    console.log('LCP:', entry.startTime);
+                    if (entry.startTime > 4000) {
+                        console.warn('LCP is slow:', entry.startTime + 'ms');
+                    }
+                }
+            }).observe({entryTypes: ['largest-contentful-paint']});
+            
+            // Measure FCP
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    console.log('FCP:', entry.startTime);
+                }
+            }).observe({entryTypes: ['paint']});
+        });
+    </script>
 </body></html>

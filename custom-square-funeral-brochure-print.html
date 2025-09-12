@@ -1,5 +1,17 @@
 <!DOCTYPE html><html lang="en"><head>
         <meta charset="UTF-8">
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- Resource hints for better performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="assets/logo/logo.png" as="image">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Funeral Brochures Lagos | Custom Funeral Brochure Printing | Inksnap Nigeria</title>
         <!-- SEO Meta Tags -->
@@ -31,20 +43,36 @@
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&amp;family=Rubik:wght@400;500;700&amp;display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&amp;family=Rubik:wght@400;500;700&amp;display=swap&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&amp;display=swap&display=swap" rel="stylesheet">
         <!-- CSS Libraries -->
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+    <style>
+        /* Critical CSS for above-the-fold content */
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Poppins',sans-serif;line-height:1.6;color:#333;background:#fff}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        header{background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000}
+        .navbar-brand{display:flex;align-items:center}
+        .navbar-brand-item{max-height:35px;width:auto}
+        .hero{background:linear-gradient(135deg,#e8f4f8 0%,#f0f8ff 50%,#e8f5e8 100%);padding:60px 0 80px;min-height:75vh;display:flex;align-items:center}
+        .hero-content{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+        .hero-text h1{font-size:64px;font-weight:700;margin-bottom:1rem;color:#495057;font-family:'Playfair Display',serif;line-height:1.1}
+        .preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;display:flex;justify-content:center;align-items:center;z-index:9999;transition:opacity 0.5s ease}
+        .preloader-item{text-align:center}
+        .preloader-item img{max-width:150px;height:auto}
+        @media (max-width:768px){.hero-content{grid-template-columns:1fr;text-align:center;gap:3rem}.hero-text h1{font-size:42px}}
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.css"></noscript>
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0HGEQLXGL4"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-0HGEQLXGL4');</script>
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    <script type="text/javascript" defer>var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
     s1.async=true;
@@ -276,16 +304,16 @@
     <body>
         <div class="preloader">
             <div class="preloader-item">
-                <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" src="assets/logo/logo.png" class="light-mode-item" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
-                <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" src="assets/logo/white-logo.png" class="dark-mode-item" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" src="assets/logo/logo.png" class="light-mode-item" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="logo">
+                <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" src="assets/logo/white-logo.png" class="dark-mode-item" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="white logo">
             </div>
         </div>
         <header class="navbar-light navbar-sticky header-static">
             <nav class="navbar navbar-expand-xl">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item light-mode-item" src="assets/logo/logo.png" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
-                        <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item dark-mode-item" src="assets/logo/white-logo.png" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                        <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item light-mode-item" src="assets/logo/logo.png" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="logo">
+                        <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item dark-mode-item" src="assets/logo/white-logo.png" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="white logo">
                     </a>
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="text-body h6 d-none d-sm-inline-block">
@@ -882,14 +910,14 @@
             <div class="container">
                 <div class="details-grid">
                     <div class="product-images">
-                        <img id="mainImage" class="main-product-image" src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-1.webp" alt="Custom Square Funeral Brochure - Professional Custom Square Funeral Brochure Services in Lagos Nigeria" loading="lazy" title="Custom Square Funeral Brochure Print - High Quality Digital Printing Services Lagos Nigeria" decoding="async">
+                        <img id="mainImage" class="main-product-image" src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-1.webp" alt="Custom Square Funeral Brochure - Professional Custom Square Funeral Brochure Services in Lagos Nigeria" loading="lazy" title="Custom Square Funeral Brochure Print - High Quality Digital Printing Services Lagos Nigeria" decoding="async"loading="lazy" decoding="async">
                                                                                                                                                                                                                         <div class="thumbnail-gallery">
-                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-1.webp" alt="custom square funeral brochure print Design 1" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-2.webp" alt="custom square funeral brochure print Design 2" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-3.webp" alt="custom square funeral brochure print Design 3" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-4.webp" alt="custom square funeral brochure print Design 4" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-5.webp" alt="custom square funeral brochure print Design 5" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
-                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-6.webp" alt="custom square funeral brochure print Design 6" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-1.webp" alt="custom square funeral brochure print Design 1" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-2.webp" alt="custom square funeral brochure print Design 2" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-3.webp" alt="custom square funeral brochure print Design 3" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-4.webp" alt="custom square funeral brochure print Design 4" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-5.webp" alt="custom square funeral brochure print Design 5" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/Square Funeral Brochure/square-funeral-brochure-6.webp" alt="custom square funeral brochure print Design 6" class="thumbnail-image" onclick="updateMainImage(this.src, event)" loading="lazy" decoding="async"loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="product-info">
@@ -1080,70 +1108,70 @@
                     <div class="product-slider" id="productSlider">
 
                         <a href="funeral-program-print.html" class="product-card">
-                            <img src="assets/images/products/All-Products/funeral-program-print-2/funeral-program-print-1.webp" alt="Funeral Program Print - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/funeral-program-print-2/funeral-program-print-1.webp" alt="Funeral Program Print - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Funeral Program Print</h3>
                                 <p>Professional funeral program printing services.</p>
                             </div>
                         </a>
                         <a href="custom-landscape-funeral-brochure-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/Landscape Funeral Brochure/custom-landscape-funeral-brochure-printing-1.webp" alt="Landscape Funeral Brochure - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/Landscape Funeral Brochure/custom-landscape-funeral-brochure-printing-1.webp" alt="Landscape Funeral Brochure - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Landscape Funeral Brochure</h3>
                                 <p>Professional landscape funeral brochure printing services.</p>
                             </div>
                         </a>
                         <a href="custom-funeral-burial-tshirt-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/funeral burial tshirt/funeral-burial-tshirt-printing-1.webp" alt="Funeral Burial T-Shirt - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/funeral burial tshirt/funeral-burial-tshirt-printing-1.webp" alt="Funeral Burial T-Shirt - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Funeral Burial T-Shirt</h3>
                                 <p>Professional funeral burial t-shirt printing services.</p>
                             </div>
                         </a>
                         <a href="burial-funeral-banner-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/burial-funeral-banner-printing/funeral-banner.webp" alt="Burial Funeral Banner - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/burial-funeral-banner-printing/funeral-banner.webp" alt="Burial Funeral Banner - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Burial Funeral Banner</h3>
                                 <p>Professional burial funeral banner printing services.</p>
                             </div>
                         </a>
                         <a href="funeral-burial-roll-up-banner-prints.html" class="product-card">
-                            <img src="assets/images/products/All-Products/funeral-burial-roll-up-banner-prints/funeral-burial-roll-up-banner-prints-1.webp" alt="Funeral Roll-Up Banner - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/funeral-burial-roll-up-banner-prints/funeral-burial-roll-up-banner-prints-1.webp" alt="Funeral Roll-Up Banner - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Funeral Roll-Up Banner</h3>
                                 <p>Professional funeral roll-up banner printing services.</p>
                             </div>
                         </a>
                         <a href="brochure-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/brochure-printing/brochure-printing-1.webp" alt="Brochure Printing - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/brochure-printing/brochure-printing-1.webp" alt="Brochure Printing - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Brochure Printing</h3>
                                 <p>Professional brochure printing services.</p>
                             </div>
                         </a>
                         <a href="trifold-brochure-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/trifold-brochure-printing/trifold-flyer-printing-1.webp" alt="Trifold Brochure Printing - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/trifold-brochure-printing/trifold-flyer-printing-1.webp" alt="Trifold Brochure Printing - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Trifold Brochure Printing</h3>
                                 <p>Professional trifold brochure printing services.</p>
                             </div>
                         </a>
                         <a href="marriage-wedding-program-of-event-brochure-print.html" class="product-card">
-                            <img src="assets/images/products/All-Products/marriage-wedding-program-of-event-brochure-print/marriage-wedding-program-of-event-brochure-print-1.webp" alt="Wedding Program Brochure - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/marriage-wedding-program-of-event-brochure-print/marriage-wedding-program-of-event-brochure-print-1.webp" alt="Wedding Program Brochure - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Wedding Program Brochure</h3>
                                 <p>Professional wedding program brochure printing services.</p>
                             </div>
                         </a>
                         <a href="square-birthday-program-print.html" class="product-card">
-                            <img src="assets/images/products/All-Products/square-birthday-program-print/square-birthday-program-print-1.webp" alt="Birthday Program Print - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/square-birthday-program-print/square-birthday-program-print-1.webp" alt="Birthday Program Print - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Birthday Program Print</h3>
                                 <p>Professional birthday program printing services.</p>
                             </div>
                         </a>
                         <a href="brochure-company-profile-printing.html" class="product-card">
-                            <img src="assets/images/products/All-Products/brochure-company-profile-printing/brochure-company-profile-printing-1.webp" alt="Company Profile Brochure - Professional Printing Services" loading="lazy" decoding="async">
+                            <img src="assets/images/products/All-Products/brochure-company-profile-printing/brochure-company-profile-printing-1.webp" alt="Company Profile Brochure - Professional Printing Services" loading="lazy" decoding="async"loading="lazy" decoding="async">
                             <div class="product-card-content">
                                 <h3>Company Profile Brochure</h3>
                                 <p>Professional company profile brochure printing services.</p>
@@ -1177,8 +1205,8 @@
                 <div class="footer-content">
                                     <div class="footer-section text-center">
                         <a class="navbar-brand d-inline-block" href="index.html">
-                            <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item light-mode-item" src="assets/logo/white-logo.png" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
-                            <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item dark-mode-item" src="assets/logo/white-logo.png" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                            <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item light-mode-item" src="assets/logo/white-logo.png" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="white logo">
+                            <img alt="Inksnap Nigeria - Professional Printing Company in Lagos Nigeria" class="navbar-brand-item dark-mode-item" src="assets/logo/white-logo.png" title="Inksnap Nigeria - funeral printing Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async"alt="white logo">
                         </a>
                         <p>Your trusted partner for all printing needs in Lagos State, Nigeria and nationwide. Quality prints, competitive prices, fast delivery all over Nigeria.</p>
                         <div class="social-icons">
@@ -1216,7 +1244,7 @@
                 <div class="footer-bottom">
                     <p>© InkSnap 2023 - 2025. All rights reserved.</p>
                 </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"defer>
         </script>
         
         <script>window.addEventListener('load',function(){const preloader=document.querySelector('.preloader');if(preloader){preloader.style.opacity='0';setTimeout(()=>{preloader.style.display='none';},500);}});setTimeout(function(){const preloader=document.querySelector('.preloader');if(preloader){preloader.style.opacity='0';setTimeout(()=>{preloader.style.display='none';},500);}},3000);let currentSlide=0;let slider,cards,cardsPerView;function initializeSlider(){slider=document.getElementById('productSlider');cards=document.querySelectorAll('.product-card');cardsPerView=window.innerWidth>768 ? 4 : window.innerWidth>480 ? 3 : 2;if(slider&&cards.length>0){updateSliderButtons();}else{}}function slideProducts(direction){if(!slider||!cards.length){return;}if(direction==='next'){currentSlide=Math.min(currentSlide+1,cards.length-cardsPerView);}else{currentSlide=Math.max(currentSlide-1,0);}const cardWidth=280;const gap=20;const slideDistance=cardWidth+gap;const translateX=-currentSlide*slideDistance;slider.style.transform=`translateX(${translateX}px)`;updateSliderButtons();}function updateSliderButtons(){const prevBtn=document.querySelector('.prev-btn');const nextBtn=document.querySelector('.next-btn');if(prevBtn&&nextBtn&&cards.length>0){prevBtn.style.opacity=currentSlide===0 ? '0.5' : '1';nextBtn.style.opacity=currentSlide>=cards.length-cardsPerView ? '0.5' : '1';prevBtn.disabled=currentSlide===0;nextBtn.disabled=currentSlide>=cards.length-cardsPerView;}}initializeSlider();const prevBtn=document.querySelector('.prev-btn');const nextBtn=document.querySelector('.next-btn');if(prevBtn){prevBtn.addEventListener('click',function(){slideProducts('prev');});}if(nextBtn){nextBtn.addEventListener('click',function(){slideProducts('next');});}if(slider){let startX=0;let endX=0;let isDragging=false;slider.addEventListener('touchstart',function(e){startX=e.touches[0].clientX;isDragging=true;});slider.addEventListener('touchmove',function(e){if(!isDragging)return;e.preventDefault();});slider.addEventListener('touchend',function(e){if(!isDragging)return;endX=e.changedTouches[0].clientX;const diff=startX-endX;if(Math.abs(diff)>50){if(diff>0){slideProducts('next');}else{slideProducts('prev');}}isDragging=false;});slider.addEventListener('mousedown',function(e){startX=e.clientX;isDragging=true;slider.style.cursor='grabbing';});slider.addEventListener('mousemove',function(e){if(!isDragging)return;e.preventDefault();});slider.addEventListener('mouseup',function(e){if(!isDragging)return;endX=e.clientX;const diff=startX-endX;if(Math.abs(diff)>50){if(diff>0){slideProducts('next');}else{slideProducts('prev');}}isDragging=false;slider.style.cursor='grab';});slider.addEventListener('mouseleave',function(e){isDragging=false;slider.style.cursor='grab';});}window.addEventListener('resize',function(){currentSlide=0;if(slider){slider.style.transform='translateX(0)';}initializeSlider();});document.addEventListener('DOMContentLoaded',function(){var dropdownElementList=[].slice.call(document.querySelectorAll('.dropdown-toggle'));var dropdownList=dropdownElementList.map(function(dropdownToggleEl){return new bootstrap.Dropdown(dropdownToggleEl);});const dropdownToggles=document.querySelectorAll('.dropdown-submenu .dropdown-toggle');dropdownToggles.forEach(toggle=>{toggle.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();const parent=this.closest('.dropdown-submenu');const submenu=parent.querySelector('.dropdown-menu');const siblings=parent.parentElement.querySelectorAll('.dropdown-submenu .dropdown-menu.show');siblings.forEach(sibling=>{if(sibling!==submenu){sibling.classList.remove('show');}});if(submenu){submenu.classList.toggle('show');}});});document.addEventListener('click',function(e){if(!e.target.closest('.dropdown')){const openDropdowns=document.querySelectorAll('.dropdown-menu.show');openDropdowns.forEach(dropdown=>{dropdown.classList.remove('show');});}});const themeToggle=document.getElementById('themeToggle');if(themeToggle){const html=document.documentElement;const currentTheme=localStorage.getItem('theme')||'light';html.setAttribute('data-bs-theme',currentTheme);function updateToggleButton(){const isDark=html.getAttribute('data-bs-theme')==='dark';const darkIcon=themeToggle.querySelector('.dark-icon');const lightIcon=themeToggle.querySelector('.light-icon');if(darkIcon&&lightIcon){if(isDark){darkIcon.style.display='none';lightIcon.style.display='block';}else{darkIcon.style.display='block';lightIcon.style.display='none';}}}updateToggleButton();function toggleTheme(){const currentTheme=html.getAttribute('data-bs-theme');const newTheme=currentTheme==='dark' ? 'light' : 'dark';html.setAttribute('data-bs-theme',newTheme);localStorage.setItem('theme',newTheme);updateToggleButton();}themeToggle.addEventListener('click',toggleTheme);}});</script>
@@ -1296,4 +1324,26 @@
 
 
 
-</div></footer></body></html>
+</div></footer>
+    <script>
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            // Measure LCP
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    console.log('LCP:', entry.startTime);
+                    if (entry.startTime > 4000) {
+                        console.warn('LCP is slow:', entry.startTime + 'ms');
+                    }
+                }
+            }).observe({entryTypes: ['largest-contentful-paint']});
+            
+            // Measure FCP
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    console.log('FCP:', entry.startTime);
+                }
+            }).observe({entryTypes: ['paint']});
+        });
+    </script>
+</body></html>
