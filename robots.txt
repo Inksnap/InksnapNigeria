@@ -52,6 +52,15 @@ Allow: /
 User-agent: Tawk.to
 Allow: /
 
+User-agent: Apollo
+Allow: /
+
+User-agent: Tawk-Apollo
+Allow: /
+
+User-agent: TawkAI
+Allow: /
+
 User-agent: LiveChat
 Allow: /
 
