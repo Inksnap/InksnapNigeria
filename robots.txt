@@ -42,6 +42,25 @@ Disallow: /
 User-agent: headless
 Disallow: /
 
+# Allow legitimate bots and services
+User-agent: Tawk
+Allow: /
+
+User-agent: Tawkbot
+Allow: /
+
+User-agent: Tawk.to
+Allow: /
+
+User-agent: LiveChat
+Allow: /
+
+User-agent: Intercom
+Allow: /
+
+User-agent: Zendesk
+Allow: /
+
 # Block generic bots (but allow legitimate search engines)
 User-agent: *bot*
 Disallow: /
