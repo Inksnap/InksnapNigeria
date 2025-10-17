@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -763,12 +763,12 @@
                                     background-size: 12px;
                                 ">
                                     <option value="">All Categories</option>
-                                    <option value="business-cards">💳 Business Cards</option>
-                                    <option value="flyers">📄 Flyers & Brochures</option>
-                                    <option value="stickers">🏷️ Stickers & Labels</option>
-                                    <option value="apparel">👕 T-Shirts & Apparel</option>
-                                    <option value="signage">🎯 Banners & Signage</option>
-                                    <option value="promotional">🎁 Promotional Items</option>
+                                    <option value="business-cards">ðŸ’³ Business Cards</option>
+                                    <option value="flyers">ðŸ“„ Flyers & Brochures</option>
+                                    <option value="stickers">ðŸ·ï¸ Stickers & Labels</option>
+                                    <option value="apparel">ðŸ‘• T-Shirts & Apparel</option>
+                                    <option value="signage">ðŸŽ¯ Banners & Signage</option>
+                                    <option value="promotional">ðŸŽ Promotional Items</option>
                                 </select>
                             </div>
                         </div>
@@ -779,10 +779,10 @@
                                 <i class="fas fa-sort sort-icon"></i>
                                 <select class="filter-select">
                                     <option value="">Sort by</option>
-                                    <option value="popular">🔥 Most Popular</option>
-                                    <option value="price-low">💰 Price: Low to High</option>
-                                    <option value="price-high">💎 Price: High to Low</option>
-                                    <option value="newest">✨ Newest</option>
+                                    <option value="popular">ðŸ”¥ Most Popular</option>
+                                    <option value="price-low">ðŸ’° Price: Low to High</option>
+                                    <option value="price-high">ðŸ’Ž Price: High to Low</option>
+                                    <option value="newest">âœ¨ Newest</option>
                                 </select>
                             </div>
                         </div>
@@ -791,10 +791,10 @@
                     
                     <!-- Quick Filter Tags -->
                     <div class="quick-filter-tags">
-                        <button class="quick-filter quick-filter-btn" data-filter="business-cards">💳 Business Cards</button>
-                        <button class="quick-filter quick-filter-btn" data-filter="flyers">📄 Flyers</button>
-                        <button class="quick-filter quick-filter-btn" data-filter="apparel">👕 Apparel</button>
-                        <button class="quick-filter quick-filter-btn" data-filter="signage">🎯 Banners</button>
+                        <button class="quick-filter quick-filter-btn" data-filter="business-cards">ðŸ’³ Business Cards</button>
+                        <button class="quick-filter quick-filter-btn" data-filter="flyers">ðŸ“„ Flyers</button>
+                        <button class="quick-filter quick-filter-btn" data-filter="apparel">ðŸ‘• Apparel</button>
+                        <button class="quick-filter quick-filter-btn" data-filter="signage">ðŸŽ¯ Banners</button>
                     </div>
                     
                 </div>
@@ -2231,16 +2231,16 @@
         <script>document.addEventListener('DOMContentLoaded', function(){const searchInput=document.querySelector('.search-filter-section .search-input');const searchBtn=document.querySelector('.search-filter-section .search-btn');const productsGrid=document.getElementById('allProductsGrid');const productCards=productsGrid ? Array.from(productsGrid.querySelectorAll('.product-card')): [];const categorySelect=document.querySelector('.filter-select[data-filter="category"]')||document.querySelectorAll('.filter-select')[0];const sortSelect=document.querySelector('.filter-select[data-filter="sort"]')||document.querySelectorAll('.filter-select')[1];const quickFilters=document.querySelectorAll('.quick-filter');const productCategories={'business-cards': ['business-cards','conqueror-letterhead','standard-business-card-printing','premium-business-card-printing','pvc-transparent-plastic-business-card-print'],'flyers': ['flyers','a4-flyer','a5flyer','a6flyer','boxflyer','square-or-box-flyer','flyer-printing'],'stickers': ['stickers','label-sticker-printing','stricker-printing','component-button-badge-print'],'apparel': ['tshirts','tshirt-printing','round-neck-tshirt-printing','polo-shirt-printing','polo-tshirt-print','button-down-polo-t-shirt-printing','luxury-roundneck-print','V Neck T Shirt','branded-hoodies','Customized Sweatshirts Printing','custom-luxury-tshirt','funeral burial tshirt','safety-work-vest-reflective-jacket-print'],'signage': ['banners','roll-up-banner-printing','advert-banner-print','backdrop-banner-print','banner-printing','birthday-banner-prints','wedding-banner-prints','burial-funeral-banner-printing','funeral-burial-roll-up-banner-prints','event-backdrop-banner-print-in-lagos-nigeria','lamp-post-banner-sign-print','wedding-banner-print','eardrop Flying Banner Print'],'promotional': ['mugs','branded-mug-printing','magic-mug-print','branded-mouse','branded-mousepad-printing','pen-branding-printing','premium-pen-printing','branded-bag-prints','branded-box-printing','branded-gift-items-printing','nylon-shopping-bag-print','nylon-shopping-bag','tote-bag-printing','courier-shopping-bag-print','shopping-paper-bag-print','paper-bag-printing','a3-paper-bag-details','a4-paper-bag','a5-paper-bag','a5-paperbag','delivery-box-branding','delivery-nylon','gift-box','collapsible-box','collapsiblebox','disposablebox','office-box-package','custom-bath-towel-print','embroided-face-towel','Personalized Apron Print','custom-branded-helmet-print','custom-branded-versity-jacket-print','branded-versity-jacket-print','custom-acrylic-business-social-media-signage','custom-calendar-printing','desk-table-calendar-print','table-calender','custom-certificate-of-completion-print','commemorative-achievement-medal-print','crstal-awards','Wooden Award Plaque','custom-3D-monogram-embroidery-print','monogram-printing','monogram','clothing-tag','clothing-woven-label','magnetic-name-tag','reusable-name-tag','lanyard-idcard-rope-print','standard-id-card-printing','steel-flask-printing','keyholder-printing','pvc-dangler','point-of-sale-stand','Promotional Counter Table','gazebo-canopy-tent','event-hall-branding','Office Wall Branding','vehicle-branding']};function normalize(text){return(text||'').toLowerCase().replace(/[^\w\s]/g,'');}function getCardData(card){const titleEl=card.querySelector('.product-title, h3');const title=titleEl ? titleEl.textContent : '';const href=card.getAttribute('href')||'';const priceEl=card.querySelector('.price');const priceText=priceEl ? priceEl.textContent : '';const price=parseFloat(priceText.replace(/[^\d]/g,''))||0;let category='other';const hrefKey=href.replace('.html','').replace(/[-_]/g,'-');for(const [cat, items] of Object.entries(productCategories)){if(items.some(item=>hrefKey.includes(item.replace(/[-_]/g,'-')))){category=cat;break;}}return{title: normalize(title), href: normalize(href), price: price, category: category, fullText: normalize(title+' '+href)};}const cardDataCache=new Map();productCards.forEach(card=>{cardDataCache.set(card, getCardData(card));});function applyFilters(){const searchQuery=searchInput ? normalize(searchInput.value.trim()): '';const selectedCategory=categorySelect ? categorySelect.value : '';const sortBy=sortSelect ? sortSelect.value : '';let filteredCards=productCards.filter(card=>{const data=cardDataCache.get(card);if(!data)return false;const matchesSearch=!searchQuery||data.fullText.includes(searchQuery);const matchesCategory=!selectedCategory||data.category===selectedCategory;return matchesSearch&&matchesCategory;});if(sortBy){filteredCards.sort((a, b)=>{const dataA=cardDataCache.get(a);const dataB=cardDataCache.get(b);switch(sortBy){case 'popular': return 0;case 'price-low': return dataA.price-dataB.price;case 'price-high': return dataB.price-dataA.price;case 'newest': return 0;default: return 0;}});}productCards.forEach(card=>{card.style.display='none';});filteredCards.forEach(card=>{card.style.display='';});updateResultsCount(filteredCards.length, productCards.length);return filteredCards.length;}function updateResultsCount(visible, total){let countElement=document.querySelector('.results-count');if(!countElement){countElement=document.createElement('div');countElement.className='results-count';countElement.style.cssText='text-align: center;margin: 20px 0;font-size: 14px;color: #7f8c8d;';productsGrid.parentNode.insertBefore(countElement, productsGrid);}countElement.textContent=`Showing ${visible}of ${total}products`;}function updateUrl(){const params=new URLSearchParams();if(searchInput&&searchInput.value.trim()){params.set('q', searchInput.value.trim());}if(categorySelect&&categorySelect.value){params.set('category', categorySelect.value);}if(sortSelect&&sortSelect.value){params.set('sort', sortSelect.value);}const queryString=params.toString();const newUrl=window.location.pathname+(queryString ?('?'+queryString): '');history.replaceState(null,'', newUrl);}function readFromUrl(){const params=new URLSearchParams(window.location.search);if(searchInput&&params.get('q')){searchInput.value=params.get('q');}if(categorySelect&&params.get('category')){categorySelect.value=params.get('category');}if(sortSelect&&params.get('sort')){sortSelect.value=params.get('sort');}}readFromUrl();applyFilters();if(searchBtn){searchBtn.addEventListener('click', function(){updateUrl();applyFilters();});}if(searchInput){searchInput.addEventListener('input', function(){updateUrl();applyFilters();});searchInput.addEventListener('keydown', function(e){if(e.key==='Enter'){e.preventDefault();updateUrl();applyFilters();}});}if(categorySelect){categorySelect.addEventListener('change', function(){updateUrl();applyFilters();});}if(sortSelect){sortSelect.addEventListener('change', function(){updateUrl();applyFilters();});}quickFilters.forEach(button=>{button.addEventListener('click', function(){const filterValue=this.getAttribute('data-filter');if(categorySelect){categorySelect.value=filterValue;updateUrl();applyFilters();}});});});</script>
         <!-- WhatsApp Floating Button -->
     <div class="whatsapp-float" aria-label="Contact Inksnap Nigeria on WhatsApp for printing services">
-        <a href="https://wa.me/2348126970276" target="_blank" rel="noopener noreferrer" aria-label="Contact Inksnap Nigeria on WhatsApp - Professional Printing Services Lagos Nigeria">
+        <a href="https://wa.me/2349066345037" target="_blank" rel="noopener noreferrer" aria-label="Contact Inksnap Nigeria on WhatsApp - Professional Printing Services Lagos Nigeria">
             <i class="fab fa-whatsapp" aria-hidden="true"></i>
             <div class="whatsapp-tooltip">
-                <div class="tooltip-header">👋 Hi there!</div>
+                <div class="tooltip-header">ðŸ‘‹ Hi there!</div>
                 <div class="tooltip-message">What would you like to do today?</div>
                 <div class="tooltip-options">
-                    • Get a quote<br>
-                    • Order printing<br>
-                    • Join reseller program<br>
-                    • Ask questions
+                    â€¢ Get a quote<br>
+                    â€¢ Order printing<br>
+                    â€¢ Join reseller program<br>
+                    â€¢ Ask questions
                 </div>
                 <div class="tooltip-cta">Click to chat on WhatsApp</div>
             </div>
@@ -2270,3 +2270,4 @@
     </script>
 </body>
 </html>
+
