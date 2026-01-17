@@ -74,6 +74,7 @@
         
         <!-- Custom CSS -->
         <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.css"></noscript>
+        <link rel="stylesheet" href="assets/discount.css">
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0HGEQLXGL4"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','G-0HGEQLXGL4');</script>
@@ -570,7 +571,7 @@
                             <form id="poloQuoteForm" action="https://formsubmit.co/contact@inksnapng.com" method="POST" enctype="multipart/form-data"> <input type="hidden" name="_subject" value="New Quote Request"><input type="hidden" name="_template" value="table"><input type="hidden" name="_captcha" value="false">
                                 <div class="form-group">
                                     <label for="tshirtQuantity">Quantity</label>
-                                    <input type="number" id="tshirtQuantity" name="tshirtQuantity" placeholder="e.g., 50" required="">
+                                    <input type="number" id="tshirtQuantity" name="tshirtQuantity" placeholder="e.g., 50" required="" data-unit-price="22000">
                                 </div>
                                 <div class="form-group">
                                     <label for="fabricType">Fabric Type</label>
@@ -877,5 +878,9 @@
             }).observe({entryTypes: ['paint']});
         });
     </script>
+    <script src="assets/discount.js" defer></script>
 </body></html>
+
+
+
 

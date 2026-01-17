@@ -74,6 +74,7 @@
         
         <!-- Custom CSS -->
         <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.css"></noscript>
+        <link rel="stylesheet" href="assets/discount.css">
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0HGEQLXGL4"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','G-0HGEQLXGL4');</script>
@@ -664,7 +665,8 @@
                                     <label for="calendarQuantity">
                                         Quantity
                                     </label>
-                                    <input type="number" id="calendarQuantity" name="calendarQuantity" placeholder="e.g., 200" required="">
+                                    <input type="number" id="calendarQuantity" name="calendarQuantity" placeholder="e.g., 200" required="" data-unit-price="3500" min="1">
+                                    <div id="priceEstimate" class="price-estimate">Estimated total: <strong id="priceValue">NGN 0</strong></div>
                                 </div>
                                 <div class="form-group">
                                     <label for="paperType">
@@ -1072,6 +1074,48 @@
             }
         });
         </script>
+                <script>
+                // Live price estimate for quote form
+                (function(){
+                        function formatNGN(n){return 'NGN ' + Number(n).toLocaleString();}
+                        const qtyInput = document.getElementById('calendarQuantity');
+                        const priceValue = document.getElementById('priceValue');
+                        const paperSelect = document.getElementById('paperType');
+                        const bindingSelect = document.getElementById('bindingType');
+
+                        if(!qtyInput || !priceValue) return;
+
+                        function getMultiplierForPaper(val){
+                            if(!val) return 1;
+                            if(val.indexOf('250gsm')!==-1) return 1.12;
+                            if(val.indexOf('300gsm')!==-1) return 1.25;
+                            return 1;
+                        }
+
+                        function getBindingSurcharge(val){
+                            if(!val) return 0;
+                            if(val.indexOf('wire')!==-1) return 40;
+                            if(val.indexOf('spiral')!==-1) return 60;
+                            if(val.indexOf('twin')!==-1) return 80;
+                            return 0;
+                        }
+
+                        function updateEstimate(){
+                                const qty = Math.max(0, parseInt(qtyInput.value,10) || 0);
+                                const unit = parseFloat(qtyInput.dataset.unitPrice) || 0;
+                                const paperMult = getMultiplierForPaper(paperSelect && paperSelect.value);
+                                const bindExtra = getBindingSurcharge(bindingSelect && bindingSelect.value);
+                                const subtotal = Math.round((unit * paperMult + bindExtra) * qty);
+                                priceValue.textContent = formatNGN(subtotal);
+                        }
+
+                        qtyInput.addEventListener('input', updateEstimate);
+                        if(paperSelect) paperSelect.addEventListener('change', updateEstimate);
+                        if(bindingSelect) bindingSelect.addEventListener('change', updateEstimate);
+                        document.addEventListener('DOMContentLoaded', updateEstimate);
+                        updateEstimate();
+                })();
+                </script>
         <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@type": "Service",
@@ -1150,5 +1194,9 @@
             }).observe({entryTypes: ['paint']});
         });
     </script>
+    <script src="assets/discount.js" defer></script>
 </body></html>
+
+
+
 

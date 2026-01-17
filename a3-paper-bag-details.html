@@ -66,6 +66,13 @@
         .preloader-item{text-align:center}
         .preloader-item img{max-width:150px;height:auto}
         @media (max-width:768px){.hero-content{grid-template-columns:1fr;text-align:center;gap:3rem}.hero-text h1{font-size:42px}}
+            /* Discount badge & price summary styles */
+            .discount-badge{display:inline-block;background:#ffefeb;color:#b02a1a;padding:8px 12px;border-radius:8px;font-weight:700;margin-top:8px;border:1px solid #ffd1c4}
+            .price-summary{margin-top:12px;background:#f8fafc;border:1px solid #e6eef6;padding:12px;border-radius:10px;font-weight:600;color:#0f172a}
+            .price-summary .muted{font-weight:400;color:#64748b;font-size:0.95rem}
+            .price-values{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:8px}
+            .price-values .total{font-size:1.05rem}
+            .price-values .discounted{color:#059669;font-weight:700}
     </style>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
@@ -73,6 +80,7 @@
         
         <!-- Custom CSS -->
         <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.css"></noscript>
+        <link rel="stylesheet" href="assets/discount.css">
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0HGEQLXGL4"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','G-0HGEQLXGL4');</script>
@@ -136,7 +144,7 @@
     "worstRating": "1"
   }
 }</script>
-
+        <script>
         <!-- Local Business Schema -->
         <script type="application/ld+json">{
   "@context": "https://schema.org",
@@ -654,7 +662,16 @@
                                     <label for="bagQuantity">
                                         Quantity
                                     </label>
-                                    <input type="number" id="bagQuantity" name="bagQuantity" placeholder="e.g., 500" required="">
+                                    <input type="number" id="bagQuantity" name="bagQuantity" placeholder="e.g., 500" required="" data-unit-price="1600">
+                                </div>
+                                <div class="discount-badge" id="discountBadge">10% OFF for orders of 200+ copies</div>
+                                <div id="priceSummary" class="price-summary" aria-live="polite">
+                                    <div class="muted">Unit price from NGN 1,600</div>
+                                    <div class="price-values">
+                                        <div class="total">Total: NGN <span id="totalPrice">0</span></div>
+                                        <div class="discounted" id="discountedPrice" style="display:none">Discounted: NGN <span id="discountPrice">0</span></div>
+                                    </div>
+                                </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="paperType">
@@ -749,10 +766,61 @@
                                     <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g., +234 906 634 5037" required="">
                                 </div>
                                 
-                                <button type="submit" class="submit-btn">
-                                    Request Quote
-                                </button>
+                                <div style="display:flex;gap:8px;align-items:center">
+                                    <button type="submit" class="submit-btn">
+                                        Request Quote
+                                    </button>
+                                    <button type="button" id="openMockup" class="submit-btn" style="background:#2563eb;color:#fff;border:none;padding:10px 14px;border-radius:8px;cursor:pointer">
+                                        Generate Mockup
+                                    </button>
+                                </div>
                             </form>
+                            <!-- Mockup modal: inline upload + prompt UI (no iframe) -->
+                            <div id="mockupModal" style="display:none;position:fixed;inset:0;z-index:2000;align-items:center;justify-content:center;background:rgba(0,0,0,0.6)">
+                                <div style="width:92%;max-width:980px;height:84%;background:var(--panel,#0f1724);border-radius:10px;position:relative;overflow:hidden;box-shadow:0 18px 60px rgba(2,6,23,0.7);color:#fff;padding:18px">
+                                    <button id="closeMockup" aria-label="Close mockup" style="position:absolute;top:12px;right:12px;z-index:20;background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.06);padding:8px 10px;border-radius:6px;cursor:pointer">Close</button>
+
+                                    <div style="display:flex;gap:16px;height:100%">
+                                        <div style="width:360px;padding:12px;border-right:1px solid rgba(255,255,255,0.04);overflow:auto">
+                                            <h3 style="margin:0 0 8px">Generate Mockup</h3>
+                                            <div style="font-size:13px;color:#cbd5e1;margin-bottom:12px">Upload your design and enter a short prompt describing the realistic style you want (e.g. "photoreal, soft shadow, high gloss").</div>
+
+                                            <label style="font-size:13px;color:#9aa4b2">Upload design</label>
+                                            <input id="modalUpload" type="file" accept="image/*" style="width:100%;margin-bottom:8px">
+
+                                            <label style="font-size:13px;color:#9aa4b2">Prompt</label>
+                                            <textarea id="mockupPrompt" rows="4" placeholder="e.g. photorealistic, soft shadow, high gloss, center" style="width:100%;padding:8px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:#e6eef8"></textarea>
+
+                                            <label style="font-size:13px;color:#9aa4b2;margin-top:12px">Template</label>
+                                            <select id="modalTpl" style="width:100%;padding:8px;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.06);color:#e6eef8;margin-bottom:12px">
+                                                <option value="paperbag">Paper Bag</option>
+                                                <option value="poster">Poster</option>
+                                                <option value="tshirt">T-Shirt</option>
+                                                <option value="mug">Mug</option>
+                                            </select>
+
+                                            <div style="display:flex;gap:8px;margin-top:10px">
+                                                <label style="display:flex;align-items:center;gap:8px;margin:0 8px 0 0;color:#cbd5e1">
+                                                    <input id="useAI" type="checkbox" style="transform:scale(1.05)"> Use AI Edits
+                                                </label>
+                                                <button id="generateMockup" style="flex:1;background:#10b981;border:none;padding:10px;border-radius:8px;color:#fff;cursor:pointer">Generate</button>
+                                                <button id="downloadMockup" style="background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:#fff;cursor:pointer">Download</button>
+                                            </div>
+
+                                            <div style="font-size:12px;color:#9aa4b2;margin-top:14px">Note: For fully AI-driven image edits you'd need to connect an external image-edit API (not enabled here). This tool will composite your upload into the chosen template and apply prompt-driven visual tweaks as a fallback.</div>
+                                        </div>
+
+                                        <div style="flex:1;display:flex;flex-direction:column;gap:8px;padding:12px">
+                                            <div style="flex:1;border-radius:8px;background:linear-gradient(180deg,#eef4fb,#fff);padding:8px;display:flex;align-items:center;justify-content:center;overflow:hidden">
+                                                <div id="modalPreviewArea" style="width:100%;height:100%"></div>
+                                            </div>
+                                            <div style="display:flex;gap:8px;align-items:center;justify-content:flex-end">
+                                                <button id="applyFilterDemo" style="background:transparent;border:1px solid rgba(0,0,0,0.06);padding:8px;border-radius:8px;cursor:pointer;color:#0f1724;background:#fff">Quick Style</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
             </div>
@@ -1035,7 +1103,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"defer>
         </script>
         
-        <script>window.addEventListener('load', function(){const preloader=document.querySelector('.preloader');if(preloader){preloader.style.opacity='0';setTimeout(()=>{preloader.style.display='none';},500);}});setTimeout(function(){const preloader=document.querySelector('.preloader');if(preloader){preloader.style.opacity='0';setTimeout(()=>{preloader.style.display='none';},500);}},3000);let currentSlide=0;let slider, cards, cardsPerView;function initializeSlider(){slider=document.getElementById('productSlider');cards=document.querySelectorAll('.product-card');cardsPerView=window.innerWidth>768 ? 4 : window.innerWidth>480 ? 3 : 2;if(slider&&cards.length>0){updateSliderButtons();}else{}}function slideProducts(direction){if(!slider||!cards.length){return;}if(direction==='next'){currentSlide=Math.min(currentSlide+1, cards.length-cardsPerView);}else{currentSlide=Math.max(currentSlide-1,0);}const cardWidth=280;const gap=20;const slideDistance=cardWidth+gap;const translateX=-currentSlide*slideDistance;slider.style.transform=`translateX(${translateX}px)`;updateSliderButtons();}function updateSliderButtons(){const prevBtn=document.querySelector('.prev-btn');const nextBtn=document.querySelector('.next-btn');if(prevBtn&&nextBtn&&cards.length>0){prevBtn.style.opacity=currentSlide===0 ? '0.5' : '1';nextBtn.style.opacity=currentSlide>=cards.length-cardsPerView ? '0.5' : '1';prevBtn.disabled=currentSlide===0;nextBtn.disabled=currentSlide>=cards.length-cardsPerView;}}document.addEventListener('DOMContentLoaded', function(){var dropdownElementList=[].slice.call(document.querySelectorAll('.dropdown-toggle'));var dropdownList=dropdownElementList.map(function(dropdownToggleEl){return new bootstrap.Dropdown(dropdownToggleEl);});const dropdownToggles=document.querySelectorAll('.dropdown-submenu .dropdown-toggle');dropdownToggles.forEach(toggle=>{toggle.addEventListener('click', function(e){e.preventDefault();e.stopPropagation();const parent=this.closest('.dropdown-submenu');const submenu=parent.querySelector('.dropdown-menu');const siblings=parent.parentElement.querySelectorAll('.dropdown-submenu .dropdown-menu.show');siblings.forEach(sibling=>{if(sibling!==submenu){sibling.classList.remove('show');}});if(submenu){submenu.classList.toggle('show');}});});document.addEventListener('click', function(e){if(!e.target.closest('.dropdown')){const openDropdowns=document.querySelectorAll('.dropdown-menu.show');openDropdowns.forEach(dropdown=>{dropdown.classList.remove('show');});}});const themeToggle=document.getElementById('themeToggle');if(themeToggle){const html=document.documentElement;const currentTheme=localStorage.getItem('theme')||'light';html.setAttribute('data-bs-theme', currentTheme);function updateToggleButton(){const isDark=html.getAttribute('data-bs-theme')==='dark';const darkIcon=themeToggle.querySelector('.dark-icon');const lightIcon=themeToggle.querySelector('.light-icon');if(darkIcon&&lightIcon){if(isDark){darkIcon.style.display='none';lightIcon.style.display='block';}else{darkIcon.style.display='block';lightIcon.style.display='none';}}}updateToggleButton();function toggleTheme(){const currentTheme=html.getAttribute('data-bs-theme');const newTheme=currentTheme==='dark' ? 'light' : 'dark';html.setAttribute('data-bs-theme', newTheme);localStorage.setItem('theme', newTheme);updateToggleButton();}themeToggle.addEventListener('click', toggleTheme);}initializeSlider();const prevBtn=document.querySelector('.prev-btn');const nextBtn=document.querySelector('.next-btn');if(prevBtn){prevBtn.addEventListener('click', function(){slideProducts('prev');});}if(nextBtn){nextBtn.addEventListener('click', function(){slideProducts('next');});}if(slider){let startX=0;let endX=0;let isDragging=false;slider.addEventListener('touchstart', function(e){startX=e.touches[0].clientX;isDragging=true;});slider.addEventListener('touchmove', function(e){if(!isDragging)return;e.preventDefault();});slider.addEventListener('touchend', function(e){if(!isDragging)return;endX=e.changedTouches[0].clientX;const diff=startX-endX;if(Math.abs(diff)>50){if(diff>0){slideProducts('next');}else{slideProducts('prev');}}isDragging=false;});slider.addEventListener('mousedown', function(e){startX=e.clientX;isDragging=true;slider.style.cursor='grabbing';});slider.addEventListener('mousemove', function(e){if(!isDragging)return;e.preventDefault();});slider.addEventListener('mouseup', function(e){if(!isDragging)return;endX=e.clientX;const diff=startX-endX;if(Math.abs(diff)>50){if(diff>0){slideProducts('next');}else{slideProducts('prev');}}isDragging=false;slider.style.cursor='grab';});slider.addEventListener('mouseleave', function(e){isDragging=false;slider.style.cursor='grab';});}window.addEventListener('resize', function(){currentSlide=0;if(slider){slider.style.transform='translateX(0)';}initializeSlider();});const firstThumbnail=document.querySelector('.thumbnail-image');if(firstThumbnail){firstThumbnail.classList.add('active');}const images=document.querySelectorAll('img[loading="lazy"]');const imageObserver=new IntersectionObserver((entries, observer)=>{entries.forEach(entry=>{if(entry.isIntersecting){const img=entry.target;img.src=img.dataset.src||img.src;img.classList.remove('lazy');observer.unobserve(img);}});});images.forEach(img=>imageObserver.observe(img));});</script>
+    <script src="assets/discount.js" defer></script>
+    <script>window.addEventListener('load', function(){const preloader=document.querySelector('.preloader');if(preloader){preloader.style.opacity='0';setTimeout(()=>{preloader.style.display='none';},500);}});setTimeout(function(){const preloader=document.querySelector('.preloader');if(preloader){preloader.style.opacity='0';setTimeout(()=>{preloader.style.display='none';},500);}},3000);let currentSlide=0;let slider, cards, cardsPerView;function initializeSlider(){slider=document.getElementById('productSlider');cards=document.querySelectorAll('.product-card');cardsPerView=window.innerWidth>768 ? 4 : window.innerWidth>480 ? 3 : 2;if(slider&&cards.length>0){updateSliderButtons();}else{}}function slideProducts(direction){if(!slider||!cards.length){return;}if(direction==='next'){currentSlide=Math.min(currentSlide+1, cards.length-cardsPerView);}else{currentSlide=Math.max(currentSlide-1,0);}const cardWidth=280;const gap=20;const slideDistance=cardWidth+gap;const translateX=-currentSlide*slideDistance;slider.style.transform=`translateX(${translateX}px)`;updateSliderButtons();}function updateSliderButtons(){const prevBtn=document.querySelector('.prev-btn');const nextBtn=document.querySelector('.next-btn');if(prevBtn&&nextBtn&&cards.length>0){prevBtn.style.opacity=currentSlide===0 ? '0.5' : '1';nextBtn.style.opacity=currentSlide>=cards.length-cardsPerView ? '0.5' : '1';prevBtn.disabled=currentSlide===0;nextBtn.disabled=currentSlide>=cards.length-cardsPerView;}}document.addEventListener('DOMContentLoaded', function(){var dropdownElementList=[].slice.call(document.querySelectorAll('.dropdown-toggle'));var dropdownList=dropdownElementList.map(function(dropdownToggleEl){return new bootstrap.Dropdown(dropdownToggleEl);});const dropdownToggles=document.querySelectorAll('.dropdown-submenu .dropdown-toggle');dropdownToggles.forEach(toggle=>{toggle.addEventListener('click', function(e){e.preventDefault();e.stopPropagation();const parent=this.closest('.dropdown-submenu');const submenu=parent.querySelector('.dropdown-menu');const siblings=parent.parentElement.querySelectorAll('.dropdown-submenu .dropdown-menu.show');siblings.forEach(sibling=>{if(sibling!==submenu){sibling.classList.remove('show');}});if(submenu){submenu.classList.toggle('show');}});});document.addEventListener('click', function(e){if(!e.target.closest('.dropdown')){const openDropdowns=document.querySelectorAll('.dropdown-menu.show');openDropdowns.forEach(dropdown=>{dropdown.classList.remove('show');});}});const themeToggle=document.getElementById('themeToggle');if(themeToggle){const html=document.documentElement;const currentTheme=localStorage.getItem('theme')||'light';html.setAttribute('data-bs-theme', currentTheme);function updateToggleButton(){const isDark=html.getAttribute('data-bs-theme')==='dark';const darkIcon=themeToggle.querySelector('.dark-icon');const lightIcon=themeToggle.querySelector('.light-icon');if(darkIcon&&lightIcon){if(isDark){darkIcon.style.display='none';lightIcon.style.display='block';}else{darkIcon.style.display='block';lightIcon.style.display='none';}}}updateToggleButton();function toggleTheme(){const currentTheme=html.getAttribute('data-bs-theme');const newTheme=currentTheme==='dark' ? 'light' : 'dark';html.setAttribute('data-bs-theme', newTheme);localStorage.setItem('theme', newTheme);updateToggleButton();}themeToggle.addEventListener('click', toggleTheme);}initializeSlider();const prevBtn=document.querySelector('.prev-btn');const nextBtn=document.querySelector('.next-btn');if(prevBtn){prevBtn.addEventListener('click', function(){slideProducts('prev');});}if(nextBtn){nextBtn.addEventListener('click', function(){slideProducts('next');});}if(slider){let startX=0;let endX=0;let isDragging=false;slider.addEventListener('touchstart', function(e){startX=e.touches[0].clientX;isDragging=true;});slider.addEventListener('touchmove', function(e){if(!isDragging)return;e.preventDefault();});slider.addEventListener('touchend', function(e){if(!isDragging)return;endX=e.changedTouches[0].clientX;const diff=startX-endX;if(Math.abs(diff)>50){if(diff>0){slideProducts('next');}else{slideProducts('prev');}}isDragging=false;});slider.addEventListener('mousedown', function(e){startX=e.clientX;isDragging=true;slider.style.cursor='grabbing';});slider.addEventListener('mousemove', function(e){if(!isDragging)return;e.preventDefault();});slider.addEventListener('mouseup', function(e){if(!isDragging)return;endX=e.clientX;const diff=startX-endX;if(Math.abs(diff)>50){if(diff>0){slideProducts('next');}else{slideProducts('prev');}}isDragging=false;slider.style.cursor='grab';});slider.addEventListener('mouseleave', function(e){isDragging=false;slider.style.cursor='grab';});}window.addEventListener('resize', function(){currentSlide=0;if(slider){slider.style.transform='translateX(0)';}initializeSlider();});const firstThumbnail=document.querySelector('.thumbnail-image');if(firstThumbnail){firstThumbnail.classList.add('active');}const images=document.querySelectorAll('img[loading="lazy"]');const imageObserver=new IntersectionObserver((entries, observer)=>{entries.forEach(entry=>{if(entry.isIntersecting){const img=entry.target;img.src=img.dataset.src||img.src;img.classList.remove('lazy');observer.unobserve(img);}});});images.forEach(img=>imageObserver.observe(img));});</script>
     
         <!-- Image Performance Optimization -->
         <script>
@@ -1168,5 +1237,196 @@
             }).observe({entryTypes: ['paint']});
         });
     </script>
+
+    <script>
+    (function(){
+        const unitPrice = 1600; // base unit price in NGN
+        const qtyInput = document.getElementById('bagQuantity');
+        const totalEl = document.getElementById('totalPrice');
+        const discountWrap = document.getElementById('discountedPrice');
+        const discountPriceEl = document.getElementById('discountPrice');
+
+        function formatNaira(n){
+            return n.toLocaleString('en-NG');
+        }
+
+        function updatePrice(){
+            if(!qtyInput) return;
+            const qty = parseInt(qtyInput.value, 10) || 0;
+            const total = qty * unitPrice;
+            totalEl.textContent = formatNaira(total);
+            if(qty >= 200){
+                const discounted = Math.round(total * 0.9);
+                discountWrap.style.display = 'inline-block';
+                discountPriceEl.textContent = formatNaira(discounted);
+            } else {
+                discountWrap.style.display = 'none';
+                discountPriceEl.textContent = '0';
+            }
+        }
+
+        if(qtyInput){
+            qtyInput.addEventListener('input', updatePrice);
+            // initial update
+            updatePrice();
+        }
+    })();
+    </script>
+    <script>
+    // Mockup modal handlers: lazy-load iframe and manage open/close
+    (function(){
+        const openBtn = document.getElementById('openMockup');
+        const modal = document.getElementById('mockupModal');
+        const iframe = document.getElementById('mockupFrame');
+        const closeBtn = document.getElementById('closeMockup');
+        if(openBtn && modal){
+            openBtn.addEventListener('click', function(){
+                // open inline modal (no iframe)
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            });
+            // listen for iframe requests to close modal (Escape key inside iframe)
+            window.addEventListener('message', function(ev){
+                try{
+                    if(ev.data && ev.data.type === 'mockup-close'){
+                        modal.style.display = 'none';
+                        iframe.src = 'about:blank';
+                        document.body.style.overflow = '';
+                    }
+                }catch(e){}
+            });
+        }
+        if(closeBtn && modal && iframe){
+            closeBtn.addEventListener('click', function(){
+                modal.style.display = 'none';
+                document.body.style.overflow = '';
+            });
+        }
+        // close when clicking outside content
+        if(modal){
+            modal.addEventListener('click', function(e){
+                if(e.target === modal){
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+    })();
+    </script>
+    <script>
+    // Inline mockup modal composition logic (basic, client-side fallback)
+    (function(){
+        const modal = document.getElementById('mockupModal');
+        const upload = document.getElementById('modalUpload');
+        const promptInput = document.getElementById('mockupPrompt');
+        const tplSelect = document.getElementById('modalTpl');
+        const genBtn = document.getElementById('generateMockup');
+        const downloadBtn = document.getElementById('downloadMockup');
+        const preview = document.getElementById('modalPreviewArea');
+
+        function createTemplateSVG(name){
+            const ns = 'http://www.w3.org/2000/svg';
+            const svg = document.createElementNS(ns,'svg');
+            svg.setAttribute('width','720'); svg.setAttribute('height','640'); svg.setAttribute('viewBox','0 0 720 640');
+            const defs = document.createElementNS(ns,'defs');
+            const clip = document.createElementNS(ns,'clipPath'); clip.setAttribute('id','mclip');
+            const rect = document.createElementNS(ns,'rect'); rect.setAttribute('x','160');rect.setAttribute('y','120');rect.setAttribute('width','400');rect.setAttribute('height','400');rect.setAttribute('rx','8');
+            clip.appendChild(rect); defs.appendChild(clip); svg.appendChild(defs);
+
+            if(name==='paperbag'){
+                const bag = document.createElementNS(ns,'rect'); bag.setAttribute('x','120');bag.setAttribute('y','80');bag.setAttribute('width','480');bag.setAttribute('height','480');bag.setAttribute('fill','#fff');bag.setAttribute('rx','6');svg.appendChild(bag);
+            } else if(name==='tshirt'){
+                const shirt = document.createElementNS(ns,'rect'); shirt.setAttribute('x','160');shirt.setAttribute('y','120');shirt.setAttribute('width','400');shirt.setAttribute('height','400');shirt.setAttribute('fill','#fff');svg.appendChild(shirt);
+            } else if(name==='mug'){
+                const mug = document.createElementNS(ns,'rect'); mug.setAttribute('x','160');mug.setAttribute('y','200');mug.setAttribute('width','320');mug.setAttribute('height','240');mug.setAttribute('fill','#fff');svg.appendChild(mug);
+            } else {
+                const poster = document.createElementNS(ns,'rect'); poster.setAttribute('x','120');poster.setAttribute('y','80');poster.setAttribute('width','480');poster.setAttribute('height','480');poster.setAttribute('fill','#fff');svg.appendChild(poster);
+            }
+            const img = document.createElementNS(ns,'image'); img.setAttribute('id','mDesign'); img.setAttribute('x','160'); img.setAttribute('y','120'); img.setAttribute('width','400'); img.setAttribute('height','400'); img.setAttribute('clip-path','url(#mclip)'); svg.appendChild(img);
+            return svg;
+        }
+
+        function applyPromptTweaks(canvas, prompt){
+            const ctx = canvas.getContext('2d');
+            const p = (prompt||'').toLowerCase();
+            if(p.includes('vintage') || p.includes('sepia')){
+                ctx.fillStyle = 'rgba(112,66,20,0.06)'; ctx.fillRect(0,0,canvas.width,canvas.height);
+            }
+            if(p.includes('grunge') || p.includes('distressed')){
+                const imgData = ctx.getImageData(0,0,canvas.width,canvas.height);
+                for(let i=0;i<imgData.data.length;i+=4){ imgData.data[i] = imgData.data[i] + (Math.random()*24-12); }
+                ctx.putImageData(imgData,0,0);
+            }
+            if(p.includes('gloss') || p.includes('high gloss')){
+                const g = ctx.createLinearGradient(0,0,0,canvas.height/2);
+                g.addColorStop(0,'rgba(255,255,255,0.28)'); g.addColorStop(1,'rgba(255,255,255,0)');
+                ctx.fillStyle = g; ctx.fillRect(0,0,canvas.width,canvas.height/2);
+            }
+        }
+
+        function svgToPng(svgEl, cb){
+            const serializer = new XMLSerializer(); const s = serializer.serializeToString(svgEl);
+            const blob = new Blob([s], {type:'image/svg+xml;charset=utf-8'});
+            const url = URL.createObjectURL(blob);
+            const img = new Image(); img.onload = ()=>{ const c = document.createElement('canvas'); c.width=svgEl.viewBox.baseVal.width; c.height=svgEl.viewBox.baseVal.height; const ctx=c.getContext('2d'); ctx.fillStyle='#f0f3f9'; ctx.fillRect(0,0,c.width,c.height); ctx.drawImage(img,0,0); URL.revokeObjectURL(url); cb(c); }; img.onerror = ()=>{ URL.revokeObjectURL(url); cb(null); }; img.src = url;
+        }
+
+        if(genBtn){
+            genBtn.addEventListener('click', async function(){
+                const f = upload.files && upload.files[0];
+                const prompt = promptInput.value || '';
+                const tpl = tplSelect.value || 'paperbag';
+                const useAI = document.getElementById('useAI') && document.getElementById('useAI').checked;
+                if(!f){ alert('Please upload your design first.'); return; }
+
+                if(useAI){
+                    // send to server proxy which calls the external image-edit API
+                    try{
+                        genBtn.disabled = true; genBtn.textContent = 'Generating...';
+                        const form = new FormData(); form.append('image', f); form.append('prompt', prompt); form.append('template', tpl);
+                        const apiEndpoint = (location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? 'http://localhost:3001/api/edit-image' : '/api/edit-image';
+                        const resp = await fetch(apiEndpoint, { method: 'POST', body: form });
+                        genBtn.disabled = false; genBtn.textContent = 'Generate';
+                        if(!resp.ok){ const txt = await resp.text(); alert('AI edit failed: '+txt); return; }
+                        const blob = await resp.blob();
+                        const url = URL.createObjectURL(blob);
+                        const img = new Image(); img.onload = ()=>{ preview.innerHTML=''; preview.appendChild(img); URL.revokeObjectURL(url); };
+                        img.src = url;
+                    }catch(err){ genBtn.disabled = false; genBtn.textContent = 'Generate'; alert('AI request failed. Check server config.'); }
+                    return;
+                }
+
+                // fallback: local composite + prompt tweaks
+                const url = URL.createObjectURL(f);
+                const img = new Image(); img.onload = ()=>{
+                    const svg = createTemplateSVG(tpl);
+                    const svgImg = svg.querySelector('#mDesign');
+                    svgImg.setAttributeNS('http://www.w3.org/1999/xlink','href', url);
+                    svgToPng(svg, function(canvas){
+                        if(!canvas){ alert('Preview failed.'); return; }
+                        applyPromptTweaks(canvas, prompt);
+                        preview.innerHTML = ''; preview.appendChild(canvas);
+                        URL.revokeObjectURL(url);
+                    });
+                }; img.onerror = ()=>{ alert('Could not load image.'); };
+                img.src = url;
+            });
+        }
+
+        if(downloadBtn){
+            downloadBtn.addEventListener('click', function(){
+                const cvs = preview.querySelector('canvas');
+                const img = preview.querySelector('img');
+                if(cvs){ const a = document.createElement('a'); a.href = cvs.toDataURL('image/png'); a.download = 'mockup.png'; a.click(); return; }
+                if(img){ // draw image to canvas to force png download
+                    const c = document.createElement('canvas'); c.width = img.naturalWidth || 720; c.height = img.naturalHeight || 640; const ctx = c.getContext('2d'); ctx.drawImage(img,0,0,c.width,c.height); const a = document.createElement('a'); a.href = c.toDataURL('image/png'); a.download = 'mockup.png'; a.click(); return; }
+                alert('No generated mockup to download.');
+            });
+        }
+
+        const demo = document.getElementById('applyFilterDemo'); if(demo) demo.addEventListener('click', ()=>{ promptInput.value = 'photoreal, soft shadow, high gloss'; });
+    })();
+    </script>
 </body></html>
+
 
