@@ -293,7 +293,8 @@
     </style>
     <link rel="stylesheet" href="website-protection.css">
     <script src="website-protection.js"></script>
-    </head>
+        <link rel="stylesheet" href="assets/discount.css">
+</head>
     <body>
         <!-- Header -->
         <header class="navbar-light navbar-sticky header-static">
@@ -489,7 +490,7 @@
                                     <label for="quantity">
                                         Quantity *
                                     </label>
-                                    <select id="quantity" name="quantity" required>
+                                    <select id="quantity" name="quantity" required data-unit-price="1380">
                                         <option value="">
                                             Select Quantity
                                         </option>
@@ -1017,8 +1018,12 @@
             }).observe({entryTypes: ['paint']});
         });
     </script>
+    <script src="assets/discount.js" defer></script>
 </body>
 </html>
+
+
+
 
 
 

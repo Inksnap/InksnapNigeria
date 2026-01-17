@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mockup Generator</title>
+  <style>
+    :root{--bg:#0b1221;--panel:#0f1724;--muted:#9aa4b2;--accent:#2b8cff;--surface:#0b1221}
+    html,body{height:100%}
+    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;margin:0;background:linear-gradient(180deg,#0b1221 0%, #071025 100%);color:#e6eef8;display:flex;align-items:center;justify-content:center;padding:20px}
+    .container{width:100%;height:100vh;background:transparent;display:flex;flex-direction:column}
+    .sidebar{display:none}
+    .header{padding:18px 20px;border-bottom:1px solid rgba(255,255,255,0.03);display:flex;align-items:center;gap:12px}
+    .title{font-size:20px;font-weight:700;color:#fff}
+    label{display:block;font-size:13px;margin:12px 0 6px;color:var(--muted)}
+    input[type=file]{display:block;background:transparent;color:inherit}
+    .template-list button{display:block;width:100%;text-align:left;padding:10px;margin:8px 0;border-radius:8px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:#dfe7ee;cursor:pointer}
+    .template-list button:hover{background:rgba(255,255,255,0.02)}
+    .note{font-size:13px;color:var(--muted);margin-top:10px}
+    .range{width:100%;appearance:none;height:10px;border-radius:999px;background:linear-gradient(90deg,var(--accent),#e06d6d)}
+    input[type=range]::-webkit-slider-thumb{appearance:none;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.4)}
+    .actions{display:flex;gap:8px;margin-top:12px}
+    .btn{background:var(--accent);color:#fff;padding:10px 14px;border-radius:999px;border:none;cursor:pointer;box-shadow:0 6px 18px rgba(43,140,255,0.18)}
+    .btn.secondary{background:transparent;color:#cfe3ff;border:1px solid rgba(255,255,255,0.06);box-shadow:none}
+    .preview-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:24px}
+    .preview-card{width:840px;max-width:92vw;height:68vh;max-height:820px;background:linear-gradient(180deg,#eef4fb 0%,#ffffff 100%);border-radius:12px;padding:12px;box-shadow:0 12px 30px rgba(2,6,23,0.3);overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .ready-msg{font-size:28px;color:#cbd5e1}
+    .bottom-bar{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;background:rgba(10,12,15,0.6);backdrop-filter:blur(6px);border-radius:999px;padding:10px 14px;display:flex;gap:10px;align-items:center;box-shadow:0 8px 30px rgba(2,6,23,0.6);z-index:40}
+    .bar-input{min-width:420px;max-width:70vw;background:transparent;border:none;color:#e6eef8;padding:8px 12px;font-size:15px}
+    .bar-btn{background:transparent;border:none;color:#cfe3ff;padding:8px;border-radius:8px;cursor:pointer}
+    .tpl-select{background:rgba(255,255,255,0.03);color:#e6eef8;border:1px solid rgba(255,255,255,0.04);padding:6px 10px;border-radius:8px}
+    .svg-container{width:100%;height:100%}
+    /* compact controls look */
+    .small{padding:6px 8px;font-size:13px}
+  </style>
+</head>
+  <body>
+  <div class="container" role="dialog" aria-label="Mockup generator">
+    <input id="artUpload" type="file" accept="image/*" style="display:none">
+    <div class="preview-wrap">
+      <div class="preview-card" aria-live="polite">
+        <div id="readyMsg" class="ready-msg">Ready when you are.</div>
+        <div class="svg-container" id="previewArea" style="display:none"></div>
+      </div>
+    </div>
+
+    <!-- Bottom input bar similar to ChatGPT UI -->
+    <div class="bottom-bar" role="toolbar" aria-label="Mockup controls">
+      <button id="quickUploadBtn" class="bar-btn" title="Upload design">＋</button>
+      <input class="bar-input" id="barInput" placeholder="Upload design or choose a template" aria-label="Mockup input">
+      <select id="tplSelect" class="tpl-select" aria-label="Choose template">
+        <option value="poster">Poster</option>
+        <option value="tshirt">T-Shirt</option>
+        <option value="mug">Mug</option>
+        <option value="paperbag">Paper Bag</option>
+      </select>
+      <button id="micBtn" class="bar-btn" title="Voice">🎤</button>
+      <button id="download" class="bar-btn" title="Download mockup">⬇️</button>
+    </div>
+  </div>
+
+  <script>
+    // Basic SVG-based mockup generator. Uses masked <image> inside SVG templates for realistic placement.
+    const previewArea = document.getElementById('previewArea');
+    let currentTpl = 'poster';
+    let artImage = null;
+
+    function createTemplate(name){
+      const ns = 'http://www.w3.org/2000/svg';
+      const svg = document.createElementNS(ns,'svg');
+      svg.setAttribute('width','720');
+      svg.setAttribute('height','640');
+      svg.setAttribute('viewBox','0 0 720 640');
+
+      // defs with a mask/clip for the design area and a subtle lighting overlay
+      const defs = document.createElementNS(ns,'defs');
+
+      const mask = document.createElementNS(ns,'clipPath');
+      mask.setAttribute('id','designClip');
+
+      const designArea = document.createElementNS(ns,'rect');
+      designArea.setAttribute('x', '160');
+      designArea.setAttribute('y', '120');
+      designArea.setAttribute('width','400');
+      designArea.setAttribute('height','400');
+      designArea.setAttribute('rx','8');
+      mask.appendChild(designArea);
+      defs.appendChild(mask);
+
+      // lighting overlay
+      const gloss = document.createElementNS(ns,'linearGradient');
+      gloss.setAttribute('id','gloss');
+      gloss.setAttribute('x1','0');gloss.setAttribute('y1','0');gloss.setAttribute('x2','0');gloss.setAttribute('y2','1');
+      const stop1 = document.createElementNS(ns,'stop'); stop1.setAttribute('offset','0'); stop1.setAttribute('stop-color','#fff'); stop1.setAttribute('stop-opacity','0.22');
+      const stop2 = document.createElementNS(ns,'stop'); stop2.setAttribute('offset','1'); stop2.setAttribute('stop-color','#fff'); stop2.setAttribute('stop-opacity','0');
+      gloss.appendChild(stop1); gloss.appendChild(stop2);
+      defs.appendChild(gloss);
+
+      svg.appendChild(defs);
+
+      // background product illustrations
+      if(name==='poster'){
+        const bg = document.createElementNS(ns,'rect');
+        bg.setAttribute('x','120');bg.setAttribute('y','80');bg.setAttribute('width','480');bg.setAttribute('height','480');bg.setAttribute('fill','#fff');bg.setAttribute('stroke','#cbd6ef');bg.setAttribute('rx','4');
+        svg.appendChild(bg);
+      } else if(name==='tshirt'){
+        const shirt = document.createElementNS(ns,'path');
+        shirt.setAttribute('d','M200 80 Q180 90 170 120 Q140 160 180 200 L180 520 Q180 540 220 540 L500 540 Q540 540 540 520 L540 200 Q600 160 570 120 Q560 90 540 80 Q470 110 360 110 Q250 110 200 80 Z');
+        shirt.setAttribute('fill','#f8f9fb'); shirt.setAttribute('stroke','#dbe6f6');
+        svg.appendChild(shirt);
+      } else if(name==='mug'){
+        const mug = document.createElementNS(ns,'g');
+        const body = document.createElementNS(ns,'rect'); body.setAttribute('x','200');body.setAttribute('y','180');body.setAttribute('width','320');body.setAttribute('height','260');body.setAttribute('rx','28');body.setAttribute('fill','#fff');body.setAttribute('stroke','#d6e1f9');
+        mug.appendChild(body);
+        const handle = document.createElementNS(ns,'path'); handle.setAttribute('d','M520 220 Q580 300 520 380'); handle.setAttribute('stroke','#d6e1f9'); handle.setAttribute('stroke-width','18'); handle.setAttribute('fill','none');
+        mug.appendChild(handle);
+        svg.appendChild(mug);
+      } else if(name==='paperbag'){
+        const bag = document.createElementNS(ns,'path');
+        bag.setAttribute('d','M200 120 L520 120 Q540 120 548 140 L580 440 Q582 460 560 480 L160 480 Q140 460 142 440 L174 140 Q182 120 200 120 Z');
+        bag.setAttribute('fill','#fff'); bag.setAttribute('stroke','#dcdfe9');
+        svg.appendChild(bag);
+      }
+
+      // the design image (initially empty)
+      const designImage = document.createElementNS(ns,'image');
+      designImage.setAttribute('id','designImage');
+      designImage.setAttribute('x','160'); designImage.setAttribute('y','120'); designImage.setAttribute('width','400'); designImage.setAttribute('height','400');
+      designImage.setAttribute('clip-path','url(#designClip)');
+      designImage.setAttribute('preserveAspectRatio','xMidYMid meet');
+      svg.appendChild(designImage);
+
+      // gloss overlay to add realism
+      const glossRect = document.createElementNS(ns,'rect');
+      glossRect.setAttribute('x','160');glossRect.setAttribute('y','120');glossRect.setAttribute('width','400');glossRect.setAttribute('height','400');glossRect.setAttribute('fill','url(#gloss)');glossRect.setAttribute('pointer-events','none');glossRect.setAttribute('rx','8');
+      svg.appendChild(glossRect);
+
+      return svg;
+    }
+
+    function render(){
+      const readyMsg = document.getElementById('readyMsg');
+      previewArea.innerHTML='';
+      const svg = createTemplate(currentTpl);
+      previewArea.appendChild(svg);
+      // if artImage present, set it
+      if(artImage){
+        // hide ready message, show previewArea
+        if(readyMsg) readyMsg.style.display='none';
+        previewArea.style.display='block';
+        const im = svg.querySelector('#designImage');
+        im.setAttributeNS('http://www.w3.org/1999/xlink','href',artImage.src);
+        im.style.transformOrigin='160px 120px';
+        im.style.cursor='grab';
+        // apply current sliders if present
+        const opacityEl = document.getElementById('opacity');
+        im.setAttribute('opacity', opacityEl ? opacityEl.value : 1);
+        setupDrag(im);
+      } else {
+        // no image: show message and hide preview
+        if(readyMsg) readyMsg.style.display='block';
+        previewArea.style.display='none';
+      }
+    }
+
+    // drag + transform state
+    function setupDrag(imgEl){
+      let dragging=false, startX=0, startY=0, x=parseFloat(imgEl.getAttribute('x')), y=parseFloat(imgEl.getAttribute('y'));
+      imgEl.addEventListener('pointerdown', e=>{ dragging=true; imgEl.setPointerCapture(e.pointerId); startX=e.clientX; startY=e.clientY; imgEl.style.cursor='grabbing';});
+      window.addEventListener('pointermove', e=>{ if(!dragging) return; const dx=e.clientX-startX; const dy=e.clientY-startY; imgEl.setAttribute('x', x+dx); imgEl.setAttribute('y', y+dy); });
+      window.addEventListener('pointerup', e=>{ if(!dragging) return; dragging=false; imgEl.releasePointerCapture(e.pointerId); imgEl.style.cursor='grab'; x=parseFloat(imgEl.getAttribute('x')); y=parseFloat(imgEl.getAttribute('y')); });
+
+      // wire sliders
+      const scale = document.getElementById('scale');
+      const rotate = document.getElementById('rotate');
+      const opacity = document.getElementById('opacity');
+      function applyTransform(){
+        const s = scale.value; const r = rotate.value;
+        const cx = parseFloat(imgEl.getAttribute('x')) + parseFloat(imgEl.getAttribute('width'))/2;
+        const cy = parseFloat(imgEl.getAttribute('y')) + parseFloat(imgEl.getAttribute('height'))/2;
+        imgEl.setAttribute('transform', `translate(${cx} ${cy}) rotate(${r}) scale(${s}) translate(${-cx} ${-cy})`);
+        imgEl.setAttribute('opacity', opacity.value);
+      }
+      scale.addEventListener('input', applyTransform);
+      rotate.addEventListener('input', applyTransform);
+      opacity.addEventListener('input', ()=>{imgEl.setAttribute('opacity', opacity.value)});
+    }
+
+    // file upload (hidden input triggered by bottom bar)
+    document.getElementById('artUpload').addEventListener('change', function(e){
+      const f = e.target.files && e.target.files[0];
+      if(!f) return;
+      const url = URL.createObjectURL(f);
+      const img = new Image(); img.onload = ()=>{ artImage = img; render(); URL.revokeObjectURL(url); };
+      img.src = url;
+    });
+
+    // bottom bar upload button
+    const quickUpload = document.getElementById('quickUploadBtn');
+    if(quickUpload){ quickUpload.addEventListener('click', ()=>{ document.getElementById('artUpload').click(); }); }
+
+    // template select in bottom bar
+    const tplSelect = document.getElementById('tplSelect');
+    if(tplSelect){ tplSelect.addEventListener('change', (e)=>{ currentTpl = e.target.value; render(); }); }
+
+    // (legacy) template buttons in hidden sidebar - keep for compatibility
+    document.querySelectorAll('.tpl').forEach(b=> b.addEventListener('click', ()=>{ currentTpl=b.dataset.tpl; render(); }));
+
+    // download: serialize SVG -> draw to canvas -> save PNG
+    document.getElementById('download').addEventListener('click', async ()=>{
+      const svg = previewArea.querySelector('svg');
+      if(!svg) return alert('Nothing to export');
+      const serializer = new XMLSerializer();
+      const source = serializer.serializeToString(svg);
+      const svgBlob = new Blob([source], {type:'image/svg+xml;charset=utf-8'});
+      const url = URL.createObjectURL(svgBlob);
+      const img = new Image();
+      img.onload = ()=>{
+        const canvas = document.createElement('canvas'); canvas.width=svg.viewBox.baseVal.width; canvas.height=svg.viewBox.baseVal.height;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#f0f3f9'; ctx.fillRect(0,0,canvas.width,canvas.height);
+        ctx.drawImage(img,0,0);
+        URL.revokeObjectURL(url);
+        const png = canvas.toDataURL('image/png');
+        const a = document.createElement('a'); a.href=png; a.download='mockup.png'; a.click();
+      };
+      img.src = url;
+    });
+
+    document.getElementById('reset').addEventListener('click', ()=>{ artImage=null; document.getElementById('artUpload').value=''; document.getElementById('scale').value=1; document.getElementById('rotate').value=0; document.getElementById('opacity').value=1; render(); });
+
+    // initial render
+    render();
+    // accessibility: allow Escape to close parent modal when embedded in iframe
+    window.addEventListener('keydown', (e)=>{
+      if(e.key === 'Escape' && window.parent){
+        try{ window.parent.postMessage({type:'mockup-close'}, '*'); }catch(err){}
+      }
+    });
+  </script>
+</body>
+</html>

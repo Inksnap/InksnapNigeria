@@ -80,7 +80,6 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.css"></noscript>
-        <link rel="stylesheet" href="assets/discount.css">
     
     <!-- Google tag (gtag.js) -->
     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-0HGEQLXGL4"></script>
@@ -545,7 +544,7 @@
                     </div>
                 </a>
                 <a href="tshirt-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/tshirt-printing/tshirt-printing-1.webp');" aria-label="T-shirt Printing Services in Lagos Nigeria - Custom T-shirt Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/tshirt-printing/round-neck-tshirt-printing-1.webp');" aria-label="T-shirt Printing Services in Lagos Nigeria - Custom T-shirt Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Round Neck T-shirts</h3>
                         <div class="price">NGN 7,647 <span class="price-unit">per one</span></div>
@@ -559,14 +558,14 @@
                     </div>
                 </a>
                 <a href="sticker-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/sticker-printing/sticker-printing-1.webp');" aria-label="Sticker Printing Services in Lagos Nigeria - Custom Sticker Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/label-sticker-printing/label-sticker-printing-1.webp');" aria-label="Sticker Printing Services in Lagos Nigeria - Custom Sticker Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Stickers</h3>
                         <div class="price">NGN 15,000 <span class="price-unit">per one</span></div>
                     </div>
                 </a>
                 <a href="invitations.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/invitations.webp');" aria-label="Wedding Invitation Printing Services in Lagos Nigeria - Premium Invitation Design"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/wedding-invitation-card-printing/wedding-invitation-card-printing-1.webp');" aria-label="Wedding Invitation Printing Services in Lagos Nigeria - Premium Invitation Design"></div>
                     <div class="product-info">
                         <h3 class="product-title">Wedding Invitations</h3>
                         <div class="price">NGN 30,000 <span class="price-unit">for 50 invitations</span></div>
@@ -580,21 +579,21 @@
                     </div>
                 </a>
                 <a href="notepad-jotter-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/notepad-jotter-printing.webp');" aria-label="Notepad Printing Services in Lagos Nigeria - Custom Notepad Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/notepad-jotter-printing/notepad-jotter-printing-1.webp');" aria-label="Notepad Printing Services in Lagos Nigeria - Custom Notepad Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Notepad & Jotter</h3>
                         <div class="price">NGN 5,500 <span class="price-unit">per one</span></div>
                     </div>
                 </a>
                 <a href="nylon-shopping-bag-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/nylon-shopping-bag-print.webp');" aria-label="Nylon1 Printing Services in Lagos Nigeria - Professional Nylon1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/nylon-shopping-bag-print/nylon-shopping-bag-print-2.webp');" aria-label="Nylon1 Printing Services in Lagos Nigeria - Professional Nylon1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Nylon Shopping Bag</h3>
                         <div class="price">NGN 28,000 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="pen-branding-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/pen-branding-printing.webp');" aria-label="Pen Branding Services in Lagos Nigeria - Custom Pen Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/pen-branding-printing/pen-branding-printing-1.webp');" aria-label="Pen Branding Services in Lagos Nigeria - Custom Pen Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Pen Branding</h3>
                         <div class="price">NGN 1,200 <span class="price-unit">per one</span></div>
@@ -615,56 +614,56 @@
                     </div>
                 </a>
                 <a href="a3-poster-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a3-poster-print/a3-poster-1.webp');" aria-label="A3poster1 Printing Services in Lagos Nigeria - Professional A3poster1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a3-poster-print/a3poster1.webp');" aria-label="A3poster1 Printing Services in Lagos Nigeria - Professional A3poster1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A3 Poster Print</h3>
                         <div class="price">NGN 35,000 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="a2-poster-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/product-1.png');" aria-label="A2 Poster Print 1 Printing Services in Lagos Nigeria - Professional A2 Poster Print 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/A2-poster/a2-poster-print-1.webp');" aria-label="A2 Poster Print 1 Printing Services in Lagos Nigeria - Professional A2 Poster Print 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A2 Poster Print</h3>
-                        <div class="price">NGN 633 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 80,000 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="a3-paper-bag-details.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a3-paper-bag-details/shopping-paper-bag-print-1.webp');" aria-label="A3 Paper Bag Details 1 Printing Services in Lagos Nigeria - Professional A3 Paper Bag Details 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a3-paper-bag-details/a3-paper-bag-details-1.webp');" aria-label="A3 Paper Bag Details 1 Printing Services in Lagos Nigeria - Professional A3 Paper Bag Details 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A3 Paper Bag</h3>
                         <div class="price">NGN 1,600 <span class="price-unit">per bag</span></div>
                     </div>
                 </a>
                 <a href="a4-notebook.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a4-notebook/a4-notebook-1.webp');" aria-label="Notebook Printing 1 Printing Services in Lagos Nigeria - Professional Notebook Printing 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a4-notebook/notebook-printing-1.webp');" aria-label="Notebook Printing 1 Printing Services in Lagos Nigeria - Professional Notebook Printing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A4 Notebook</h3>
                         <div class="price">NGN 850 <span class="price-unit">per notebook</span></div>
                     </div>
                 </a>
                 <a href="a5flyer.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a5flyer/a5flyer-5.jpeg');" aria-label="A5 Flyer Printing Services in Lagos Nigeria - Professional Flyer Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a5flyer/a5flyer-2.webp');" aria-label="A5 Flyer Printing Services in Lagos Nigeria - Professional Flyer Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A5 Flyers</h3>
                         <div class="price">NGN 20,000 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="a6flyer.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a6flyer/a6flyer-5.webp');" aria-label="A6flyer 1 Printing Services in Lagos Nigeria - Professional A6flyer 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a6flyer/a6flyer-1.webp');" aria-label="A6flyer 1 Printing Services in Lagos Nigeria - Professional A6flyer 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A6 Flyers</h3>
                         <div class="price">NGN 15,000 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="advert-banner-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/advert-banner-print-1.webp');" aria-label="Advert Banner Print 1 Printing Services in Lagos Nigeria - Professional Advert Banner Print 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/advert-banner-print/advert-banner-print-1.webp');" aria-label="Advert Banner Print 1 Printing Services in Lagos Nigeria - Professional Advert Banner Print 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Advert Banner</h3>
                         <div class="price">NGN 15,500 <span class="price-unit">per banner</span></div>
                     </div>
                 </a>
                 <a href="banner-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/banner-printing.webp');" aria-label="Banner Printing 1 Printing Services in Lagos Nigeria - Professional Banner Printing 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/banner-printing/banner-printing-6.webp');" aria-label="Banner Printing 1 Printing Services in Lagos Nigeria - Professional Banner Printing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Banner Printing</h3>
                         <div class="price">NGN 15,000 <span class="price-unit">per banner</span></div>
@@ -692,199 +691,199 @@
                     </div>
                 </a>
                 <a href="canvas-prints.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/canvas-prints/canvas-prints-1.webp');" aria-label="Canvas Prints 1 Printing Services in Lagos Nigeria - Professional Canvas Prints 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/canvas-prints/canvas-prints-2.webp');" aria-label="Canvas Prints 1 Printing Services in Lagos Nigeria - Professional Canvas Prints 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Canvas Prints</h3>
-                        <div class="price">NGN 18,000 <span class="price-unit">per canvas</span></div>
+                        <div class="price">NGN 25,000 <span class="price-unit">per canvas</span></div>
                     </div>
                 </a>
                 <a href="custom-calendar-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/custom-calendar-printing/custom-calendar-printing-1.webp');" aria-label="Desk Table Calendar Printing Services in Lagos Nigeria - Professional Calendar Design"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/custom-calendar-printing/alpi-wood-calendar-2013-fabio-faberi.webp');" aria-label="Desk Table Calendar Printing Services in Lagos Nigeria - Professional Calendar Design"></div>
                     <div class="product-info">
                         <h3 class="product-title">Custom Calendar</h3>
                         <div class="price">NGN 3,500 <span class="price-unit">per one</span></div>
                     </div>
                 </a>
                 <a href="envelope-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/envelope-printing.webp');" aria-label="Envelop Printing Services in Lagos Nigeria - Professional Envelop Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/envelope-printing/envelop.webp');" aria-label="Envelop Printing Services in Lagos Nigeria - Professional Envelop Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Envelope Printing</h3>
                         <div class="price">NGN 120,000 <span class="price-unit">per 100 envelopes</span></div>
                     </div>
                 </a>
                 <a href="event-backdrop-banner-print-in-lagos-nigeria.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/event-backdrop-banner-print-in-lagos-nigeria.webp');" aria-label="Eventbackdrop Printing Services in Lagos Nigeria - Professional Eventbackdrop Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/event-backdrop-banner-print-in-lagos-nigeria/backdrop2.webp');" aria-label="Eventbackdrop Printing Services in Lagos Nigeria - Professional Eventbackdrop Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Event Backdrop Banner</h3>
-                        <div class="price">NGN 40,500 <span class="price-unit">per copy</span></div>
+                        <div class="price">NGN 40,500.00 <span class="price-unit">per copy</span></div>
                     </div>
                 </a>
                 <a href="face-cap-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/face-cap-printing.webp');" aria-label="Face Cap Printing 1 Printing Services in Lagos Nigeria - Professional Face Cap Printing 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/face-cap-printing/face-cap-printing-3.webp');" aria-label="Face Cap Printing 1 Printing Services in Lagos Nigeria - Professional Face Cap Printing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Face Cap Printing</h3>
-                        <div class="price">NGN 4,000 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 4,025 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="hard-cover-jotter-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/hard-cover-jotter-print.webp');" aria-label="Hard Cover Jotter Print 1 Printing Services in Lagos Nigeria - Professional Hard Cover Jotter Print 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/hard-cover-jotter-print/hard-cover-jotter-print-1.webp');" aria-label="Hard Cover Jotter Print 1 Printing Services in Lagos Nigeria - Professional Hard Cover Jotter Print 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Hard Cover Jotter</h3>
-                        <div class="price">NGN 1,800 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 5,175 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="keyholder-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/keyholder-printing.webp');" aria-label="Keyholder Printing 1 Printing Services in Lagos Nigeria - Professional Keyholder Printing 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/keyholder-printing/keyholder-printing-1.webp');" aria-label="Keyholder Printing 1 Printing Services in Lagos Nigeria - Professional Keyholder Printing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Keyholder Printing</h3>
-                        <div class="price">NGN 2,500 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 3,220 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="lanyard-idcard-rope-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/lanyard-idcard-rope-print.webp');" aria-label="Lanyard Idcard Rope Print 1 Printing Services in Lagos Nigeria - Professional Lanyard Idcard Rope Print 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/lanyard-idcard-rope-print/lanyard-idcard-rope-print-1.webp');" aria-label="Lanyard Idcard Rope Print 1 Printing Services in Lagos Nigeria - Professional Lanyard Idcard Rope Print 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Lanyard ID Card</h3>
-                        <div class="price">NGN 2,500 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 1,725 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="letterhead-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/letterhead-printing/letterhead-printing-1.webp');" aria-label="Letterhead Printing Services in Lagos Nigeria - Professional Letterhead Design"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/letterhead-printing/letter-head-printing-1.webp');" aria-label="Letterhead Printing Services in Lagos Nigeria - Professional Letterhead Design"></div>
                     <div class="product-info">
                         <h3 class="product-title">Letterhead Printing</h3>
-                        <div class="price">NGN 20,000 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 20,700 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="magic-mug-print.html" class="product-card">
                     <div class="product-image" style="background-image: url('assets/images/products/All-Products/magic-mug-print/magic-mug-print-1.webp');" aria-label="Magic Mug Print 1 Printing Services in Lagos Nigeria - Professional Magic Mug Print 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Magic Mug Print</h3>
-                        <div class="price">NGN 5,000 <span class="price-unit">per one</span></div>
+                        <div class="price">NGN 7,500 <span class="price-unit">per one</span></div>
                     </div>
                 </a>
                 <a href="menu-card-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/menu-card-printing.webp');" aria-label="A5menu Card Printing 1 Printing Services in Lagos Nigeria - Professional A5menu Card Printing 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/menu-card-printing/a5menu-card-printing-1.webp');" aria-label="A5menu Card Printing 1 Printing Services in Lagos Nigeria - Professional A5menu Card Printing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Menu Card Printing</h3>
-                        <div class="price">NGN 546 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 40,250 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="polo-shirt-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/polo-shirt-printing/polo-shirt-printing-1.webp');" aria-label="Button Down Polo T Shirt Printing 1 Printing Services in Lagos Nigeria - Professional Button Down Polo T Shirt Printing 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/polo-shirt-printing/polo-tshirt-print-1.webp');" aria-label="Button Down Polo T Shirt Printing 1 Printing Services in Lagos Nigeria - Professional Button Down Polo T Shirt Printing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Polo Shirt Printing</h3>
-                        <div class="price">NGN 7,500 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 9,775 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="tote-bag-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/tote-bag-printing/tote-bag-printing-5.webp');" aria-label="Tote Bag Printing 1 Printing Services in Lagos Nigeria - Professional Tote Bag Printing 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/tote-bag-printing/tote-bag-printing-1.webp');" aria-label="Tote Bag Printing 1 Printing Services in Lagos Nigeria - Professional Tote Bag Printing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Tote Bag Printing</h3>
-                        <div class="price">NGN 4,643 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 3,680 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="vehicle-branding.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/vehicle-branding/vehicle-branding-5.webp');" aria-label="Vehicle Branding 1 Printing Services in Lagos Nigeria - Professional Vehicle Branding 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/vehicle-branding/vehicle-branding-1.webp');" aria-label="Vehicle Branding 1 Printing Services in Lagos Nigeria - Professional Vehicle Branding 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Vehicle Branding</h3>
-                        <div class="price">NGN 230,575 <span class="price-unit">per vehicle</span></div>
+                        <div class="price">NGN 97,750 <span class="price-unit">per vehicle</span></div>
                     </div>
                 </a>
                 <a href="wedding-banner-prints.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/wedding-banner-prints/wedding-banner-prints-5.webp');" aria-label="Wedding Banner Prints 1 Printing Services in Lagos Nigeria - Professional Wedding Banner Prints 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/wedding-banner-prints/wedding-banner-prints-1.webp');" aria-label="Wedding Banner Prints 1 Printing Services in Lagos Nigeria - Professional Wedding Banner Prints 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Wedding Banner Prints</h3>
-                        <div class="price">NGN 189,750 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 59,800 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="advert-poster-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/advert-poster-print.webp');" aria-label="A3 Poster Print 1 Printing Services in Lagos Nigeria - Professional A3 Poster Print 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a1-poster/a3-poster-print-1.webp');" aria-label="A3 Poster Print 1 Printing Services in Lagos Nigeria - Professional A3 Poster Print 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A1 Poster Print</h3>
-                        <div class="price">NGN 30,000 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 20,700 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="a2-wall-calendar-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a2-wall-calendar-print.html/a2-wall-calendar-print-1.webp');" aria-label="Desk Table Calendar Printing Services in Lagos Nigeria - Professional Calendar Design"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/business-cards/business-cards-1.webp');" aria-label="Desk Table Calendar Printing Services in Lagos Nigeria - Professional Calendar Design"></div>
                     <div class="product-info">
                         <h3 class="product-title">A2 Wall Calendar</h3>
-                        <div class="price">NGN 6,500 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 32,200 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="a3-wall-calendar-print.html" class="product-card">
                     <div class="product-image" style="background-image: url('assets/images/products/All-Products/a3-wall-calendar-print/a3-wall-calendar-print-1.webp');" aria-label="Desk Table Calendar Printing Services in Lagos Nigeria - Professional Calendar Design"></div>
                     <div class="product-info">
                         <h3 class="product-title">A3 Wall Calendar</h3>
-                        <div class="price">NGN 3,500 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 25,300 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="paper-bag-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/paper-bag-printing.webp');" aria-label="A4paper4 Printing Services in Lagos Nigeria - Professional A4paper4 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a4 paper bag/a4paper4.webp');" aria-label="A4paper4 Printing Services in Lagos Nigeria - Professional A4paper4 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A4 Paper Bag</h3>
-                        <div class="price">NGN 1,200 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 43,700 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="a4-poster-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a4-poster-print/poster5.png');" aria-label="A4poster1 Printing Services in Lagos Nigeria - Professional A4poster1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a4-poster-print/a4poster1.webp');" aria-label="A4poster1 Printing Services in Lagos Nigeria - Professional A4poster1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A4 Poster Print</h3>
-                        <div class="price">NGN 30,000 <span class="price-unit">per one</span></div>
+                        <div class="price">NGN 7,500 <span class="price-unit">per one</span></div>
                     </div>
                 </a>
                 <a href="paper-bag-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/paper-bag-printing.webp');" aria-label="A5 Paper Bag Printing Services in Lagos Nigeria - Professional Paper Bag Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/business-cards/business-cards-1.webp');" aria-label="A5 Paper Bag Printing Services in Lagos Nigeria - Professional Paper Bag Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A5 Paper Bag</h3>
-                        <div class="price">NGN 1,200 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 36,800 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="funeral-program-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/funeral-program-print.webp');" aria-label="A5funeral1 Printing Services in Lagos Nigeria - Professional A5funeral1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a5funeral/a5funeral1.webp');" aria-label="A5funeral1 Printing Services in Lagos Nigeria - Professional A5funeral1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A5 Funeral Program</h3>
-                        <div class="price">NGN 3,500 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 51,750 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="menu-card-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/menu-card-printing.webp');" aria-label="A5menu Card Printing 1 Printing Services in Lagos Nigeria - Professional A5menu Card Printing 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a5menu-card-printing/a5menu-card-printing-1.webp');" aria-label="A5menu Card Printing 1 Printing Services in Lagos Nigeria - Professional A5menu Card Printing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A5 Menu Card</h3>
-                        <div class="price">NGN 546 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 36,800 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="paper-bag-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/paper-bag-printing.webp');" aria-label="A5paper1 Printing Services in Lagos Nigeria - Professional A5paper1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a5paperbag/a5paper1.webp');" aria-label="A5paper1 Printing Services in Lagos Nigeria - Professional A5paper1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A5 Paper Bag</h3>
-                        <div class="price">NGN 1,200 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 32,200 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="advert-poster-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/advert-poster-print.webp');" aria-label="Advert Poster Print 1 Printing Services in Lagos Nigeria - Professional Advert Poster Print 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/advert-poster-print/advert-poster-print-1.webp');" aria-label="Advert Poster Print 1 Printing Services in Lagos Nigeria - Professional Advert Poster Print 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Advert Poster Print</h3>
-                        <div class="price">NGN 30,000 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 17,250 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="backdrop-banner-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/backdrop-banner-print/backdrop-banner-print-1.webp');" aria-label="Backdrop Banner Print 3 Printing Services in Lagos Nigeria - Professional Backdrop Banner Print 3 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/backdrop-banner-print/backdrop-banner-print-3.webp');" aria-label="Backdrop Banner Print 3 Printing Services in Lagos Nigeria - Professional Backdrop Banner Print 3 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Backdrop Banner Print</h3>
-                        <div class="price">NGN 145,000 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 66,700 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="bifold-product.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/bifold-product.webp');" aria-label="Bifold Product 1 Printing Services in Lagos Nigeria - Professional Bifold Product 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/bifold-product/bifold-product-1.webp');" aria-label="Bifold Product 1 Printing Services in Lagos Nigeria - Professional Bifold Product 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Bifold Product</h3>
-                        <div class="price">NGN 600 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 48,300 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="book-publishing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/softcover.webp');" aria-label="Book Publishing 1 Printing Services in Lagos Nigeria - Professional Book Publishing 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/book-publishing/book-publishing-1.webp');" aria-label="Book Publishing 1 Printing Services in Lagos Nigeria - Professional Book Publishing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Book Publishing</h3>
-                        <div class="price">NGN 2,600 <span class="price-unit">per book</span></div>
+                        <div class="price">NGN 97,750 <span class="price-unit">per book</span></div>
                     </div>
                 </a>
                 <a href="button-down-polo.html" class="product-card">
@@ -895,80 +894,80 @@
                     </div>
                 </a>
                 <a href="boxflyer.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/boxflyer/boxflyer.png?v=2');" aria-label="Boxflyer Printing Services in Lagos Nigeria - Professional Boxflyer Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/boxflyer/boxflyer.webp');" aria-label="Boxflyer Printing Services in Lagos Nigeria - Professional Boxflyer Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Box Flyer</h3>
-                        <div class="price">NGN 17,500 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 43,700 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="branded-bag-prints.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/a3bag1.webp');" aria-label="Branded Bag Prints 1 Printing Services in Lagos Nigeria - Professional Branded Bag Prints 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-bag-prints/branded-bag-print-1.webp');" aria-label="Branded Bag Prints 1 Printing Services in Lagos Nigeria - Professional Branded Bag Prints 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Branded Bag Prints</h3>
-                        <div class="price">NGN 2,200 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 40,250 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="branded-box-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/giftbox1.webp');" aria-label="Branded Box Printing 4 Printing Services in Lagos Nigeria - Professional Branded Box Printing 4 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-box-printing/branded-box-printing-4.webp');" aria-label="Branded Box Printing 4 Printing Services in Lagos Nigeria - Professional Branded Box Printing 4 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Branded Box Printing</h3>
-                        <div class="price">NGN 6,500 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 48,300 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="branded-gift-items-printing.html" class="product-card">
                     <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-1.webp');" aria-label="Branded Gift Items Printing 1 Printing Services in Lagos Nigeria - Professional Branded Gift Items Printing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Branded Gift Items</h3>
-                        <div class="price">NGN 800 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 28,750 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="custom-branded-wireless-mouse-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-mouse/branded-mouse-1.webp');" aria-label="Custom Branded Wireless Mouse Print 1 Printing Services in Lagos Nigeria - Professional Custom Branded Wireless Mouse Print 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-mouse/custom-branded-wireless-mouse-print-1.webp');" aria-label="Custom Branded Wireless Mouse Print 1 Printing Services in Lagos Nigeria - Professional Custom Branded Wireless Mouse Print 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Branded Mouse</h3>
-                        <div class="price">NGN 5,200 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 9,775 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="branded-mousepad-printing.html" class="product-card">
                     <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-mousepad-printing/branded-mousepad-printing-1.webp');" aria-label="Branded Mousepad Printing 1 Printing Services in Lagos Nigeria - Professional Branded Mousepad Printing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Branded Mousepad</h3>
-                        <div class="price">NGN 4,500 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 4,830 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="custom-branded-versity-jacket-print.html" class="product-card">
                     <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-Versity Jacket/custom-branded-versity-jacket-print-1.webp');" aria-label="Custom Branded Versity Jacket Print 1 Printing Services in Lagos Nigeria - Professional Custom Branded Versity Jacket Print 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Branded Versity Jacket</h3>
-                        <div class="price">NGN 24,500 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 17,825 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="brochure-company-profile-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/brochure-company-profile-printing.webp');" aria-label="Brochure Printing Services in Lagos Nigeria - Professional Brochure Design"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/brochure-company-profile-printing/catering-profile.webp');" aria-label="Brochure Printing Services in Lagos Nigeria - Professional Brochure Design"></div>
                     <div class="product-info">
                         <h3 class="product-title">Company Profile Brochure</h3>
-                        <div class="price">NGN 3,500 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 63,250 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="brochure-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/brochure-printing/brochure-printing-1.webp');" aria-label="Brochure Printing Services in Lagos Nigeria - Professional Brochure Design"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/brochure-printing/brochure-company-profile-printing-2.webp');" aria-label="Brochure Printing Services in Lagos Nigeria - Professional Brochure Design"></div>
                     <div class="product-info">
                         <h3 class="product-title">Brochure Printing</h3>
-                        <div class="price">NGN 665 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 51,750 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="burial-funeral-banner-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/burial-funeral-banner-printing.webp');" aria-label="Funeral Banner3 Printing Services in Lagos Nigeria - Professional Funeral Banner3 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/burial-funeral-banner-printing/funeral-banner3.webp');" aria-label="Funeral Banner3 Printing Services in Lagos Nigeria - Professional Funeral Banner3 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Funeral Banner Printing</h3>
-                        <div class="price">NGN 45,000 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 55,200 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="button-down-polo-t-shirt-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/button-down-polo-t-shirt-printing.webp');" aria-label="The Countdown Continues Rgv Zapata Elementary Uniforms Personalized Printing Services in Lagos Nigeria - Professional The Countdown Continues Rgv Zapata Elementary Uniforms Personalized Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/button-down-polo-t-shirt-printing/the-countdown-continues-rgv-zapata-elementary-uniforms-personalized.webp');" aria-label="The Countdown Continues Rgv Zapata Elementary Uniforms Personalized Printing Services in Lagos Nigeria - Professional The Countdown Continues Rgv Zapata Elementary Uniforms Personalized Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Button Down Polo T-shirt</h3>
-                        <div class="price">NGN 22,000 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 10,120 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
                 <a href="#" class="product-card">
@@ -986,24 +985,24 @@
                     </div>
                 </a>
                 <a href="branded-box-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/giftbox1.webp');" aria-label="Collapsible Box Printing Services in Lagos Nigeria - Professional Box Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/collapsible-box/collaps.webp');" aria-label="Collapsible Box Printing Services in Lagos Nigeria - Professional Box Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Collapsible Box</h3>
-                        <div class="price">NGN 6,500 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 40,250 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="collapsiblebox.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/collapsiblebox/collapsiblebox-5.webp');" aria-label="Collapsiblebox 1 Printing Services in Lagos Nigeria - Professional Collapsiblebox 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/collapsiblebox/collapsiblebox-1.webp');" aria-label="Collapsiblebox 1 Printing Services in Lagos Nigeria - Professional Collapsiblebox 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Collapsible Box (Premium)</h3>
-                        <div class="price">NGN 15,000 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 48,300 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="commemorative-achievement-medal-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/commemorative-achievement-medal-print.webp');" aria-label="Commemorative Achievement Medal Print 2 Printing Services in Lagos Nigeria - Professional Commemorative Achievement Medal Print 2 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/commemorative-achievement-medal-print/commemorative-achievement-medal-print-2.webp');" aria-label="Commemorative Achievement Medal Print 2 Printing Services in Lagos Nigeria - Professional Commemorative Achievement Medal Print 2 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Achievement Medal Print</h3>
-                        <div class="price">NGN 7,000 <span class="price-unit">per piece</span></div>
+                        <div class="price">NGN 9,775 <span class="price-unit">per piece</span></div>
                     </div>
                 </a>
             </div>
@@ -1031,14 +1030,14 @@
                     </div>
                 </a>
                 <a href="tshirt-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/tshirt-printing/tshirt-printing-1.webp');" aria-label="T-shirt Printing Services in Lagos Nigeria - Custom T-shirt Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/round-neck-tshirt-printing/round-neck-tshirt-printing-1.webp');" aria-label="T-shirt Printing Services in Lagos Nigeria - Custom T-shirt Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Round Neck T-shirts</h3>
-                        <div class="price">NGN 7,647 <span class="price-unit">per one</span></div>
+                        <div class="price">NGN 7,500 <span class="price-unit">per one</span></div>
                     </div>
                 </a>
                 <a href="mugs.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/Customized-mug-printing/Customized-mug-printing-1.webp');" aria-label="Branded Mug Printing Services in Lagos Nigeria - Custom Mug Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-mug-printing/branded-mug-printing-2.webp');" aria-label="Branded Mug Printing Services in Lagos Nigeria - Custom Mug Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Branded Mugs</h3>
                         <div class="price">NGN 4,000 <span class="price-unit">per piece</span></div>
@@ -1052,28 +1051,28 @@
                     </div>
                 </a>
                 <a href="flyers.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/flyers/flyers-5.webp');" aria-label="A5 Flyer Printing Services in Lagos Nigeria - Professional Flyer Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a5flyer/a5flyer-1.webp');" aria-label="A5 Flyer Printing Services in Lagos Nigeria - Professional Flyer Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">A5 Flyers</h3>
-                        <div class="price">NGN 25,000 <span class="price-unit">per 100</span></div>
+                        <div class="price">NGN 20,000 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="sticker-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/sticker-printing/sticker-printing-1.webp');" aria-label="Sticker Printing Services in Lagos Nigeria - Custom Sticker Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/label-sticker-printing/label-sticker-printing-1.webp');" aria-label="Sticker Printing Services in Lagos Nigeria - Custom Sticker Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Stickers</h3>
                         <div class="price">NGN 15,000 <span class="price-unit">per one</span></div>
                     </div>
                 </a>
                 <a href="nylon-shopping-bag-print.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/nylon-shopping-bag-print.webp');" aria-label="Nylon1 Printing Services in Lagos Nigeria - Professional Nylon1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/nylon-shopping-bag-print/nylon-shopping-bag-print-2.webp');" aria-label="Nylon1 Printing Services in Lagos Nigeria - Professional Nylon1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Nylon Shopping Bag</h3>
                         <div class="price">NGN 28,000 <span class="price-unit">per 100</span></div>
                     </div>
                 </a>
                 <a href="face-cap-printing.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/face-cap-printing.webp');" aria-label="Face Cap Printing 1 Printing Services in Lagos Nigeria - Professional Face Cap Printing 1 Design and Printing"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/face-cap-printing/face-cap-printing-1.webp');" aria-label="Face Cap Printing 1 Printing Services in Lagos Nigeria - Professional Face Cap Printing 1 Design and Printing"></div>
                     <div class="product-info">
                         <h3 class="product-title">Face Cap Printing</h3>
                         <div class="price">NGN 4,000 <span class="price-unit">per cap</span></div>
@@ -1087,7 +1086,7 @@
                     </div>
                 </a>
                 <a href="invitations.html" class="product-card">
-                    <div class="product-image" style="background-image: url('assets/images/products/detail/invitations.webp');" aria-label="Wedding Invitation Printing Services in Lagos Nigeria - Premium Invitation Design"></div>
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/wedding-invitation-card-printing/wedding-invitation-card-printing-1.webp');" aria-label="Wedding Invitation Printing Services in Lagos Nigeria - Premium Invitation Design"></div>
                     <div class="product-info">
                         <h3 class="product-title">Wedding Invitations</h3>
                         <div class="price">NGN 30,000 <span class="price-unit">for 50 invitations</span></div>
@@ -1292,10 +1291,7 @@
             }).observe({entryTypes: ['paint']});
         });
     </script>
-    <script src="assets/discount.js" defer></script>
 </body>
 </html>
-
-
 
 

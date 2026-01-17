@@ -65,6 +65,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
         <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.css"></noscript>
+        <link rel="stylesheet" href="assets/discount.css">
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0HGEQLXGL4"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','G-0HGEQLXGL4');</script>
@@ -1059,7 +1060,7 @@
                                     <label for="stickerQuantity">
                                         Quantity
                                     </label>
-                                    <select id="stickerQuantity" name="stickerQuantity">
+                                    <select id="stickerQuantity" name="stickerQuantity" data-unit-price="15000">
                                         <option value="50">
                                             50 Stickers
                                         </option>
@@ -1762,5 +1763,9 @@
             }).observe({entryTypes: ['paint']});
         });
     </script>
+    <script src="assets/discount.js" defer></script>
 </body></html>
+
+
+
 
