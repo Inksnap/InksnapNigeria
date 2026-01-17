@@ -1,0 +1,133 @@
+/* Shared discount styles */
+.discount-badge{display:inline-block;background:#ffefeb;color:#b02a1a;padding:10px 14px;border-radius:8px;font-weight:800;margin-top:8px;border:1px solid #ffd1c4;font-size:0.95rem}
+.discount-badge::before{content:"\1F4B0 ";margin-right:6px}
+.price-summary{margin-top:12px;background:#f8fafc;border:1px solid #e6eef6;padding:12px;border-radius:10px;font-weight:600;color:#0f172a}
+.price-summary .muted{font-weight:400;color:#64748b;font-size:0.95rem}
+.price-values{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:8px}
+.price-values .total{font-size:1.05rem}
+.price-values .discounted{color:#059669;font-weight:700}
+
+/* Popup modal for site-wide discount announcement */
+.discount-modal-overlay{display:none}
+
+/* Compact bottom banner */
+.discount-bottom-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;z-index:99999;background:#ffffff;border-radius:12px;padding:10px 14px;box-shadow:0 8px 24px rgba(2,6,23,0.18);border:1px solid #e6eef6;display:flex;gap:12px;align-items:center;max-width:720px;width:calc(100% - 40px)}
+.discount-bottom-banner .badge{background:linear-gradient(135deg,#ffedd5,#ffe4e1);color:#b02a1a;padding:8px 12px;border-radius:8px;font-weight:800;border:1px solid #ffd1c4;font-size:0.95rem}
+.discount-bottom-banner .content{flex:1}
+.discount-bottom-banner h4{margin:0;font-size:1rem;color:#0f172a}
+.discount-bottom-banner p{margin:0;color:#475569;font-size:0.95rem}
+.discount-bottom-banner .actions{display:flex;gap:8px;margin-left:12px}
+.discount-bottom-banner .actions .primary{background:#059669;color:#fff;padding:8px 12px;border-radius:8px;border:none;font-weight:700}
+.discount-bottom-banner .actions .close{background:transparent;border:none;color:#334155;font-size:1.05rem}
+
+@media (max-width:480px){
+	.discount-bottom-banner{left:12px;right:12px;transform:none;width:auto;bottom:78px;padding:12px}
+	.discount-bottom-banner p{display:none}
+}
+
+/* Ensure any page-level chat widgets are displayed above the discount banner */
+.chat-widgets, .whatsapp-float, .whatsapp-btn, .whatsapp-float a, .whatsapp-float button{z-index:100001 !important}
+
+/* If pages use other floating selectors, make a fallback high z-index for typical widget classes */
+.floating-whatsapp, .floating-chat, .chat-button{z-index:100001 !important}
+
+/* Product details layout enhancements (mobile-first) */
+.details-grid{display:block;margin-top:18px}
+.product-images{margin-bottom:12px}
+.product-images .main-product-image{width:100%;height:auto;border-radius:12px;display:block;object-fit:cover}
+.thumbnail-gallery{display:flex;gap:8px;overflow-x:auto;margin-top:10px}
+.thumbnail-gallery .thumbnail-image{height:64px;border-radius:8px;object-fit:cover;cursor:pointer;border:2px solid transparent}
+.thumbnail-gallery .thumbnail-image.active{border-color:#059669}
+.product-info h2{font-size:1.15rem;margin-bottom:8px}
+.product-info p{color:#4b5563;line-height:1.6}
+.features-list{margin:12px 0 0 18px;color:#374151}
+.order-form{background:#fff;padding:14px;border-radius:12px;border:1px solid #e6eef6;margin-top:12px}
+.order-form .form-group{margin-bottom:12px}
+.order-form label{display:block;font-weight:600;margin-bottom:6px}
+.order-form input[type=number],.order-form select,.order-form input[type=date],.order-form input[type=tel]{width:100%;padding:10px;border:1px solid #e6eef6;border-radius:8px}
+.submit-btn{display:inline-block;padding:10px 14px;border-radius:10px;background:#059669;color:#fff;border:none;font-weight:700;cursor:pointer}
+.price-estimate{margin-top:8px;padding:10px;border-radius:8px;background:linear-gradient(180deg,#f8fafc,#ffffff);border:1px solid #e6eef6;color:#0f172a;font-weight:700}
+
+@media(min-width:992px){
+	.details-grid{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:start}
+	.product-images .main-product-image{height:520px;width:100%;object-fit:cover}
+	.thumbnail-gallery{flex-direction:column;max-height:520px;overflow:auto;gap:10px}
+	.thumbnail-gallery .thumbnail-image{height:72px}
+	.order-form{position:sticky;top:110px}
+}
+
+@media(max-width:420px){
+	.thumbnail-gallery .thumbnail-image{height:56px}
+	.product-info h2{font-size:1rem}
+}
+
+/* Small utility */
+.text-muted{color:#64748b}
+
+/* Lightbox for images */
+.lightbox-overlay{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.85);z-index:130000}
+.lightbox-overlay.show{display:flex}
+.lightbox-overlay .lb-image{max-width:92%;max-height:88%;border-radius:8px;object-fit:contain;box-shadow:0 20px 50px rgba(0,0,0,0.6)}
+.lightbox-overlay .lb-close{position:absolute;top:18px;right:18px;background:transparent;color:#fff;border:0;font-size:34px;line-height:1;cursor:pointer}
+.lightbox-overlay .lb-prev,.lightbox-overlay .lb-next{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,0.45);color:#fff;border:0;width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.lightbox-overlay .lb-prev{left:18px}
+.lightbox-overlay .lb-next{right:18px}
+
+/* Share bar */
+.share-bar{position:fixed;left:12px;top:40%;display:flex;flex-direction:column;gap:8px;z-index:120000}
+.share-bar a.share-btn{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;background:#fff;box-shadow:0 8px 20px rgba(2,6,23,0.12);text-decoration:none;color:#111}
+.share-bar a.share-btn i{font-size:18px}
+
+@media(max-width:480px){
+	.share-bar{left:auto;right:12px;top:auto;bottom:110px}
+	.lightbox-overlay .lb-prev,.lightbox-overlay .lb-next{width:44px;height:44px}
+}
+
+/* Global font reduction — lowers base sizes and overrides inline font-size where used */
+:root{--site-base-font:13px}
+html{font-size:var(--site-base-font) !important}
+body{font-size:13px !important;line-height:1.45 !important}
+
+/* Standard text elements reduced */
+p,li,a,span,label,input,button,select,textarea,div{font-size:13px !important}
+
+/* Headings scaled down */
+h1{font-size:28px !important}
+h2{font-size:22px !important}
+h3{font-size:18px !important}
+h4{font-size:16px !important}
+h5{font-size:14px !important}
+h6{font-size:13px !important}
+
+/* Override inline font-size attributes to inherit our base sizes */
+[style*="font-size"]{font-size:inherit !important}
+
+@media(max-width:768px){
+	:root{--site-base-font:12px}
+	html{font-size:12px !important}
+	h1{font-size:22px !important}
+	h2{font-size:18px !important}
+	h3{font-size:16px !important}
+}
+
+/* Recently Viewed */
+.recent-row{display:flex;gap:8px;overflow-x:auto;padding:8px 0}
+
+/* Recently viewed mini row */
+.recent-row{display:flex;gap:8px;overflow-x:auto;padding:8px 0}
+.recent-item{min-width:120px;border:1px solid #e6eef6;padding:8px;border-radius:8px;background:#fff;text-align:center}
+.recent-item img{width:100%;height:80px;object-fit:cover;border-radius:6px}
+
+/* Loyalty badge */
+.loyalty-badge{display:inline-block;background:linear-gradient(180deg,#fff,#f8fafc);border:1px solid #e6eef6;padding:6px 8px;border-radius:8px;font-weight:700;color:#0f172a;margin-left:8px;font-size:13px}
+
+@media(max-width:480px){
+	/* small-screen tweaks for recent/other widgets */
+}
+
+
+/* Bundle builder shelf */
+
+
+/* Advanced social and upsell features removed per request */
+
