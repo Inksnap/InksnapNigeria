@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inksnap Nigeria provides professional printing services in 75+ locations across Lagos and Abuja. Find quality printing near you.">
+    <meta name="keywords" content="printing services Lagos, printing services Abuja, printing near me, Inksnap locations, professional printing Nigeria">
+    <meta name="author" content="Inksnap Nigeria">
+    <title>Printing Services Locations - Lagos & Abuja | Inksnap Nigeria</title>
+    
+    <meta property="og:title" content="Printing Services Locations - Lagos & Abuja | Inksnap Nigeria">
+    <meta property="og:description" content="Professional printing services in 75+ locations across Lagos and Abuja with fast delivery and quality.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inksnapng.com/locations-index.html">
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Inksnap Nigeria - Printing Services in 75+ Locations",
+        "description": "Find professional printing services in Lagos and Abuja",
+        "url": "https://inksnapng.com/locations-index.html",
+        "publisher": {"@type": "Organization", "name": "Inksnap Nigeria"}
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Poppins', 'Inter', sans-serif !important;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif !important;
+            font-weight: 700;
+        }
+        
+        /* Preloader */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+        
+        .preloader img {
+            max-width: 100px;
+            animation: fadeInOut 2s infinite;
+        }
+        
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+        
+        /* Header */
+        header {
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+        
+        .navbar {
+            padding: 0;
+        }
+        
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: 700;
+            color: #1f2937 !important;
+        }
+        
+        .navbar-brand img {
+            max-height: 40px;
+            width: auto;
+            margin-right: 10px;
+        }
+        
+        .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+        
+        .nav-link:hover {
+            color: #0d6efd !important;
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 100px 20px;
+            text-align: center;
+            border-bottom: 4px solid #667eea;
+        }
+        
+        .hero-section h1 {
+            font-size: 56px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero-section p {
+            font-size: 18px;
+            color: #6b7280;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        /* Locations Section */
+        .locations-section {
+            padding: 80px 20px;
+            background: #f8fafc;
+        }
+        
+        .section-title {
+            font-size: 44px;
+            font-weight: 700;
+            color: #1f2937;
+            text-align: center;
+            margin-bottom: 60px;
+            line-height: 1.2;
+        }
+        
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto 60px;
+        }
+        
+        .location-tile {
+            background: white;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #1f2937;
+            text-align: center;
+            border-top: 4px solid #0d6efd;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 140px;
+            cursor: pointer;
+        }
+        
+        .location-tile:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            transform: translateY(-6px);
+            background: linear-gradient(135deg, #667eea08 0%, #764ba208 100%);
+        }
+        
+        .location-tile h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0;
+            color: #1f2937;
+        }
+        
+        .location-tile p {
+            font-size: 12px;
+            color: #6b7280;
+            margin: 8px 0 0;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1f2937;
+            color: #e5e7eb;
+            padding: 60px 20px 30px;
+            margin-top: 60px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section {
+            text-align: center;
+        }
+        
+        .footer-section h3 {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .footer-section a {
+            display: block;
+            color: #d1d5db;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: #fff;
+        }
+        
+        .footer-section .navbar-brand {
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .footer-section .navbar-brand img {
+            max-height: 35px;
+        }
+        
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            transition: background 0.3s;
+            margin: 0;
+        }
+        
+        .social-icons a:hover {
+            background: #0d6efd;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #9ca3af;
+            font-size: 14px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 36px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .locations-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 12px;
+            }
+            
+            .location-tile {
+                padding: 20px;
+                min-height: 120px;
+            }
+            
+            .location-tile h3 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <img alt="Loading" src="assets/logo/logo.png" loading="lazy" decoding="async">
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Inksnap Nigeria" src="assets/logo/logo.png" loading="lazy" decoding="async">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="all-products.html">ALL PRODUCTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="calculator.html">GET QUOTE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Printing Services Near You</h1>
+            <p>Professional printing services in 75+ locations across Lagos and Abuja. Fast delivery, competitive prices, and quality you can trust. Find us in your area.</p>
+        </div>
+    </section>
+    
+    <!-- Locations Section -->
+    <section class="locations-section">
+        <div class="container">
+            <h2 class="section-title">Our Locations</h2>
+            
+            <div class="locations-grid">
+                <!-- LAGOS LOCATIONS -->
+                <a href="victoria-island-printing.html" class="location-tile">
+                    <h3>Victoria Island</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ikoyi-printing.html" class="location-tile">
+                    <h3>Ikoyi</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="lekki-phase-1-printing.html" class="location-tile">
+                    <h3>Lekki Phase 1</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="banana-island-printing.html" class="location-tile">
+                    <h3>Banana Island</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="eko-atlantic-printing.html" class="location-tile">
+                    <h3>Eko Atlantic</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="parkview-estate-printing.html" class="location-tile">
+                    <h3>Parkview Estate</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="osborne-foreshore-printing.html" class="location-tile">
+                    <h3>Osborne Foreshore</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="vgc-printing.html" class="location-tile">
+                    <h3>Victoria Garden City</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="dolphin-estate-printing.html" class="location-tile">
+                    <h3>Dolphin Estate</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="lekki-conservation-printing.html" class="location-tile">
+                    <h3>Lekki Conservation</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="badore-printing.html" class="location-tile">
+                    <h3>Badore</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="idado-printing.html" class="location-tile">
+                    <h3>Idado</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ilasan-printing.html" class="location-tile">
+                    <h3>Ilasan</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="sangotedo-printing.html" class="location-tile">
+                    <h3>Sangotedo</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ibeju-lekki-printing.html" class="location-tile">
+                    <h3>Ibeju Lekki</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ajah-lekki-printing.html" class="location-tile">
+                    <h3>Ajah</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ogombo-printing.html" class="location-tile">
+                    <h3>Ogombo</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="oniru-printing.html" class="location-tile">
+                    <h3>Oniru</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="lekki-phase-2-printing.html" class="location-tile">
+                    <h3>Lekki Phase 2</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="chevron-drive-printing.html" class="location-tile">
+                    <h3>Chevron Drive</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="admiralty-way-printing.html" class="location-tile">
+                    <h3>Admiralty Way</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ahmadu-bello-way-printing.html" class="location-tile">
+                    <h3>Ahmadu Bello Way</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="mowrin-drive-printing.html" class="location-tile">
+                    <h3>Mowrin Drive</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="magodo-printing.html" class="location-tile">
+                    <h3>Magodo</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="lekki-epe-printing.html" class="location-tile">
+                    <h3>Lekki-Epe Corridor</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ojodu-printing.html" class="location-tile">
+                    <h3>Ojodu</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="yaba-printing.html" class="location-tile">
+                    <h3>Yaba</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="surulere-printing.html" class="location-tile">
+                    <h3>Surulere</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ikeja-printing.html" class="location-tile">
+                    <h3>Ikeja</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="maryland-printing.html" class="location-tile">
+                    <h3>Maryland</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="gbagada-printing.html" class="location-tile">
+                    <h3>Gbagada</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="shomolu-printing.html" class="location-tile">
+                    <h3>Shomolu</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ilupeju-printing.html" class="location-tile">
+                    <h3>Ilupeju</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="isolo-printing.html" class="location-tile">
+                    <h3>Isolo</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ejigbo-printing.html" class="location-tile">
+                    <h3>Ejigbo</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="mushin-printing.html" class="location-tile">
+                    <h3>Mushin</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="apapa-printing.html" class="location-tile">
+                    <h3>Apapa</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="amuwo-odofin-printing.html" class="location-tile">
+                    <h3>Amuwo-Odofin</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ogba-printing.html" class="location-tile">
+                    <h3>Ogba</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="festac-printing.html" class="location-tile">
+                    <h3>Festac</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="lekki-arts-printing.html" class="location-tile">
+                    <h3>Lekki Arts & Crafts</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ikoyi-commercial-printing.html" class="location-tile">
+                    <h3>Ikoyi Commercial</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="bariga-printing.html" class="location-tile">
+                    <h3>Bariga</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="kosofe-printing.html" class="location-tile">
+                    <h3>Kosofe</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="oshodi-printing.html" class="location-tile">
+                    <h3>Oshodi</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="berger-printing.html" class="location-tile">
+                    <h3>Berger</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="ojota-printing.html" class="location-tile">
+                    <h3>Ojota</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="oregun-printing.html" class="location-tile">
+                    <h3>Oregun</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="victoria-island-commercial-printing.html" class="location-tile">
+                    <h3>VI Commercial</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="mende-printing.html" class="location-tile">
+                    <h3>Mende</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="epe-printing.html" class="location-tile">
+                    <h3>Epe</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="badagry-printing.html" class="location-tile">
+                    <h3>Badagry</h3>
+                    <p>Lagos</p>
+                </a>
+                <a href="seme-printing.html" class="location-tile">
+                    <h3>Seme</h3>
+                    <p>Lagos</p>
+                </a>
+                
+                <!-- ABUJA LOCATIONS -->
+                <a href="abuja-cbd-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>CBD</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-maitama-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Maitama</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-asokoro-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Asokoro</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-guzape-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Guzape</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-jahi-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Jahi</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-karon-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Karon</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-utako-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Utako</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-dera-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Dera</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-wuse-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Wuse</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-garki-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Garki</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-ikoyi-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Ikoyi</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-mabushi-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Mabushi</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-duste-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Dutse</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-kubwa-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Kubwa</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-nyanya-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Nyanya</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-kuje-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Kuje</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-gwagwalada-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Gwagwalada</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-bwari-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Bwari</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-abingdon-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Abingdon Estate</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-katampe-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Katampe</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-tipper-garage-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Tipper Garage</h3>
+                    <p>Abuja</p>
+                </a>
+                <a href="abuja-wuye-printing.html" class="location-tile" style="border-top-color: #764ba2;">
+                    <h3>Wuye</h3>
+                    <p>Abuja</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a class="navbar-brand d-inline-block" href="index.html">
+                        <img alt="Inksnap Nigeria" src="assets/logo/white-logo.png" loading="lazy" decoding="async">
+                    </a>
+                    <p style="margin-top: 15px; color: #d1d5db;">Professional printing services across Nigeria. Quality, speed, and affordability guaranteed.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/inksnapnigeria" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="all-products.html">All Products</a>
+                    <a href="about-us.html">About Us</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <a href="business-cards.html">Business Cards</a>
+                    <a href="brochure-printing.html">Brochures</a>
+                    <a href="banner-printing.html">Banners</a>
+                    <a href="branded-mug-printing.html">Merchandise</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <a href="tel:+2349066345037">+234 906 634 5037</a>
+                    <a href="mailto:info@inksnapng.com">info@inksnapng.com</a>
+                    <p style="margin-top: 15px; color: #d1d5db; font-size: 14px;">Available across Lagos and Abuja Monday - Saturday</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Inksnap Nigeria. All rights reserved. | <a href="#" style="color: #9ca3af;">Privacy Policy</a> | <a href="#" style="color: #9ca3af;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Hide preloader
+        window.addEventListener('load', function() {
+            document.getElementById('preloader').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <!-- Resource hints for better performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="assets/logo/logo.png" as="image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inksnap Nigeria - Best Printing Company in Lagos State & Nationwide | Professional Printing Services</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Inksnap Nigeria - Leading printing company in Lagos State. Professional business cards, flyers, banners, t-shirts, and custom printing services. Fast delivery nationwide. Get your quote today!">
+    
+    <meta name="keywords" content="Index printing Lagos, custom index design, index printing services, corporate index Lagos, commercial printing Nigeria">>
+		<meta name="author" content="Oladipo Azeez Olaniyi">
+    <meta name="creator" content="Oladipo Azeez Olaniyi">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Inksnap Nigeria - Best Printing Company in Lagos State & Nationwide | Professional Printing Services">
+    <meta property="og:description" content="Inksnap Nigeria - Leading printing company in Lagos State. Professional business cards, flyers, banners, t-shirts, and custom printing services. Fast delivery nationwide. Get your quote today!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inksnapng.com/">
+    <meta property="og:image" content="https://inksnapng.com/assets/images/index.png">
+    <meta property="og:site_name" content="Inksnap Nigeria">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Inksnap Nigeria - Best Printing Company in Lagos State & Nationwide | Professional Printing Services">
+    <meta name="twitter:description" content="Inksnap Nigeria - Leading printing company in Lagos State. Professional business cards, flyers, banners, t-shirts, and custom printing services. Fast delivery nationwide. Get your quote today!">
+    <meta name="twitter:image" content="https://inksnapng.com/assets/images/index.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://inksnapng.com/">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/logo/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Libraries -->
+    
+    <style>
+        /* Critical CSS for above-the-fold content */
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Poppins', sans-serif;line-height:1.6;color:#333;background:#fff}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        header{background:#fff;box-shadow:0 2px 4px rgba(0,0,0,0.08);position:sticky;top:0;z-index:1000}
+        .navbar-brand{display:flex;align-items:center}
+        .navbar-brand-item{max-height:35px;width:auto}
+        .hero{background:linear-gradient(135deg,#e8f4f8 0%,#f0f8ff 50%,#e8f5e8 100%);padding:60px 0 80px;min-height:75vh;display:flex;align-items:center}
+        .hero-content{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
+        .hero-text h1{font-size:64px;font-weight:700;margin-bottom:1rem;color:#495057;font-family:'Playfair Display', serif;line-height:1.1}
+    .hero-text .subtitle{color:#556; margin-bottom:1.25rem}
+    .hero-ctas{margin-top:1.25rem;display:flex;gap:12px;flex-wrap:wrap}
+    .btn-cta{display:inline-flex;align-items:center;gap:.5rem;padding:12px 18px;border-radius:8px;border:0;font-weight:600;text-decoration:none}
+    .btn-cta.primary{background:linear-gradient(90deg,#667eea,#764ba2);color:#fff}
+    .btn-cta.ghost{background:transparent;color:#333;border:1px solid rgba(0,0,0,0.08)}
+        .preloader{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;display:flex;justify-content:center;align-items:center;z-index:9999;transition:opacity 0.5s ease}
+        .preloader-item{text-align:center}
+        .preloader-item img{max-width:150px;height:auto}
+    .hero-image img{max-width:100%;height:auto;border-radius:14px;box-shadow:0 8px 30px rgba(9,30,66,0.08)}
+    @media (max-width:768px){.hero-content{grid-template-columns:1fr;text-align:center;gap:2rem}.hero-text h1{font-size:42px}.hero-ctas{justify-content:center}}
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.css"></noscript>
+        <link rel="stylesheet" href="assets/discount.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-0HGEQLXGL4"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','G-0HGEQLXGL4');</script>
+    
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript" defer>var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"), s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65149de5b1aaa13b7a79531e/1hbc8hieq';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1, s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <style>.products-grid{display:grid;gap:16px;grid-template-columns:repeat(2, minmax(0,1fr));align-items:stretch}@media (min-width:768px){.products-grid{grid-template-columns:repeat(3, minmax(0,1fr))}}@media (min-width:992px){.products-grid{grid-template-columns:repeat(4, minmax(0,1fr))}}@media (min-width:1200px){.products-grid{grid-template-columns:repeat(5, minmax(0,1fr))}}.products-grid .product-card{display:block;height:100%}.products-grid .product-image{background-size:cover;background-position:center;height:180px;border-radius:10px}.products-grid .product-info{padding-top:4px}.products-grid .product-info .product-title{font-size:14px;line-height:1.3}.products-grid .product-info .price{font-size:13px}@media (min-width:1200px){.products-grid .product-image{height:200px}.products-grid .product-info .product-title{font-size:15px}.products-grid .product-info .price{font-size:14px}}</style>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Inksnap Nigeria",
+  "description": "Professional printing services in Lagos State, Nigeria with nationwide delivery. Best printing company in Lagos, fast delivery, competitive prices, quality guaranteed.",
+  "url": "https://inksnapng.com/",
+  "logo": "https://inksnapng.com/assets/logo/logo.png",
+  "image": "https://inksnapng.com/assets/images/products/detail/index.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+2349066345037",
+    "contactType": "customer service",
+    "areaServed": "Nigeria",
+    "availableLanguage": "English",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lagos State",
+    "addressCountry": "Nigeria"
+  },
+  "sameAs": [
+    "https://www.facebook.com/inksnapnigeria",
+    "https://twitter.com/inksnapnigeria",
+    "https://www.instagram.com/inksnapnigeria"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Printing Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Business Card Printing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "T-shirt Printing"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Banner Printing"
+        }
+      }
+    ]
+  }
+}</script>
+
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Inksnap Nigeria",
+  "description": "Professional printing services in Lagos State, Nigeria with nationwide delivery. Best printing company in Lagos, fast delivery, competitive prices, quality guaranteed.",
+  "url": "https://inksnapng.com/",
+  "telephone": "+2349066345037",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lagos State, Nigeria",
+    "addressLocality": "Lagos State",
+    "addressRegion": "Lagos State",
+    "addressCountry": "Nigeria"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "6.5244",
+    "longitude": "3.3792"
+  },
+  "openingHours": [
+    "Mo-Fr 08:00-18:00",
+    "Sa 09:00-16:00"
+  ],
+  "priceRange": "NGN 1825-NGN 273758",
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "6.5244",
+      "longitude": "3.3792"
+    },
+    "geoRadius": "50000"
+  },
+  "email": "info@inksnapng.com",
+  "paymentAccepted": [
+    "Cash",
+    "Bank Transfer",
+    "POS"
+  ],
+  "currenciesAccepted": "NGN"
+}</script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are your printing service prices?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our printing services start from NGN 1,380 for basic items. Contact us for a free quote based on your specific requirements, quantity, and materials needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does delivery take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer fast delivery nationwide. Standard orders take 3-5 business days, while rush orders can be completed in 24-48 hours. We serve Lagos State and deliver to customers all over Nigeria."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide printing services across Nigeria?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, we specialize in professional printing services in Lagos State with nationwide delivery. We serve all areas of Lagos State and deliver to customers all over Nigeria with fast delivery and professional service."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What types of printing services do you offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We offer comprehensive printing services including digital printing, offset printing, screen printing, embroidery services, branding services, promotional items, corporate gifts, business printing, event printing, marketing materials, and advertising printing."
+      }
+    }
+  ]
+}</script>
+
+    <!-- Website Schema -->
+    
+
+    <!-- Website Protection -->
+    <link rel="stylesheet" href="website-protection.css">
+    <script src="website-protection.js"></script>
+    </head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-item">
+            <img src="assets/logo/logo.png" class="light-mode-item" alt="Inksnap Nigeria Logo - Professional Printing Services" title="Inksnap Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+            <img src="assets/logo/white-logo.png" class="dark-mode-item" alt="Inksnap Nigeria Logo - Professional Printing Services" title="Inksnap Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+        </div>
+    </div>
+    
+    <!-- Header -->
+    <header class="navbar-light navbar-sticky header-static">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-brand-item light-mode-item" src="assets/logo/logo.png" alt="Index - Professional Printing Services in Lagos Nigeria & Nationwide" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                    <img class="navbar-brand-item dark-mode-item" src="assets/logo/logo.png" alt="Index - Professional Printing Services in Lagos Nigeria & Nationwide" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                </a>
+                
+                <!-- Mobile toggle -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-body h6 d-none d-sm-inline-block">Menu</span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navigation -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav navbar-nav-scroll ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ALL PRODUCTS</a>
+                            <ul class="dropdown-menu">
+                                <!-- Corporate Branding -->
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Corporate Branding</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="flyer-printing.html">Flyer & Handbill</a></li>
+                                        <li class="dropdown-submenu dropstart">
+                                            <a class="dropdown-item dropdown-toggle" href="tshirt-printing.html">T-shirts & Embroidery</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="tshirt-printing.html">Custom T-shirt</a></li>
+                                                <li><a class="dropdown-item" href="custom-v-neck-t-shirt-printing.html">V-Neck T-shirt</a></li>
+                                                <li><a class="dropdown-item" href="polo-tshirt-print.html">Polo T-Shirt</a></li>
+                                                <li><a class="dropdown-item" href="button-down-polo-t-shirt-printing.html">Button Down Shirts</a></li>
+                                                <li><a class="dropdown-item" href="branded-hoodies.html">Customized Hoodies</a></li>
+                                                <li><a class="dropdown-item" href="customized-sweatshirts-printing.html">Customized Sweatshirts</a></li>
+                                                <li><a class="dropdown-item" href="custom-branded-versity-jacket-print.html">Varsity Jacket</a></li>
+                                                <li><a class="dropdown-item" href="safety-work-vest-reflective-jacket-print.html">Safety Jacket</a></li>
+                                                <li><a class="dropdown-item" href="custom-funeral-burial-tshirt-printing.html">Funeral/Burial T-Shirt</a></li>
+                                                <li><a class="dropdown-item" href="Monogram-printing.html">Monogram Printing</a></li>
+                                                <li><a class="dropdown-item" href="custom-3D-monogram-embroidery-print.html">3D Monogram</a></li>
+                                                <li><a class="dropdown-item" href="custom-bath-towel-print.html">Embroidered Bath Towel</a></li>
+                                                <li><a class="dropdown-item" href="custom-embroidered-face-towel-print.html">Face Towel</a></li>
+                                                <li><a class="dropdown-item" href="custom-Personalized-apron-print.html">Customized Apron</a></li>
+                                                <li><a class="dropdown-item" href="classic-artwork-tshirt-print.html">Classic T-shirt</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="dropdown-item" href="custom-branded-helmet-print.html">Safety Helmet</a></li>
+                                        <li class="dropdown-submenu dropstart">
+                                            <a class="dropdown-item dropdown-toggle" href="#">Office Stationeries</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="pen-branding-printing.html">Branded Pen</a></li>
+                                                <li><a class="dropdown-item" href="premium-pen-printing.html">Premium Pen</a></li>
+                                                <li><a class="dropdown-item" href="branded-mousepad-printing.html">Mousepad</a></li>
+                                                <li><a class="dropdown-item" href="custom-branded-wireless-mouse-print.html">Branded Mouse</a></li>
+                                                <li><a class="dropdown-item" href="letterhead-design-and-printing.html">LetterHead</a></li>
+                                                <li><a class="dropdown-item" href="custom-business-receipt-invoice-booklet-print.html">Official Receipt</a></li>
+                                                <li><a class="dropdown-item" href="#">Block Pad</a></li>
+                                                <li><a class="dropdown-item" href="office-presentation-file-folder-print.html">File Presentation Folder</a></li>
+                                                <li><a class="dropdown-item" href="custom-c4-envelope-printing.html">C4 Envelope</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <!-- Book & Brochures -->
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Book & Brochures</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="brochure-company-profile-printing.html">Brochure & Company Profile</a></li>
+                                        <li><a class="dropdown-item" href="brochure-printing.html">Bifold Brochure</a></li>
+                                        <li><a class="dropdown-item" href="trifold-brochure-printing.html">Trifold Brochure</a></li>
+                                        <li><a class="dropdown-item" href="book-publishing.html">Book Publishing</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Business Cards & Label -->
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Business Cards & Label</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="standard-business-card-printing.html">Standard Business Card</a></li>
+                                        <li><a class="dropdown-item" href="premium-business-card-printing.html">Premium Business Card</a></li>
+                                        <li><a class="dropdown-item" href="pvc-transparent-plastic-business-card-print.html">Plastic Business Card</a></li>
+                                        <li><a class="dropdown-item" href="custom-business-customer-thank-you-card-print.html">Customer Thank You Card</a></li>
+                                        <li><a class="dropdown-item" href="custom-clothing-hang-tag-label-cards.html">Clothe Hang Tag Cards</a></li>
+                                        <li><a class="dropdown-item" href="custom-clothing-woven-label-printing.html">Woven Label</a></li>
+                                        <li><a class="dropdown-item" href="custom-event-ticket-print.html">Ticket Card</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Large Format Print -->
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Large Format Print</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="roll-up-banner-printing.html">Roll-Up Banner</a></li>
+                                        <li><a class="dropdown-item" href="advert-banner-print.html">Advertisement Banner</a></li>
+                                        <li><a class="dropdown-item" href="label-sticker-printing.html">Sticker Print</a></li>
+                                        <li><a class="dropdown-item" href="delivery-box-branding.html">Courier Box Branding</a></li>
+                                        <li><a class="dropdown-item" href="banner-printing.html">X-Banner</a></li>
+                                        <li><a class="dropdown-item" href="vehicle-car-branding.html">Vehicle Branding</a></li>
+                                        <li><a class="dropdown-item" href="backdrop-banner-print.html">Pop up Display Banner</a></li>
+                                        <li><a class="dropdown-item" href="custom-gazebo-canopy-tent-printing.html">Gazebo Canopy Tent</a></li>
+                                        <li><a class="dropdown-item" href="event-backdrop-banner-print-in-lagos-nigeria.html">Event Backdrop Banner</a></li>
+                                        <li><a class="dropdown-item" href="wedding-banner-prints.html">Wedding Banner</a></li>
+                                        <li><a class="dropdown-item" href="birthday-banner-prints.html">Birthday Banner</a></li>
+                                        <li><a class="dropdown-item" href="burial-funeral-banner-printing.html">Burial Banner</a></li>
+                                        <li><a class="dropdown-item" href="funeral-burial-roll-up-banner-prints.html">Funeral Roll-Up Banner</a></li>
+                                        <li><a class="dropdown-item" href="custom-event-hall-branding.html">Event Branding</a></li>
+                                        <li><a class="dropdown-item" href="custom-office-wall-branding.html">Office Branding</a></li>
+                                        <li><a class="dropdown-item" href="pvc-bunting-printing.html">Bunting Flags</a></li>
+                                        <li><a class="dropdown-item" href="custom-promotional-pvc-dangler-printing.html">PVC Danglers</a></li>
+                                        <li><a class="dropdown-item" href="teardrop-flying-banner-print.html">Teardrop Banner</a></li>
+                                        <li><a class="dropdown-item" href="lamp-post-banner-sign-print.html">Lamp Post Banner</a></li>
+                                        <li><a class="dropdown-item" href="custom-point-of-sale-display-stand-print.html">POS Display Stand</a></li>
+                                        <li><a class="dropdown-item" href="custom-promotional-counter-table-printing.html">Counter Table</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Custom ID Card -->
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Custom ID Card</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="standard-id-card-printing.html">Standard ID Card</a></li>
+                                        <li><a class="dropdown-item" href="lanyard-idcard-rope-print.html">Lanyard/ID Card Rope</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Menu & Program of Event -->
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Menu & Program of Event</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="funeral-program-print.html">Funeral Programme</a></li>
+                                        <li><a class="dropdown-item" href="custom-landscape-funeral-brochure-printing.html">Landscape Funeral Brochure</a></li>
+                                        <li><a class="dropdown-item" href="custom-square-funeral-brochure-print.html">Square Funeral Brochure</a></li>
+                                        <li><a class="dropdown-item" href="square-birthday-program-print.html">Square Birthday Brochure</a></li>
+                                        <li><a class="dropdown-item" href="menu-card-printing.html">Menu Card</a></li>
+                                        <li><a class="dropdown-item" href="custom-table-tent-card-printing.html">Table Tent</a></li>
+                                        <li><a class="dropdown-item" href="event-table-tags-tent-cards-printing.html">Table Tag</a></li>
+                                        <li><a class="dropdown-item" href="restaurant-and-lounge-menu-book-print.html">Menu Book</a></li>
+                                        <li><a class="dropdown-item" href="marriage-wedding-program-of-event-brochure-print.html">Wedding Programs</a></li>
+                                        <li><a class="dropdown-item" href="custom-wedding-handfan-print.html">Wedding Handfan</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Certificate & Awards -->
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Certificate & Awards</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="custom-certificate-of-completion-print.html">Certificate of Completion</a></li>
+                                        <li><a class="dropdown-item" href="commemorative-achievement-medal-print.html">Commemorative Medal</a></li>
+                                        <li><a class="dropdown-item" href="custom-wooden-award-plaque-printing.html">Wooden Award Plaque</a></li>
+                                        <li><a class="dropdown-item" href="custom-crystal-award-plaque-printing.html">Crystal Award Plaque</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Badge Tag & Lapel Pins -->
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Badge Tag & Lapel Pins</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="component-button-badge-print.html">Component Badge</a></li>
+                                        <li><a class="dropdown-item" href="custom-magnetic-name-tag-print.html">Custom Name Tag</a></li>
+                                        <li><a class="dropdown-item" href="custom-casting-lapel-badge-printing.html">Lapel Pin Badge</a></li>
+                                        <li><a class="dropdown-item" href="custom-reusable-name-tag-print.html">Reusable Name Tag</a></li>
+                                    </ul>
+                                </li>
+                                <!-- Posters & Signages -->
+                                <li class="dropdown-submenu dropend">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Posters & Signages</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="advert-poster-print.html">Posters</a></li>
+                                        <li><a class="dropdown-item" href="custom-acrylic-business-social-media-signage.html">Acrylic Social Media Sign</a></li>
+                                        <li><a class="dropdown-item" href="#">3D Company Signage</a></li>
+                                        <li><a class="dropdown-item" href="#">Non Illuminated Signage</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="quotes.html">GET QUOTE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="track-order.html">TRACK ORDER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calculator.html">CALCULATOR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="stores.html">STORES</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link theme-toggle-btn" id="themeToggle">
+                                <i class="fas fa-moon dark-icon"></i>
+                                <i class="fas fa-sun light-icon"></i>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <main class="main-content">
+            
+
+    <!-- Hero Section - Combined Style -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Quality Prints</h1>
+                    <p class="subtitle">Shipped to your doorstep</p>
+                    
+                    <div class="search-section">
+                        <h3>What would you like to print today?</h3>
+                        <div class="search-container">
+                            <input type="text" class="search-input" placeholder="Search for Business cards, T-shirts, Mugs, etc">
+                            <button type="button" class="search-btn"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="rating-section">
+                        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="rating-text"><strong>4.8/5</strong> based on 500+ reviews</div>
+                    </div>
+
+                    <div class="hero-ctas">
+                        <a class="btn-cta primary" href="quotes.html" aria-label="Get a quote">Get a Quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a class="btn-cta ghost" href="products.html" aria-label="Browse products">Browse Products</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/images/index.png" srcset="assets/images/index.png 800w, assets/images/index.png 1200w" sizes="(max-width:768px) 100vw, 50vw" alt="Professional Business Card Printing Services in Lagos Nigeria - Inksnap Nigeria Quality Guarantee" title="Quality Business Card Printing Lagos Nigeria" loading="lazy" decoding="async" fetchpriority="high">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Creative Branding</h2>
+                <a href="products.html" class="section-link">See all products &rarr;</a>
+            </div>
+            <div class="products-grid">
+                <a href="business-cards.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/business-cards/business-cards-1.webp');" aria-label="Professional Business Card Printing Services in Lagos Nigeria - Inksnap Nigeria Quality Guarantee"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Premium Business Cards</h3>
+                        <div class="price">NGN 35,000 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="flyers.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/flyers/flyers-5.webp');" aria-label="A5 Flyer Printing Services in Lagos Nigeria - Professional Flyer Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A5 Flyers</h3>
+                        <div class="price">NGN 25,000 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="roll-up-banner-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/roll-up-banner-printing/roll-up-banner-printing-1.webp');" aria-label="Roll-up Banner Printing Services in Lagos Nigeria - Premium Banner Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Roll-up Banners</h3>
+                        <div class="price">NGN 55,000 <span class="price-unit">per banner</span></div>
+                    </div>
+                </a>
+                <a href="mugs.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/Customized-mug-printing/Customized-mug-printing-1.webp');" aria-label="Branded Mug Printing Services in Lagos Nigeria - Custom Mug Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Branded Mugs</h3>
+                        <div class="price">NGN 4,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="tshirt-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/tshirt-printing/tshirt-printing-1.webp');" aria-label="T-shirt Printing Services in Lagos Nigeria - Custom T-shirt Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Round Neck T-shirts</h3>
+                        <div class="price">NGN 7,647 <span class="price-unit">per one</span></div>
+                    </div>
+                </a>
+                <a href="brochure-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/brochure-printing/brochure-printing-1.webp');" aria-label="Brochure Printing Services in Lagos Nigeria - Professional Brochure Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A4 Trifold Brochures</h3>
+                        <div class="price">NGN 665 <span class="price-unit">per one </span></div>
+                    </div>
+                </a>
+                <a href="sticker-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/sticker-printing/sticker-printing-1.webp');" aria-label="Sticker Printing Services in Lagos Nigeria - Custom Sticker Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Stickers</h3>
+                        <div class="price">NGN 15,000 <span class="price-unit">per one</span></div>
+                    </div>
+                </a>
+                <a href="invitations.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/invitations.webp');" aria-label="Wedding Invitation Printing Services in Lagos Nigeria - Premium Invitation Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wedding Invitations</h3>
+                        <div class="price">NGN 30,000 <span class="price-unit">for 50 invitations</span></div>
+                    </div>
+                </a>
+                <a href="conqueror-letterhead.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/conqueror-letterhead/conqueror-letterhead-1.webp');" aria-label="Letterhead Printing Services in Lagos Nigeria - Professional Letterhead Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Conqueror Letterhead</h3>
+                        <div class="price">NGN 20,000 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="notepad-jotter-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/notepad-jotter-printing.webp');" aria-label="Notepad Printing Services in Lagos Nigeria - Custom Notepad Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Notepad & Jotter</h3>
+                        <div class="price">NGN 5,500 <span class="price-unit">per one</span></div>
+                    </div>
+                </a>
+                <a href="nylon-shopping-bag-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/nylon-shopping-bag-print.webp');" aria-label="Nylon1 Printing Services in Lagos Nigeria - Professional Nylon1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Nylon Shopping Bag</h3>
+                        <div class="price">NGN 28,000 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="pen-branding-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/pen-branding-printing.webp');" aria-label="Pen Branding Services in Lagos Nigeria - Custom Pen Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pen Branding</h3>
+                        <div class="price">NGN 1,200 <span class="price-unit">per one</span></div>
+                    </div>
+                </a>
+                <a href="flyer-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/flyer-printing/flyer-printing-1.webp');" aria-label="Corporate Flyer Template Printing Services in Lagos Nigeria - Professional Corporate Flyer Template Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A4 Flyers</h3>
+                        <div class="price">NGN 25,000 <span class="price-unit">per 50</span></div>
+                    </div>
+                </a>
+                <a href="a5-jotter.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a5-jotter/a5-jotter-1.webp');" aria-label="A5 Jotter 1 Printing Services in Lagos Nigeria - Professional A5 Jotter 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A5 Jotter</h3>
+                        <div class="price">NGN 1,800 <span class="price-unit">per jotter</span></div>
+                    </div>
+                </a>
+                <a href="a3-poster-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a3-poster-print/a3-poster-1.webp');" aria-label="A3poster1 Printing Services in Lagos Nigeria - Professional A3poster1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A3 Poster Print</h3>
+                        <div class="price">NGN 35,000 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="a2-poster-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/product-1.png');" aria-label="A2 Poster Print 1 Printing Services in Lagos Nigeria - Professional A2 Poster Print 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A2 Poster Print</h3>
+                        <div class="price">NGN 633 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="a3-paper-bag-details.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a3-paper-bag-details/shopping-paper-bag-print-1.webp');" aria-label="A3 Paper Bag Details 1 Printing Services in Lagos Nigeria - Professional A3 Paper Bag Details 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A3 Paper Bag</h3>
+                        <div class="price">NGN 1,600 <span class="price-unit">per bag</span></div>
+                    </div>
+                </a>
+                <a href="a4-notebook.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a4-notebook/a4-notebook-1.webp');" aria-label="Notebook Printing 1 Printing Services in Lagos Nigeria - Professional Notebook Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A4 Notebook</h3>
+                        <div class="price">NGN 850 <span class="price-unit">per notebook</span></div>
+                    </div>
+                </a>
+                <a href="a5flyer.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a5flyer/a5flyer-5.jpeg');" aria-label="A5 Flyer Printing Services in Lagos Nigeria - Professional Flyer Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A5 Flyers</h3>
+                        <div class="price">NGN 20,000 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="a6flyer.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a6flyer/a6flyer-5.webp');" aria-label="A6flyer 1 Printing Services in Lagos Nigeria - Professional A6flyer 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A6 Flyers</h3>
+                        <div class="price">NGN 15,000 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="advert-banner-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/advert-banner-print-1.webp');" aria-label="Advert Banner Print 1 Printing Services in Lagos Nigeria - Professional Advert Banner Print 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Advert Banner</h3>
+                        <div class="price">NGN 15,500 <span class="price-unit">per banner</span></div>
+                    </div>
+                </a>
+                <a href="banner-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/banner-printing.webp');" aria-label="Banner Printing 1 Printing Services in Lagos Nigeria - Professional Banner Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Banner Printing</h3>
+                        <div class="price">NGN 15,000 <span class="price-unit">per banner</span></div>
+                    </div>
+                </a>
+                <a href="birthday-banner-prints.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/birthday-banner-prints/birthday-banner-prints-1.webp');" aria-label="Birthday Banner Prints 1 Printing Services in Lagos Nigeria - Professional Birthday Banner Prints 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Birthday Banners</h3>
+                        <div class="price">NGN 50,500 <span class="price-unit">per banner</span></div>
+                    </div>
+                </a>
+                <a href="branded-hoodies.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-hoodies/branded-hoodies-1.webp');" aria-label="Branded Hoodies 1 Printing Services in Lagos Nigeria - Professional Branded Hoodies 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Branded Hoodies</h3>
+                        <div class="price">NGN 30,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="branded-mug-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-mug-printing/branded-mug-printing-1.webp');" aria-label="Branded Mug Printing Services in Lagos Nigeria - Custom Mug Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Branded Mug Printing</h3>
+                        <div class="price">NGN 4,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="canvas-prints.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/canvas-prints/canvas-prints-1.webp');" aria-label="Canvas Prints 1 Printing Services in Lagos Nigeria - Professional Canvas Prints 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Canvas Prints</h3>
+                        <div class="price">NGN 18,000 <span class="price-unit">per canvas</span></div>
+                    </div>
+                </a>
+                <a href="custom-calendar-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/custom-calendar-printing/custom-calendar-printing-1.webp');" aria-label="Desk Table Calendar Printing Services in Lagos Nigeria - Professional Calendar Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Custom Calendar</h3>
+                        <div class="price">NGN 3,500 <span class="price-unit">per one</span></div>
+                    </div>
+                </a>
+                <a href="envelope-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/envelope-printing.webp');" aria-label="Envelop Printing Services in Lagos Nigeria - Professional Envelop Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Envelope Printing</h3>
+                        <div class="price">NGN 120,000 <span class="price-unit">per 100 envelopes</span></div>
+                    </div>
+                </a>
+                <a href="event-backdrop-banner-print-in-lagos-nigeria.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/event-backdrop-banner-print-in-lagos-nigeria.webp');" aria-label="Eventbackdrop Printing Services in Lagos Nigeria - Professional Eventbackdrop Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Event Backdrop Banner</h3>
+                        <div class="price">NGN 40,500 <span class="price-unit">per copy</span></div>
+                    </div>
+                </a>
+                <a href="face-cap-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/face-cap-printing.webp');" aria-label="Face Cap Printing 1 Printing Services in Lagos Nigeria - Professional Face Cap Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Face Cap Printing</h3>
+                        <div class="price">NGN 4,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="hard-cover-jotter-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/hard-cover-jotter-print.webp');" aria-label="Hard Cover Jotter Print 1 Printing Services in Lagos Nigeria - Professional Hard Cover Jotter Print 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Hard Cover Jotter</h3>
+                        <div class="price">NGN 1,800 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="keyholder-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/keyholder-printing.webp');" aria-label="Keyholder Printing 1 Printing Services in Lagos Nigeria - Professional Keyholder Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Keyholder Printing</h3>
+                        <div class="price">NGN 2,500 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="lanyard-idcard-rope-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/lanyard-idcard-rope-print.webp');" aria-label="Lanyard Idcard Rope Print 1 Printing Services in Lagos Nigeria - Professional Lanyard Idcard Rope Print 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Lanyard ID Card</h3>
+                        <div class="price">NGN 2,500 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="letterhead-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/letterhead-printing/letterhead-printing-1.webp');" aria-label="Letterhead Printing Services in Lagos Nigeria - Professional Letterhead Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Letterhead Printing</h3>
+                        <div class="price">NGN 20,000 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="magic-mug-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/magic-mug-print/magic-mug-print-1.webp');" aria-label="Magic Mug Print 1 Printing Services in Lagos Nigeria - Professional Magic Mug Print 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Magic Mug Print</h3>
+                        <div class="price">NGN 5,000 <span class="price-unit">per one</span></div>
+                    </div>
+                </a>
+                <a href="menu-card-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/menu-card-printing.webp');" aria-label="A5menu Card Printing 1 Printing Services in Lagos Nigeria - Professional A5menu Card Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Menu Card Printing</h3>
+                        <div class="price">NGN 546 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="polo-shirt-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/polo-shirt-printing/polo-shirt-printing-1.webp');" aria-label="Button Down Polo T Shirt Printing 1 Printing Services in Lagos Nigeria - Professional Button Down Polo T Shirt Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Polo Shirt Printing</h3>
+                        <div class="price">NGN 7,500 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="tote-bag-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/tote-bag-printing/tote-bag-printing-5.webp');" aria-label="Tote Bag Printing 1 Printing Services in Lagos Nigeria - Professional Tote Bag Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Tote Bag Printing</h3>
+                        <div class="price">NGN 4,643 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="vehicle-branding.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/vehicle-branding/vehicle-branding-5.webp');" aria-label="Vehicle Branding 1 Printing Services in Lagos Nigeria - Professional Vehicle Branding 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Vehicle Branding</h3>
+                        <div class="price">NGN 230,575 <span class="price-unit">per vehicle</span></div>
+                    </div>
+                </a>
+                <a href="wedding-banner-prints.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/wedding-banner-prints/wedding-banner-prints-5.webp');" aria-label="Wedding Banner Prints 1 Printing Services in Lagos Nigeria - Professional Wedding Banner Prints 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wedding Banner Prints</h3>
+                        <div class="price">NGN 189,750 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="advert-poster-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/advert-poster-print.webp');" aria-label="A3 Poster Print 1 Printing Services in Lagos Nigeria - Professional A3 Poster Print 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A1 Poster Print</h3>
+                        <div class="price">NGN 30,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="a2-wall-calendar-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a2-wall-calendar-print.html/a2-wall-calendar-print-1.webp');" aria-label="Desk Table Calendar Printing Services in Lagos Nigeria - Professional Calendar Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A2 Wall Calendar</h3>
+                        <div class="price">NGN 6,500 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="a3-wall-calendar-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a3-wall-calendar-print/a3-wall-calendar-print-1.webp');" aria-label="Desk Table Calendar Printing Services in Lagos Nigeria - Professional Calendar Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A3 Wall Calendar</h3>
+                        <div class="price">NGN 3,500 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="paper-bag-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/paper-bag-printing.webp');" aria-label="A4paper4 Printing Services in Lagos Nigeria - Professional A4paper4 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A4 Paper Bag</h3>
+                        <div class="price">NGN 1,200 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="a4-poster-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/a4-poster-print/poster5.png');" aria-label="A4poster1 Printing Services in Lagos Nigeria - Professional A4poster1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A4 Poster Print</h3>
+                        <div class="price">NGN 30,000 <span class="price-unit">per one</span></div>
+                    </div>
+                </a>
+                <a href="paper-bag-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/paper-bag-printing.webp');" aria-label="A5 Paper Bag Printing Services in Lagos Nigeria - Professional Paper Bag Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A5 Paper Bag</h3>
+                        <div class="price">NGN 1,200 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="funeral-program-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/funeral-program-print.webp');" aria-label="A5funeral1 Printing Services in Lagos Nigeria - Professional A5funeral1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A5 Funeral Program</h3>
+                        <div class="price">NGN 3,500 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="menu-card-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/menu-card-printing.webp');" aria-label="A5menu Card Printing 1 Printing Services in Lagos Nigeria - Professional A5menu Card Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A5 Menu Card</h3>
+                        <div class="price">NGN 546 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="paper-bag-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/paper-bag-printing.webp');" aria-label="A5paper1 Printing Services in Lagos Nigeria - Professional A5paper1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A5 Paper Bag</h3>
+                        <div class="price">NGN 1,200 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="advert-poster-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/advert-poster-print.webp');" aria-label="Advert Poster Print 1 Printing Services in Lagos Nigeria - Professional Advert Poster Print 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Advert Poster Print</h3>
+                        <div class="price">NGN 30,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="backdrop-banner-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/backdrop-banner-print/backdrop-banner-print-1.webp');" aria-label="Backdrop Banner Print 3 Printing Services in Lagos Nigeria - Professional Backdrop Banner Print 3 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Backdrop Banner Print</h3>
+                        <div class="price">NGN 145,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="bifold-product.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/bifold-product.webp');" aria-label="Bifold Product 1 Printing Services in Lagos Nigeria - Professional Bifold Product 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Bifold Product</h3>
+                        <div class="price">NGN 600 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="book-publishing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/softcover.webp');" aria-label="Book Publishing 1 Printing Services in Lagos Nigeria - Professional Book Publishing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Book Publishing</h3>
+                        <div class="price">NGN 2,600 <span class="price-unit">per book</span></div>
+                    </div>
+                </a>
+                <a href="button-down-polo.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/botton-down-polo/botton-down-polo4.webp');" aria-label="Botton Down Polo4 Printing Services in Lagos Nigeria - Professional Botton Down Polo4 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Button Down Polo</h3>
+                        <div class="price">NGN 10,925 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="boxflyer.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/boxflyer/boxflyer.png?v=2');" aria-label="Boxflyer Printing Services in Lagos Nigeria - Professional Boxflyer Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Box Flyer</h3>
+                        <div class="price">NGN 17,500 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="branded-bag-prints.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/a3bag1.webp');" aria-label="Branded Bag Prints 1 Printing Services in Lagos Nigeria - Professional Branded Bag Prints 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Branded Bag Prints</h3>
+                        <div class="price">NGN 2,200 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="branded-box-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/giftbox1.webp');" aria-label="Branded Box Printing 4 Printing Services in Lagos Nigeria - Professional Branded Box Printing 4 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Branded Box Printing</h3>
+                        <div class="price">NGN 6,500 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="branded-gift-items-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-gift-items-printing/branded-gift-items-printing-1.webp');" aria-label="Branded Gift Items Printing 1 Printing Services in Lagos Nigeria - Professional Branded Gift Items Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Branded Gift Items</h3>
+                        <div class="price">NGN 800 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="custom-branded-wireless-mouse-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-mouse/branded-mouse-1.webp');" aria-label="Custom Branded Wireless Mouse Print 1 Printing Services in Lagos Nigeria - Professional Custom Branded Wireless Mouse Print 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Branded Mouse</h3>
+                        <div class="price">NGN 5,200 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="branded-mousepad-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-mousepad-printing/branded-mousepad-printing-1.webp');" aria-label="Branded Mousepad Printing 1 Printing Services in Lagos Nigeria - Professional Branded Mousepad Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Branded Mousepad</h3>
+                        <div class="price">NGN 4,500 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="custom-branded-versity-jacket-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-Versity Jacket/custom-branded-versity-jacket-print-1.webp');" aria-label="Custom Branded Versity Jacket Print 1 Printing Services in Lagos Nigeria - Professional Custom Branded Versity Jacket Print 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Branded Versity Jacket</h3>
+                        <div class="price">NGN 24,500 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="brochure-company-profile-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/brochure-company-profile-printing.webp');" aria-label="Brochure Printing Services in Lagos Nigeria - Professional Brochure Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Company Profile Brochure</h3>
+                        <div class="price">NGN 3,500 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="brochure-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/brochure-printing/brochure-printing-1.webp');" aria-label="Brochure Printing Services in Lagos Nigeria - Professional Brochure Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Brochure Printing</h3>
+                        <div class="price">NGN 665 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="burial-funeral-banner-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/burial-funeral-banner-printing.webp');" aria-label="Funeral Banner3 Printing Services in Lagos Nigeria - Professional Funeral Banner3 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Funeral Banner Printing</h3>
+                        <div class="price">NGN 45,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="button-down-polo-t-shirt-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/button-down-polo-t-shirt-printing.webp');" aria-label="The Countdown Continues Rgv Zapata Elementary Uniforms Personalized Printing Services in Lagos Nigeria - Professional The Countdown Continues Rgv Zapata Elementary Uniforms Personalized Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Button Down Polo T-shirt</h3>
+                        <div class="price">NGN 22,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="#" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/clothing-tag/custom-clothing-hang-tag-label-cards-1.webp');" aria-label="Custom Clothing Hang Tag Label Cards 1 Printing Services in Lagos Nigeria - Professional Custom Clothing Hang Tag Label Cards 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Clothing Tag</h3>
+                        <div class="price">NGN 2,875 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="#" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/clothing-woven-label/custom-clothing-woven-label-printing-1.webp');" aria-label="Custom Clothing Woven Label Printing 1 Printing Services in Lagos Nigeria - Professional Custom Clothing Woven Label Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Clothing Woven Label</h3>
+                        <div class="price">NGN 3,680 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="branded-box-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/giftbox1.webp');" aria-label="Collapsible Box Printing Services in Lagos Nigeria - Professional Box Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Collapsible Box</h3>
+                        <div class="price">NGN 6,500 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="collapsiblebox.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/collapsiblebox/collapsiblebox-5.webp');" aria-label="Collapsiblebox 1 Printing Services in Lagos Nigeria - Professional Collapsiblebox 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Collapsible Box (Premium)</h3>
+                        <div class="price">NGN 15,000 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="commemorative-achievement-medal-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/commemorative-achievement-medal-print.webp');" aria-label="Commemorative Achievement Medal Print 2 Printing Services in Lagos Nigeria - Professional Commemorative Achievement Medal Print 2 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Achievement Medal Print</h3>
+                        <div class="price">NGN 7,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    
+
+   
+
+    <!-- Best Selling Section -  Style -->
+    <section class="best-selling">
+        <div class="container">
+            <h2 class="section-title" style="font-family: 'Poppins', sans-serif; font-weight: 600; font-size: 1.8rem; color: #2c3e50; text-align: center; margin-bottom: 0.5rem; position: relative; text-transform: uppercase; letter-spacing: 1px;">
+                <span style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Best Selling</span>
+                <div style="width: 60px; height: 3px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); margin: 10px auto 0; border-radius: 2px;"></div>
+            </h2>
+            <p style="text-align: center; font-size: 0.95rem; color: #7f8c8d; margin-bottom: 2.5rem; font-style: italic; font-weight: 400;">Our most popular and trusted products</p>
+            <div class="products-grid">
+                <a href="business-cards.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/business-cards/business-cards-1.webp');" aria-label="Professional Business Card Printing Services in Lagos Nigeria - Inksnap Nigeria Quality Guarantee"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Business Cards</h3>
+                        <div class="price">NGN 35,000 <span class="price-unit">per 100 cards</span></div>
+                    </div>
+                </a>
+                <a href="tshirt-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/tshirt-printing/tshirt-printing-1.webp');" aria-label="T-shirt Printing Services in Lagos Nigeria - Custom T-shirt Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Round Neck T-shirts</h3>
+                        <div class="price">NGN 7,647 <span class="price-unit">per one</span></div>
+                    </div>
+                </a>
+                <a href="mugs.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/Customized-mug-printing/Customized-mug-printing-1.webp');" aria-label="Branded Mug Printing Services in Lagos Nigeria - Custom Mug Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Branded Mugs</h3>
+                        <div class="price">NGN 4,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="roll-up-banner-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/roll-up-banner-printing/roll-up-banner-printing-1.webp');" aria-label="Roll-up Banner Printing Services in Lagos Nigeria - Premium Banner Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Roll-up Banners</h3>
+                        <div class="price">NGN 55,000 <span class="price-unit">per banner</span></div>
+                    </div>
+                </a>
+                <a href="flyers.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/flyers/flyers-5.webp');" aria-label="A5 Flyer Printing Services in Lagos Nigeria - Professional Flyer Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">A5 Flyers</h3>
+                        <div class="price">NGN 25,000 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="sticker-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/sticker-printing/sticker-printing-1.webp');" aria-label="Sticker Printing Services in Lagos Nigeria - Custom Sticker Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Stickers</h3>
+                        <div class="price">NGN 15,000 <span class="price-unit">per one</span></div>
+                    </div>
+                </a>
+                <a href="nylon-shopping-bag-print.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/nylon-shopping-bag-print.webp');" aria-label="Nylon1 Printing Services in Lagos Nigeria - Professional Nylon1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Nylon Shopping Bag</h3>
+                        <div class="price">NGN 28,000 <span class="price-unit">per 100</span></div>
+                    </div>
+                </a>
+                <a href="face-cap-printing.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/face-cap-printing.webp');" aria-label="Face Cap Printing 1 Printing Services in Lagos Nigeria - Professional Face Cap Printing 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Face Cap Printing</h3>
+                        <div class="price">NGN 4,000 <span class="price-unit">per cap</span></div>
+                    </div>
+                </a>
+                <a href="branded-hoodies.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/All-Products/branded-hoodies/branded-hoodies-1.webp');" aria-label="Branded Hoodies 1 Printing Services in Lagos Nigeria - Professional Branded Hoodies 1 Design and Printing"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Branded Hoodies</h3>
+                        <div class="price">NGN 30,000 <span class="price-unit">per piece</span></div>
+                    </div>
+                </a>
+                <a href="invitations.html" class="product-card">
+                    <div class="product-image" style="background-image: url('assets/images/products/detail/invitations.webp');" aria-label="Wedding Invitation Printing Services in Lagos Nigeria - Premium Invitation Design"></div>
+                    <div class="product-info">
+                        <h3 class="product-title">Wedding Invitations</h3>
+                        <div class="price">NGN 30,000 <span class="price-unit">for 50 invitations</span></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        </main>
+        <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section text-center">
+                    <a class="navbar-brand d-inline-block" href="index.html">
+                        <img class="navbar-brand-item light-mode-item" src="assets/logo/white-logo.png" alt="Index - Professional Printing Services in Lagos Nigeria & Nationwide" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                        <img class="navbar-brand-item dark-mode-item" src="assets/logo/white-logo.png" alt="Index - Professional Printing Services in Lagos Nigeria & Nationwide" title="Inksnap Nigeria - printing company in Lagos Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                    </a>
+                    <p>
+                        Your trusted partner for all printing needs in Lagos State, Nigeria and nationwide. Quality prints, competitive prices, fast delivery all over Nigeria.
+                    </p>
+                    <div class="social-icons">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="products.html">All Products</a>
+                    <a href="services.html">Services</a>
+                    <a href="quotes.html">Get Quote</a>
+                    <a href="track-order.html">Track Order</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="reseller.html">Reseller Program</a>
+                    <a href="calculator.html">Price Calculator</a>
+                    <a href="stores.html">Our Stores</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Help Center</a>
+                    <a href="#">Returns</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; InkSnap 2023 - 2025. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"defer></script>
+    
+    <!-- Custom JavaScript for dropdowns and preloader -->
+    <script>
+        window.addEventListener('load', function() {
+            const preloader = document.querySelector('.preloader');
+            if (preloader) {
+                preloader.style.opacity = '0';
+                setTimeout(() => { preloader.style.display = 'none'; }, 500);
+            }
+        });
+        setTimeout(function() {
+            const preloader = document.querySelector('.preloader');
+            if (preloader) {
+                preloader.style.opacity = '0';
+                setTimeout(() => { preloader.style.display = 'none'; }, 500);
+            }
+        }, 3000);
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'));
+            // initialize bootstrap dropdowns and ARIA
+            var dropdownList = dropdownElementList.map(function(el){
+                // ensure ARIA attributes for accessibility
+                if (!el.hasAttribute('aria-expanded')) el.setAttribute('aria-expanded', 'false');
+                el.addEventListener('click', function(){
+                    // toggle aria-expanded so assistive tech knows state
+                    var is = this.getAttribute('aria-expanded') === 'true';
+                    this.setAttribute('aria-expanded', is ? 'false' : 'true');
+                });
+                return new bootstrap.Dropdown(el);
+            });
+
+            const dropdownToggles = document.querySelectorAll('.dropdown-submenu .dropdown-toggle');
+            dropdownToggles.forEach(toggle => {
+                if (!toggle.hasAttribute('aria-expanded')) toggle.setAttribute('aria-expanded', 'false');
+                toggle.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    const parent = this.closest('.dropdown-submenu');
+                    const submenu = parent.querySelector('.dropdown-menu');
+                    const siblings = parent.parentElement.querySelectorAll('.dropdown-submenu .dropdown-menu.show');
+                    siblings.forEach(sibling => { if (sibling !== submenu) sibling.classList.remove('show'); });
+                    if (submenu) {
+                        submenu.classList.toggle('show');
+                        this.setAttribute('aria-expanded', submenu.classList.contains('show') ? 'true' : 'false');
+                    }
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.dropdown')) {
+                    const openDropdowns = document.querySelectorAll('.dropdown-menu.show');
+                    openDropdowns.forEach(dropdown => dropdown.classList.remove('show'));
+                }
+            });
+
+            const themeToggle = document.getElementById('themeToggle');
+            if (themeToggle) {
+                const html = document.documentElement;
+                const currentTheme = localStorage.getItem('theme') || 'light';
+                html.setAttribute('data-bs-theme', currentTheme);
+                function updateToggleButton() {
+                    const isDark = html.getAttribute('data-bs-theme') === 'dark';
+                    const darkIcon = themeToggle.querySelector('.dark-icon');
+                    const lightIcon = themeToggle.querySelector('.light-icon');
+                    if (darkIcon && lightIcon) {
+                        if (isDark) { darkIcon.style.display = 'none'; lightIcon.style.display = 'block'; }
+                        else { darkIcon.style.display = 'block'; lightIcon.style.display = 'none'; }
+                    }
+                }
+                updateToggleButton();
+                function toggleTheme() {
+                    const currentTheme = html.getAttribute('data-bs-theme');
+                    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                    html.setAttribute('data-bs-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    updateToggleButton();
+                }
+                themeToggle.addEventListener('click', toggleTheme);
+            }
+
+            const heroSearchInput = document.querySelector('.hero .search-section .search-input');
+            const heroSearchBtn = document.querySelector('.hero .search-section .search-btn');
+            function goToSearch() {
+                if (!heroSearchInput) return;
+                const query = heroSearchInput.value.trim();
+                if (query.length > 0) window.location.href = 'products.html?q=' + encodeURIComponent(query);
+                else window.location.href = 'products.html';
+            }
+            if (heroSearchBtn) heroSearchBtn.addEventListener('click', goToSearch);
+            if (heroSearchInput) heroSearchInput.addEventListener('keydown', function(e) { if (e.key === 'Enter') { e.preventDefault(); goToSearch(); }});
+        });
+    </script>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float" aria-label="Contact Inksnap Nigeria on WhatsApp for printing services">
+        <a href="https://wa.me/2349066345037" target="_blank" rel="noopener noreferrer" aria-label="Contact Inksnap Nigeria on WhatsApp - Professional Printing Services Lagos Nigeria">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <div class="whatsapp-tooltip">
+                <div class="tooltip-header">👋 Hi there!</div>
+                <div class="tooltip-message">What would you like to do today?</div>
+                <div class="tooltip-options">
+                    • Get a quote<br>
+                    • Order printing<br>
+                    • Join reseller program<br>
+                    • Ask questions
+                </div>
+                <div class="tooltip-cta">Click to chat on WhatsApp</div>
+            </div>
+        </a>
+    </div>
+
+    <script>
+        // Performance monitoring
+        window.addEventListener('load', function() {
+            // Measure LCP
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    console.log('LCP:', entry.startTime);
+                    if (entry.startTime > 4000) {
+                        console.warn('LCP is slow:', entry.startTime + 'ms');
+                    }
+                }
+            }).observe({entryTypes: ['largest-contentful-paint']});
+            
+            // Measure FCP
+            new PerformanceObserver((entryList) => {
+                for (const entry of entryList.getEntries()) {
+                    console.log('FCP:', entry.startTime);
+                }
+            }).observe({entryTypes: ['paint']});
+        });
+    </script>
+    <script src="assets/discount.js" defer></script>
+</body>
+</html>
+
+
+
+
