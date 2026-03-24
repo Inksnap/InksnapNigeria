@@ -212,7 +212,7 @@
         target.appendChild(el);
     }
 
-    function init(){ try{ trackRecent(); renderRecentRow(); renderLoyaltyBadge(); }catch(e){console.error('recent/loyalty init',e);} }
+    function init(){ try{ trackRecent(); renderLoyaltyBadge(); }catch(e){console.error('recent/loyalty init',e);} }
     if(document.readyState==='loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
 
