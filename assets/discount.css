@@ -1,7 +1,7 @@
 /* Shared discount styles */
 .discount-badge{display:inline-block;background:#ffefeb;color:#b02a1a;padding:10px 14px;border-radius:8px;font-weight:800;margin-top:8px;border:1px solid #ffd1c4;font-size:0.95rem}
 .discount-badge::before{content:"\1F4B0 ";margin-right:6px}
-.price-summary{margin-top:12px;background:#f8fafc;border:1px solid #e6eef6;padding:12px;border-radius:10px;font-weight:600;color:#0f172a}
+.price-summary{margin-top:12px;background:#f8fafc;border:1px solid #e6eef6;padding:12px;border-radius:10px;font-weight:600;color:#0f172a;contain:layout style}
 .price-summary .muted{font-weight:400;color:#64748b;font-size:0.95rem}
 .price-values{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:8px}
 .price-values .total{font-size:1.05rem}
@@ -11,7 +11,7 @@
 .discount-modal-overlay{display:none}
 
 /* Compact bottom banner */
-.discount-bottom-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;z-index:99999;background:#ffffff;border-radius:12px;padding:10px 14px;box-shadow:0 8px 24px rgba(2,6,23,0.18);border:1px solid #e6eef6;display:flex;gap:12px;align-items:center;max-width:720px;width:calc(100% - 40px)}
+.discount-bottom-banner{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;z-index:99999;background:#ffffff;border-radius:12px;padding:10px 14px;box-shadow:0 8px 24px rgba(2,6,23,0.18);border:1px solid #e6eef6;display:flex;gap:12px;align-items:center;max-width:720px;width:calc(100% - 40px);contain:layout style}
 .discount-bottom-banner .badge{background:linear-gradient(135deg,#ffedd5,#ffe4e1);color:#b02a1a;padding:8px 12px;border-radius:8px;font-weight:800;border:1px solid #ffd1c4;font-size:0.95rem}
 .discount-bottom-banner .content{flex:1}
 .discount-bottom-banner h4{margin:0;font-size:1rem;color:#0f172a}
@@ -34,7 +34,7 @@
 /* Product details layout enhancements (mobile-first) */
 .details-grid{display:block;margin-top:18px}
 .product-images{margin-bottom:12px}
-.product-images .main-product-image{width:100%;height:auto;border-radius:12px;display:block;object-fit:cover}
+.product-images .main-product-image{width:100%;height:auto;border-radius:12px;display:block;object-fit:cover;aspect-ratio:4/3}
 .thumbnail-gallery{display:flex;gap:8px;overflow-x:auto;margin-top:10px}
 .thumbnail-gallery .thumbnail-image{height:64px;border-radius:8px;object-fit:cover;cursor:pointer;border:2px solid transparent}
 .thumbnail-gallery .thumbnail-image.active{border-color:#059669}
@@ -83,33 +83,6 @@
 	.lightbox-overlay .lb-prev,.lightbox-overlay .lb-next{width:44px;height:44px}
 }
 
-/* Global font reduction — lowers base sizes and overrides inline font-size where used */
-:root{--site-base-font:13px}
-html{font-size:var(--site-base-font) !important}
-body{font-size:13px !important;line-height:1.45 !important}
-
-/* Standard text elements reduced */
-p,li,a,span,label,input,button,select,textarea,div{font-size:13px !important}
-
-/* Headings scaled down */
-h1{font-size:28px !important}
-h2{font-size:22px !important}
-h3{font-size:18px !important}
-h4{font-size:16px !important}
-h5{font-size:14px !important}
-h6{font-size:13px !important}
-
-/* Override inline font-size attributes to inherit our base sizes */
-[style*="font-size"]{font-size:inherit !important}
-
-@media(max-width:768px){
-	:root{--site-base-font:12px}
-	html{font-size:12px !important}
-	h1{font-size:22px !important}
-	h2{font-size:18px !important}
-	h3{font-size:16px !important}
-}
-
 /* Recently Viewed */
 .recent-row{display:flex;gap:8px;overflow-x:auto;padding:8px 0}
 
@@ -123,6 +96,120 @@ h6{font-size:13px !important}
 
 @media(max-width:480px){
 	/* small-screen tweaks for recent/other widgets */
+}
+
+/* Site-wide compact mode: smaller typography and lighter visual weight */
+html{font-size:14px !important}
+body{line-height:1.45 !important}
+
+h1{font-size:2rem !important}
+h2{font-size:1.65rem !important}
+h3{font-size:1.35rem !important}
+h4{font-size:1.15rem !important}
+
+p,li,a,span,label,input,button,select,textarea{font-size:0.93rem !important}
+
+.hero,
+.hero-section,
+.product-hero,
+.product-details,
+.related-products,
+.features,
+.creative-branding,
+.cta-section,
+.quote-form-section,
+.popular-products-section,
+.page-header,
+.services-hero,
+.blog-layout{
+	padding-top:48px !important;
+	padding-bottom:48px !important;
+}
+
+.container{max-width:1140px !important}
+
+.product-card,
+.feature-card,
+.category-card,
+.industry-card,
+.contact-card,
+.info-card,
+.faq-item,
+.sidebar-card,
+.order-form,
+.quote-form-container,
+.price-table,
+.product-images,
+.file-upload-area,
+.blog-post,
+.sidebar-section{
+	border-radius:10px !important;
+	box-shadow:0 3px 12px rgba(0,0,0,0.08) !important;
+	contain:layout style;
+}
+
+.product-card,
+.feature-card,
+.category-card,
+.contact-card,
+.info-card,
+.faq-item,
+.sidebar-card,
+.quote-form-container{
+	padding:1.1rem !important;
+}
+
+.cta-button,
+.btn-cta,
+.submit-btn,
+.btn-primary,
+.cta-section .btn,
+.cta-section .btn-light,
+.cta-section .btn-outline-light,
+.mail-button,
+.create-account,
+.search-btn{
+	font-size:0.92rem !important;
+	padding:10px 16px !important;
+	border-radius:10px !important;
+	box-shadow:none !important;
+}
+
+.hero-price,
+.discount-badge,
+.loyalty-badge,
+.price-summary,
+.price-estimate{
+	font-size:0.9rem !important;
+	padding:8px 12px !important;
+	border-radius:8px !important;
+}
+
+.main-product-image{height:380px !important;border-radius:12px !important}
+.thumbnail-image{width:64px !important;height:64px !important;border-radius:8px !important}
+
+@media(max-width:768px){
+	html{font-size:13px !important}
+	h1{font-size:1.7rem !important}
+	h2{font-size:1.4rem !important}
+	h3{font-size:1.2rem !important}
+	.hero,
+	.hero-section,
+	.product-hero,
+	.product-details,
+	.related-products,
+	.features,
+	.creative-branding,
+	.cta-section,
+	.quote-form-section,
+	.popular-products-section,
+	.page-header,
+	.services-hero,
+	.blog-layout{
+		padding-top:34px !important;
+		padding-bottom:34px !important;
+	}
+	.main-product-image{height:320px !important}
 }
 
 

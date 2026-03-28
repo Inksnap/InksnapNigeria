@@ -55,12 +55,12 @@
         const totalEl = summary.querySelector('.totalPrice');
         const discountEl = summary.querySelector('.discountPrice');
         const discountWrap = summary.querySelector('.discounted');
+        const badge = summary.querySelector('.discount-badge');
 
         function calc(){
             const qty = parseInt(input.value,10) || 0;
             const total = qty * unitPrice;
             totalEl.textContent = formatNaira(total);
-            const badge = summary.querySelector('.discount-badge');
             if(qty >= 200){
                 const discounted = Math.round(total * 0.9);
                 discountWrap.style.display = 'inline-block';
@@ -75,7 +75,8 @@
 
         // initial
         calc();
-        input.addEventListener('input', calc);
+        var _debounceTimer;
+        input.addEventListener('input', function(){ clearTimeout(_debounceTimer); _debounceTimer = setTimeout(calc, 150); });
         input.addEventListener('change', calc);
     }
 
@@ -376,9 +377,11 @@
             return wrap;
         }
 
-        function showIfNeeded(){ if(!shouldShow()) return; const b = makeBanner(); document.body.appendChild(b); try{ b.querySelector('.primary').focus(); }catch(e){} }
+        function showIfNeeded(){ if(!shouldShow()) return; var b = makeBanner(); document.body.appendChild(b); }
 
-        if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', showIfNeeded); else showIfNeeded();
+        // Delay banner injection to avoid CLS during initial paint
+        function deferBanner(){ setTimeout(showIfNeeded, 3000); }
+        if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', deferBanner); else deferBanner();
     }catch(e){console.error('banner init',e)}
 })();
 
