@@ -1,15 +1,11 @@
-﻿<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html><html lang="en"><head>
         <meta charset="UTF-8">
     <!-- Preconnect to Google Fonts for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <!-- Resource hints for better performance -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="preload" href="styles.css" as="style">
     <link rel="preload" href="assets/logo/logo.png" as="image">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,7 +62,7 @@
         .preloader-item img{max-width:150px;height:auto}
         @media (max-width:768px){.hero-content{grid-template-columns:1fr;text-align:center;gap:3rem}.hero-text h1{font-size:42px}}
     </style>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         
         <!-- Custom CSS -->
@@ -75,18 +71,10 @@
     <!-- Google tag (gtag.js) -->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0HGEQLXGL4"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','G-0HGEQLXGL4');</script>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript" defer>var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"), s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/65149de5b1aaa13b7a79531e/1hbc8hieq';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1, s0);
-    })();
+    <!--Tawk.to - deferred to first user interaction for better INP-->
+    <script defer>
+    (function(){var loaded=false;function loadTawk(){if(loaded)return;loaded=true;var s=document.createElement("script");s.async=true;s.src="https://embed.tawk.to/65149de5b1aaa13b7a79531e/1hbc8hieq";s.charset="UTF-8";s.setAttribute("crossorigin","*");document.head.appendChild(s);}window.addEventListener("mousemove",loadTawk,{once:true});window.addEventListener("scroll",loadTawk,{once:true});window.addEventListener("touchstart",loadTawk,{once:true});setTimeout(loadTawk,5000);})();
     </script>
-    <!--End of Tawk.to Script-->
         
         <!-- Structured Data for SEO -->
         <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service","name": "Professional Printing Quote Service","description": "Professional Quotes services in Lagos State, Nigeria with nationwide delivery. Best Quotes in Lagos, professional printing company, fast delivery, competitive prices, quality guaranteed. Serving all areas of Lagos State and customers all over Nigeria.","provider":{"@type": "LocalBusiness","name": "Inksnap Nigeria","address":{"@type": "PostalAddress","addressLocality": "Lagos State","addressCountry": "Nigeria"}},"areaServed": [{"@type": "City","name": "Lagos"},{"@type": "State","name": "Lagos State"},{"@type": "Country","name": "Nigeria"}],"serviceType": "Printing Services","offers":{"@type": "Offer","price": "1200","priceCurrency": "NGN","availability": "https://schema.org/InStock"}}</script>
@@ -99,8 +87,8 @@
         <!-- Preloader -->
         <div class="preloader">
             <div class="preloader-item">
-                <img src="assets/logo/logo.png" alt="Inksnap Nigeria" class="light-mode-item" loading="lazy" decoding="async">
-                <img src="assets/logo/white-logo.png" alt="Inksnap Nigeria" class="dark-mode-item" loading="lazy" decoding="async">
+                <img src="assets/logo/logo.png" alt="Inksnap Nigeria" class="light-mode-item" loading="lazy" width="400" height="300" decoding="async">
+                <img src="assets/logo/white-logo.png" alt="Inksnap Nigeria" class="dark-mode-item" loading="lazy" width="400" height="300" decoding="async">
             </div>
         </div>
 
@@ -109,8 +97,8 @@
             <nav class="navbar navbar-expand-xl">
                 <div class="container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/logo/logo.png" alt="Inksnap Nigeria" class="navbar-brand-item light-mode-item" loading="lazy" decoding="async">
-                        <img src="assets/logo/white-logo.png" alt="Inksnap Nigeria" class="navbar-brand-item dark-mode-item" loading="lazy" decoding="async">
+                        <img src="assets/logo/logo.png" alt="Inksnap Nigeria" class="navbar-brand-item light-mode-item" loading="lazy" width="400" height="300" decoding="async">
+                        <img src="assets/logo/white-logo.png" alt="Inksnap Nigeria" class="navbar-brand-item dark-mode-item" loading="lazy" width="400" height="300" decoding="async">
                     </a>
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -186,7 +174,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="hero-image">
-                            <img src="assets/images/index.png" alt="Printing Quote Service" class="img-fluid" loading="lazy" decoding="async"fetchpriority="high">
+                            <img src="assets/images/index.png" alt="Printing Quote Service" class="img-fluid" loading="lazy" width="400" height="300" decoding="async"fetchpriority="high">
                         </div>
                     </div>
             </div>

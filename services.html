@@ -1,17 +1,13 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
     <!-- Preconnect to Google Fonts for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <!-- Resource hints for better performance -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link rel="preload" href="styles.css" as="style">
     <link rel="preload" href="assets/logo/logo.png" as="image">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,18 +68,10 @@
     <!-- Google tag (gtag.js) -->
     <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-0HGEQLXGL4"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config','G-0HGEQLXGL4');</script>
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript" defer>var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-    (function(){
-    var s1=document.createElement("script"), s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/65149de5b1aaa13b7a79531e/1hbc8hieq';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1, s0);
-    })();
+    <!--Tawk.to - deferred to first user interaction for better INP-->
+    <script defer>
+    (function(){var loaded=false;function loadTawk(){if(loaded)return;loaded=true;var s=document.createElement("script");s.async=true;s.src="https://embed.tawk.to/65149de5b1aaa13b7a79531e/1hbc8hieq";s.charset="UTF-8";s.setAttribute("crossorigin","*");document.head.appendChild(s);}window.addEventListener("mousemove",loadTawk,{once:true});window.addEventListener("scroll",loadTawk,{once:true});window.addEventListener("touchstart",loadTawk,{once:true});setTimeout(loadTawk,5000);})();
     </script>
-    <!--End of Tawk.to Script-->
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <!-- Google Fonts -->
@@ -312,8 +300,8 @@
         <!-- Preloader -->
         <div class="preloader">
             <div class="preloader-item">
-                <img src="assets/logo/logo.png" class="light-mode-item" alt="Inksnap Logo - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
-                <img src="assets/logo/white-logo.png" class="dark-mode-item" alt="Inksnap Logo - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                <img src="assets/logo/logo.png" class="light-mode-item" alt="Inksnap Logo - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - Your Trusted Printing Partner" loading="lazy" width="400" height="300" decoding="async">
+                <img src="assets/logo/white-logo.png" class="dark-mode-item" alt="Inksnap Logo - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - Your Trusted Printing Partner" loading="lazy" width="400" height="300" decoding="async">
             </div>
         </div>
         <!-- Header -->
@@ -322,8 +310,8 @@
                 <div class="container">
                     <!-- Logo -->
                     <a class="navbar-brand" href="index.html">
-                        <img class="navbar-brand-item light-mode-item" src="assets/logo/logo.png" alt="Inksnap Logo - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
-                        <img class="navbar-brand-item dark-mode-item" src="assets/logo/white-logo.png" alt="Inksnap Logo - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - Your Trusted Printing Partner" loading="lazy" decoding="async">
+                        <img class="navbar-brand-item light-mode-item" src="assets/logo/logo.png" alt="Inksnap Logo - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - Your Trusted Printing Partner" loading="lazy" width="400" height="300" decoding="async">
+                        <img class="navbar-brand-item dark-mode-item" src="assets/logo/white-logo.png" alt="Inksnap Logo - Professional Printing Company in Lagos Nigeria" title="Inksnap Nigeria - Your Trusted Printing Partner" loading="lazy" width="400" height="300" decoding="async">
                     </a>
                     <!-- Mobile toggle -->
                     <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
